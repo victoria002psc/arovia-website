@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arovia Healthcare — Healthcare Support, Made Easier</title>
+  <meta name="description" content="Arovia brings healthcare services closer to you. Home care nursing, ambulance services, medical equipment, pharmacy, and diagnostic lab tests. Call +91 7013775996.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar__content">
+      <div class="topbar__info">
+        <span class="topbar__item">
+          <strong>Arovia Healthcare Services</strong> — Guntur, Andhra Pradesh
+        </span>
+        <span class="topbar__item">
+          Direct Phone: <a href="tel:+917013775996">+91 7013775996</a>
+        </span>
+      </div>
+      <div>
+        <span class="topbar__emergency-badge">Direct Phone Contact • No Online Forms</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__wrapper">
+      <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
+        <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
+        <div class="brand-link__text">
+          <span class="brand-link__title">AROVIA</span>
+          <span class="brand-link__subtitle">HEALTHCARE SERVICES</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="main-nav__list">
+          <li><a href="index.html" class="main-nav__link main-nav__link--active" aria-current="page">Home</a></li>
+          <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
+          <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
+          <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
+          <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
+          <li><a href="clinic.html" class="main-nav__link">Clinic</a></li>
+          <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
+          <li><a href="contact.html" class="main-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <a href="tel:+917013775996" class="btn btn--call-primary" aria-label="Call Arovia at +91 7013775996">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+          <span>Call: +91 7013775996</span>
+        </a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="drawerOverlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer__header">
+      <span class="brand-link__title">AROVIA</span>
+      <button id="drawerClose" class="mobile-drawer__close" aria-label="Close navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer__nav">
+      <a href="index.html" class="mobile-drawer__link mobile-drawer__link--active" aria-current="page">Home</a>
+      <a href="home-care.html" class="mobile-drawer__link">Home Care</a>
+      <a href="ambulance.html" class="mobile-drawer__link">Ambulance</a>
+      <a href="medical-equipment.html" class="mobile-drawer__link">Medical Equipment</a>
+      <a href="pharmacy.html" class="mobile-drawer__link">Pharmacy</a>
+      <a href="clinic.html" class="mobile-drawer__link">Clinic</a>
+      <a href="lab-tests.html" class="mobile-drawer__link">Lab Tests</a>
+      <a href="contact.html" class="mobile-drawer__link">Contact</a>
+    </nav>
+    <div class="mobile-drawer__footer">
+      <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+        <span>Call: +91 7013775996</span>
+      </a>
+      <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Direct phone service only. No online forms or bookings required.</p>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+    
+    <!-- 2.1 & 2.2 Hero Section -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="page-header__badge">
+            <span>Healthcare • Medical • Technology</span>
+          </div>
+          <h1 class="hero__title">
+            Healthcare Support, Made Easier.
+          </h1>
+          <p class="hero__intro">
+            Arovia brings healthcare services closer to you. From personal care and nursing support at home to ambulance services, medical equipment, pharmacy products, and laboratory tests, we help you find the support you need.
+          </p>
+          <div class="hero__actions">
+            <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 14px 28px; font-size: var(--font-size-base);">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+              <span>Call Now: +91 7013775996</span>
+            </a>
+            <a href="#services" class="btn btn--call-secondary" style="padding: 14px 24px; font-size: var(--font-size-base);">
+              <span>Explore Our Services</span>
+            </a>
+          </div>
+          <p class="hero__note">
+            Speak directly with a coordinator. No online registration or forms required.
+          </p>
+        </div>
+
+        <div class="hero__image-card">
+          <img src="assets/images/hero_homecare.jpg" alt="Arovia healthcare professional providing compassionate home nursing care to an elderly patient" class="hero__image" width="700" height="525">
+          <div class="hero__image-caption">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>Compassionate in-home patient care and clinical support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.3 Services Overview -->
+    <section id="services" class="section section--alt">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto var(--spacing-12);">
+          <div class="page-header__badge">
+            <span>Essential Medical Services</span>
+          </div>
+          <h2>Explore Our Services</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Review our six primary healthcare services below. Read the relevant details and call our official phone line to speak directly with us.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--spacing-8);">
+          
+          <!-- 1. Home Care -->
+          <article class="service-card">
+            <div class="service-card__icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            </div>
+            <h3 class="service-card__title">Home Care</h3>
+            <p class="service-card__description">
+              Personal assistance and professional nursing care for people who need support at home.
+            </p>
+            <ul class="service-card__features">
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Daily personal caregivers for mobility and feeding</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Registered nurses for clinical procedures & IV care</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Flexible 12-hour and 24-hour shift options</span>
+              </li>
+            </ul>
+            <div class="service-card__footer">
+              <a href="home-care.html" class="btn btn--call-secondary" style="width: 100%; margin-bottom: var(--spacing-2);">
+                <span>Explore Home Care</span>
+              </a>
+              <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+                <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+                <span>Call to Inquire</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Ambulance -->
+          <article class="service-card">
+            <div class="service-card__icon-wrap" style="background-color: var(--color-emergency-bg); color: var(--color-emergency);">
+              <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            </div>
+            <h3 class="service-card__title">Ambulance</h3>
+            <p class="service-card__description">
+              Ambulance transportation for patients who need help getting to or from medical facilities.
+            </p>
+            <ul class="service-card__features">
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Emergency transit and hospital discharge transfers</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Oxygen cylinder and patient stretcher onboard</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Direct telephone dispatch response</span>
+              </li>
+            </ul>
+            <div class="service-card__footer">
+              <a href="ambulance.html" class="btn btn--call-secondary" style="width: 100%; margin-bottom: var(--spacing-2);">
+                <span>Explore Ambulance</span>
+              </a>
+              <a href="tel:+917013775996" class="btn btn--emergency" style="width: 100%;">
+                <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+                <span>Call Ambulance Now</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Medical Equipment -->
+          <article class="service-card">
+            <div class="service-card__icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+            </div>
+            <h3 class="service-card__title">Medical Equipment</h3>
+            <p class="service-card__description">
+              Explore hospital-related medical equipment available for international shipping. Contact us for product details and pricing.
+            </p>
+            <ul class="service-card__features">
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Electric ICU beds, recovery trolleys, & crash carts</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Patient monitors, wheelchairs, and examination tables</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Direct quotation and specification details by phone</span>
+              </li>
+            </ul>
+            <div class="service-card__footer">
+              <a href="medical-equipment.html" class="btn btn--call-secondary" style="width: 100%; margin-bottom: var(--spacing-2);">
+                <span>View Equipment</span>
+              </a>
+              <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+                <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+                <span>Call for Equipment</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Pharmacy -->
+          <article class="service-card">
+            <div class="service-card__icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-15zM10.5 4.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-15z"/></svg>
+            </div>
+            <h3 class="service-card__title">Pharmacy</h3>
+            <p class="service-card__description">
+              Browse available medicines, read their details, and check the listed prices.
+            </p>
+            <ul class="service-card__features">
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Verified prescription medications & refills</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Surgical disposables and patient care supplies</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Direct telephone ordering for doorstep delivery</span>
+              </li>
+            </ul>
+            <div class="service-card__footer">
+              <a href="pharmacy.html" class="btn btn--call-secondary" style="width: 100%; margin-bottom: var(--spacing-2);">
+                <span>Explore Pharmacy</span>
+              </a>
+              <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+                <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+                <span>Call to Order Medicines</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Clinic -->
+          <article class="service-card service-card--disabled">
+            <div class="service-card__icon-wrap" style="background-color: #fef3c7; color: #92400e;">
+              <svg viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 16H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V20z"/></svg>
+            </div>
+            <div>
+              <span class="badge-coming-soon">Coming Soon</span>
+            </div>
+            <h3 class="service-card__title">Clinic</h3>
+            <p class="service-card__description">
+              Our clinic services are currently being prepared. More information will be available soon.
+            </p>
+            <ul class="service-card__features">
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                <span>Facility preparation and clinical onboarding in progress</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                <span>General medicine and outpatient schedules to be announced</span>
+              </li>
+            </ul>
+            <div class="service-card__footer">
+              <a href="clinic.html" class="btn btn--call-secondary" style="width: 100%; margin-bottom: var(--spacing-2);">
+                <span>Read Clinic Status</span>
+              </a>
+              <span style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Inquiries welcome via our main phone line</span>
+            </div>
+          </article>
+
+          <!-- 6. Lab Tests -->
+          <article class="service-card">
+            <div class="service-card__icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M9 2c-.55 0-1 .45-1 1v1H6c-.55 0-1 .45-1 1s.45 1 1 1h1v10.59l-4.71 4.7c-.38.39-.38 1.02 0 1.41.39.39 1.02.39 1.41 0L5 20.41V21c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-.59l1.29 1.29c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L17 15.59V6h1c.55 0 1-.45 1-1s-.45-1-1-1h-2V3c0-.55-.45-1-1-1H9zm1 4h4v9.59l1.71 1.71c.19.19.29.44.29.7H8c0-.26.1-.51.29-.7L10 15.59V6z"/></svg>
+            </div>
+            <h3 class="service-card__title">Lab Tests</h3>
+            <p class="service-card__description">
+              Explore available laboratory tests and health packages, including the tests included and their prices.
+            </p>
+            <ul class="service-card__features">
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Hygienic doorstep blood sample collection</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Complete blood count, diabetes, and lipid profiles</span>
+              </li>
+              <li class="service-card__feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Accurate reports delivered directly by phone</span>
+              </li>
+            </ul>
+            <div class="service-card__footer">
+              <a href="lab-tests.html" class="btn btn--call-secondary" style="width: 100%; margin-bottom: var(--spacing-2);">
+                <span>Explore Lab Tests</span>
+              </a>
+              <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+                <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+                <span>Call for Home Collection</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.4 Home Care Introduction (Dedicated Section) -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 760px; margin: 0 auto; text-align: center;">
+          <div class="page-header__badge">
+            <span>Understanding Home Care Options</span>
+          </div>
+          <h2>Two Types of Home Care at Arovia</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-3); font-size: var(--font-size-md);">
+            To help families choose the right kind of assistance, Arovia provides two distinct categories of home care: general caregivers for day-to-day physical assistance, and registered nurses for medical and clinical procedures.
+          </p>
+        </div>
+
+        <div class="home-care-duo">
+          
+          <!-- Category 1: Caregivers -->
+          <div class="care-type-card">
+            <span class="care-type-card__tag">Personal Assistance</span>
+            <h3 class="care-type-card__title">Caregivers (Attendants)</h3>
+            <p class="care-type-card__desc">
+              Caregivers provide non-medical, personal day-to-day assistance for elderly individuals, patients with limited mobility, or those recovering who need help with routine daily activities.
+            </p>
+            <div class="care-type-card__list">
+              <div class="care-type-card__item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Help with bathing, dressing, and personal hygiene</span>
+              </div>
+              <div class="care-type-card__item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Meal feeding assistance and fluid intake support</span>
+              </div>
+              <div class="care-type-card__item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Assisting with walking, transfers, and bed repositioning</span>
+              </div>
+              <div class="care-type-card__item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Friendly companionship and reassurance at home</span>
+              </div>
+            </div>
+            <div>
+              <a href="home-care.html" class="btn btn--call-secondary" style="width: 100%;">
+                <span>Learn More About Caregiver Support</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Category 2: Registered Nurses -->
+          <div class="care-type-card">
+            <span class="care-type-card__tag" style="background-color: #e0f2fe; color: #0369a1;">Clinical Care</span>
+            <h3 class="care-type-card__title">Registered Nurses</h3>
+            <p class="care-type-card__desc">
+              Registered nurses deliver specialized clinical care directly at home for post-surgical patients, ICU step-down cases, and patients requiring professional medical monitoring.
+            </p>
+            <div class="care-type-card__list">
+              <div class="care-type-card__item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Intravenous (IV) medication and infusion therapy</span>
+              </div>
+              <div class="care-type-card__item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Post-operative wound dressing and bed-sore prevention</span>
+              </div>
+              <div class="care-type-card__item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Catheter, Ryle's tube, and tracheostomy clinical care</span>
+              </div>
+              <div class="care-type-card__item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Continuous vital sign monitoring and doctor reporting</span>
+              </div>
+            </div>
+            <div>
+              <a href="home-care.html" class="btn btn--call-primary" style="width: 100%;">
+                <span>Learn More About Clinical Nursing</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5 Why Choose Arovia? (Factual & Modest) -->
+    <section class="section section--alt">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Practical Benefits</span>
+          </div>
+          <h2>Why Choose Arovia?</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Finding and arranging essential medical support should be straightforward and dependable. Here are the practical benefits of having all services organized with Arovia:
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-card__num">01 / DIRECT CONTACT</span>
+            <h4 class="why-card__title">Direct Phone Communication</h4>
+            <p class="why-card__desc">
+              You speak directly with a healthcare coordinator on the phone. There are no automated voice bots, support tickets, or waiting for email replies.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card__num">02 / COMPREHENSIVE</span>
+            <h4 class="why-card__title">Six Services in One Place</h4>
+            <p class="why-card__desc">
+              Whether you need bedside nursing, patient ambulance transportation, hospital equipment, or pharmacy supplies, you have a single point of reference.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card__num">03 / FACTUAL CLARITY</span>
+            <h4 class="why-card__title">Clear Specifications & Details</h4>
+            <p class="why-card__desc">
+              We present product model numbers, equipment dimensions, nursing roles, and test inclusions plainly so you know exactly what is offered.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card__num">04 / NO COMPLICATED FORMS</span>
+            <h4 class="why-card__title">No Complex Registrations</h4>
+            <p class="why-card__desc">
+              We do not ask you to create online accounts, remember passwords, or navigate checkouts. Read the details, call us, and we handle the rest.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.6 Contact Section (At Bottom of Home Page) -->
+    <section class="home-contact-section">
+      <div class="container">
+        <div class="home-contact-card">
+          <div>
+            <h2 class="home-contact-card__title">
+              Need help choosing a service? Call us to discuss what you need.
+            </h2>
+            <p class="home-contact-card__desc">
+              Our coordinators can answer questions about home nurse availability, ambulance transit, hospital equipment models, and lab tests.
+            </p>
+          </div>
+          <div class="home-contact-card__actions">
+            <a href="tel:+917013775996" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
+              <svg viewBox="0 0 24 24" style="fill: var(--color-primary-dark);"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+              <span>Call Now: +91 7013775996</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 2.7 Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-col__brand">
+          <a href="index.html" class="footer-col__logo-wrap">
+            <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="footer-col__logo" width="100" height="48">
+            <div>
+              <div class="footer-col__logo-title">AROVIA</div>
+              <div class="footer-col__logo-subtitle">HEALTHCARE • MEDICAL • TECHNOLOGY</div>
+            </div>
+          </a>
+          <p class="footer-col__text">
+            Arovia delivers professional healthcare services designed to make patient care simpler and more accessible. From personal home nursing to medical equipment and ambulance services.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-col__heading">Core Services</h3>
+          <ul class="footer-nav__list">
+            <li><a href="home-care.html" class="footer-nav__link">Home Care</a></li>
+            <li><a href="ambulance.html" class="footer-nav__link">Ambulance</a></li>
+            <li><a href="medical-equipment.html" class="footer-nav__link">Medical Equipment</a></li>
+            <li><a href="pharmacy.html" class="footer-nav__link">Pharmacy</a></li>
+            <li><a href="clinic.html" class="footer-nav__link">Clinic</a></li>
+            <li><a href="lab-tests.html" class="footer-nav__link">Lab Tests</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__heading">Navigation</h3>
+          <ul class="footer-nav__list">
+            <li><a href="index.html" class="footer-nav__link">Home</a></li>
+            <li><a href="contact.html" class="footer-nav__link">Contact Information</a></li>
+            <li><a href="components.html" class="footer-nav__link">Design System</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__heading">Direct Contact</h3>
+          <div class="footer-contact__list">
+            <div class="footer-contact__item">
+              <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+              <div>
+                <div>Official Phone Number:</div>
+                <a href="tel:+917013775996" class="footer-contact__link">+91 7013775996</a>
+              </div>
+            </div>
+            <div class="footer-contact__item">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <div>
+                Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, Andhra Pradesh, INDIA
+              </div>
+            </div>
+            <div class="footer-contact__item">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <div>
+                <a href="mailto:arovia22@gmail.com" class="footer-contact__link">arovia22@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div>&copy; 2026 Arovia Healthcare. All rights reserved. Direct phone service only — No online booking or automated checkout.</div>
+        <div>Healthcare Support, Made Easier</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Call Button -->
+  <a href="tel:+917013775996" class="floating-call-btn" aria-label="Call Arovia Healthcare at +91 7013775996">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+    <span>Call +91 7013775996</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

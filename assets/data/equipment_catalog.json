@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "av-het",
+    "model_number": "AV-HET",
+    "name": "Emergency Recovery Trolley Hydraulic",
+    "category": "Hospital Beds & Stretchers",
+    "short_summary": "Heavy-duty hydraulic emergency recovery trolley with X-ray compatible translucent top and drop-down stainless steel safety side rails.",
+    "page": 1,
+    "image": "assets/images/equipment/catalog/av-het.png",
+    "intended_purpose": "Designed for emergency rooms, intensive care units, post-operative recovery, and operating theatre patient transfer.",
+    "key_features": [
+      "X-ray compatible top for emergency and diagnostic use",
+      "Strong MS frame for long-term hospital usage",
+      "Stainless steel safety side rails for patient protection",
+      "Adjustable backrest for patient comfort",
+      "Easy maneuverability with swivel castors and brakes",
+      "Fitted with IV rod, utility tray, and oxygen cylinder holder",
+      "Corner buffers to protect walls and equipment",
+      "Suitable for emergency rooms, ICUs, wards, and OT transfer"
+    ],
+    "specifications": {
+      "Frame Material": "Rectangular & tubular mild steel (MS) pipe",
+      "Finish": "Epoxy powder-coated",
+      "Top Surface": "X-ray translucent removable top with cassette tray",
+      "Side Railings": "Stainless steel safety side railings (drop-down type)",
+      "Backrest Adjustment": "Ratchet-type manual backrest",
+      "Height Adjustment": "Hydraulic adjustment mechanism",
+      "Castors": "12.5 cm (5 inch) heavy-duty castors (2 with brakes, 2 free movement)",
+      "IV Rod": "Adjustable stainless steel IV rod",
+      "Corner Protection": "Rubber corner buffers",
+      "Load Capacity": "Up to 180 – 200 kg (approx.)"
+    },
+    "dimensions": {
+      "Length": "210 cm",
+      "Width": "65 cm",
+      "Height Adjustment Range": "65 ~ 85 cm"
+    },
+    "weight": "Approx. 85 ~ 95 kg (Net Weight)",
+    "accessories": [
+      "Utility tray",
+      "Oxygen cylinder cage",
+      "Adjustable stainless steel IV rod",
+      "Rubber corner buffers"
+    ]
+  },
+  {
+    "id": "av-ei3a",
+    "model_number": "AV-EI3A",
+    "name": "Electric ICU Bed 3 Function (ABS Panel & ABS Side Railing)",
+    "category": "Hospital Beds & Stretchers",
+    "short_summary": "Full 3-function motorized ICU hospital bed featuring electric remote operation, detachable ABS head/foot panels, and ABS safety side railings.",
+    "page": 2,
+    "image": "assets/images/equipment/catalog/av-ei3a.png",
+    "intended_purpose": "Critical care, intensive care units (ICU), surgical recovery, and general patient care wards.",
+    "key_features": [
+      "Ergonomic design for patient comfort",
+      "Easy operation with Electric Remote",
+      "Stable structure with high load-bearing capacity",
+      "Low noise wheels for smooth movement",
+      "Easy maintenance and hospital-grade finish",
+      "Suitable for ICU, ward, and general patient care"
+    ],
+    "specifications": {
+      "Platform Material": "Perforated MS sheet with epoxy powder coating",
+      "Operation System": "Electric remote with manual crank backup",
+      "Head & Foot Panels": "ABS head & foot panels, detachable for easy cleaning and transport",
+      "Side Railing": "ABS side railing",
+      "Castor Wheels": "Mounted on 125 mm silent castor wheels with individual brakes",
+      "Frame Construction": "Strong MS tubular frame for long-term durability with smooth edges",
+      "Backrest Adjustment": "0° – 75°",
+      "Leg Section Adjustment": "0° – 40°",
+      "Overall Lifting Range": "500 – 700 mm"
+    },
+    "dimensions": {
+      "Overall Bed Size": "2100 × 1050 × 500–700 mm (L × W × H)"
+    },
+    "weight": "Approx. Net Weight: 85 – 95 kg | Mattress Weight: 10 – 15 kg | Gross Weight: 105 – 115 kg",
+    "accessories": [
+      "Stainless steel IV infusion stand with 4 hooks (height adjustable)",
+      "Compatible hospital mattress",
+      "Electric remote control"
+    ]
+  },
+  {
+    "id": "av-ei3c",
+    "model_number": "AV-EI3C",
+    "name": "Electric ICU Bed 3 Function (ABS Panel & Collapsible Side Railing)",
+    "category": "Hospital Beds & Stretchers",
+    "short_summary": "Electric 3-function ICU bed featuring durable collapsible stainless/aluminum side railings, remote control motorized adjustment, and ABS panels.",
+    "page": 3,
+    "image": "assets/images/equipment/catalog/av-ei3c.png",
+    "intended_purpose": "ICU, step-down units, recovery suites, and long-term clinical patient care.",
+    "key_features": [
+      "Ergonomic design for patient comfort",
+      "Easy operation with Electric Remote",
+      "Stable structure with high load-bearing capacity",
+      "Low noise wheels for smooth movement",
+      "Easy maintenance and hospital-grade finish",
+      "Suitable for ICU, ward, and general patient care"
+    ],
+    "specifications": {
+      "Platform Material": "Perforated MS sheet with epoxy powder coating",
+      "Operation System": "Electric remote with manual crank backup",
+      "Head & Foot Panels": "ABS head & foot panels, detachable for easy cleaning and transport",
+      "Side Railing": "Collapsible side railing",
+      "Castor Wheels": "Mounted on 125 mm silent castor wheels with individual brakes",
+      "Frame Construction": "Strong MS tubular frame with smooth safety corners",
+      "Backrest Adjustment": "0° – 75°",
+      "Leg Section Adjustment": "0° – 40°",
+      "Overall Lifting Range": "500 – 700 mm"
+    },
+    "dimensions": {
+      "Overall Bed Size": "2100 × 1050 × 500–700 mm (L × W × H)"
+    },
+    "weight": "Approx. Net Weight: 85 – 95 kg | Mattress Weight: 10 – 15 kg | Gross Weight: 105 – 115 kg",
+    "accessories": [
+      "Stainless steel IV infusion stand with 4 hooks",
+      "Specialized medical mattress",
+      "Electric remote handset"
+    ]
+  },
+  {
+    "id": "av-fss1",
+    "model_number": "AV-FSS1",
+    "name": "Foot Single Step SS",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Full stainless steel single-step stool designed with anti-skid rubber leg tips for safe patient mounting onto examination tables and hospital beds.",
+    "page": 4,
+    "image": "assets/images/equipment/catalog/av-fss1.png",
+    "intended_purpose": "Patient assistance for climbing onto examination couches, hospital beds, and clinical diagnostic tables.",
+    "key_features": [
+      "Full stainless steel construction for hygiene and durability",
+      "Corrosion-resistant SS body suitable for hospital environments",
+      "Anti-skid rubber leg tips for patient safety",
+      "Smooth, easy-to-clean surface",
+      "Strong load-bearing structure",
+      "Compact and stable design"
+    ],
+    "specifications": {
+      "Material": "Stainless Steel (SS 202 Grade)",
+      "Finish": "Matt / Satin Finish",
+      "Structure": "Welded SS Frame",
+      "Leg Tips": "Anti-skid Rubber Shoes"
+    },
+    "dimensions": {
+      "Overall Size (L × W × H)": "500 × 300 × 230 mm (approx.)"
+    },
+    "weight": "Net Weight: Approx. 3 – 4 kg",
+    "accessories": [
+      "Integrated anti-skid rubber feet"
+    ]
+  },
+  {
+    "id": "av-ge2",
+    "model_number": "AV-GE2",
+    "name": "Gynaec Examination Table Two Fold Fix Mattress (22\" × 72\")",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Specialized gynecological examination couch with two-fold frame, fixed upholstered mattress, and adjustable lithotomy poles with straps.",
+    "page": 5,
+    "image": "assets/images/equipment/catalog/av-ge2.png",
+    "intended_purpose": "Obstetric and gynecological consultations, pelvic examinations, and minor clinical procedures.",
+    "key_features": [
+      "Two-fold table design suitable for gynecological examinations",
+      "Fixed cushioned mattress for stable patient support",
+      "Adjustable lithotomy poles (crutches) with straps",
+      "Strong mild steel frame made of rectangular & square tubes",
+      "Legs fitted with PVC stumps for floor protection"
+    ],
+    "specifications": {
+      "Frame Material": "Mild Steel (MS) rectangular & square tube structure",
+      "Table Type": "Examination Table (Gynaec)",
+      "Mattress Type": "Fixed mattress, two-fold design",
+      "Mattress Size": "22\" × 72\"",
+      "Leg Support": "Adjustable lithotomy poles (crutches) with straps",
+      "Base Support": "Protective PVC floor stumps"
+    },
+    "dimensions": {
+      "Overall Size": "180 × 60 × 46 cm"
+    },
+    "weight": "Approx. Net Weight: 30 – 40 kg",
+    "accessories": [
+      "Lithotomy poles (crutches)",
+      "Securing straps",
+      "Protective PVC leg stumps"
+    ]
+  },
+  {
+    "id": "av-mtn",
+    "model_number": "AV-MTN",
+    "name": "Mayo Trolley Normal",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Stainless steel procedural instrument stand with adjustable height mechanism and four smooth-rolling swivel castor wheels.",
+    "page": 6,
+    "image": "assets/images/equipment/catalog/av-mtn.png",
+    "intended_purpose": "Surgical procedures, minor operations, dental clinics, and routine surgical instrument tray staging.",
+    "key_features": [
+      "Adjustable height for procedural convenience",
+      "Compact and lightweight design for easy handling",
+      "Stainless steel construction ensures durability and hygiene",
+      "Smooth mobility with four swivel wheels",
+      "Easy to clean and maintain",
+      "Suitable for operation theatres, clinics, and hospitals"
+    ],
+    "specifications": {
+      "Product Type": "Mayo Trolley",
+      "Frame Material": "Stainless Steel (SS)",
+      "Shelf Configuration": "1 stainless steel shelf / tray",
+      "Height Adjustment": "Manual adjustable height mechanism",
+      "Mobility": "Mounted on 4 swivel castor wheels",
+      "Finish": "Stainless steel polished finish",
+      "Usage": "Indoor clinical and OT use"
+    },
+    "dimensions": {
+      "Overall Size (L × W × H)": "10 × 10 × 30 cm (approx. tray base)"
+    },
+    "weight": "Net Weight: 10 – 15 kg",
+    "accessories": [
+      "Stainless steel instrument tray",
+      "Swivel castor set"
+    ]
+  },
+  {
+    "id": "av-its",
+    "model_number": "AV-ITS",
+    "name": "Instrument Trolley SS",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Dual-tier stainless steel medical instrument trolley with 3-sided protective railing on the top shelf and smooth-running castors.",
+    "page": 7,
+    "image": "assets/images/equipment/catalog/av-its.png",
+    "intended_purpose": "Transporting and organizing sterile surgical instruments, dressings, medications, and supplies across wards and operating suites.",
+    "key_features": [
+      "High-quality stainless steel construction for long service life",
+      "Stainless steel top and bottom shelves",
+      "Three-side safety railing provided on top shelf",
+      "Smooth mobility for easy handling during procedures",
+      "Easy to clean and maintain for hygienic use"
+    ],
+    "specifications": {
+      "Trolley Type": "Instrument Trolley",
+      "Frame Material": "Stainless Steel",
+      "Shelves": "Top shelf with 3-side protective railing; Bottom plain stainless steel shelf",
+      "Mobility": "Mounted on smooth-running swivel castors",
+      "Finish": "Smooth, corrosion-resistant stainless finish"
+    },
+    "dimensions": {
+      "Length": "60 cm",
+      "Width": "45 cm",
+      "Height": "90 cm"
+    },
+    "weight": "Approx. Net Weight: 18 – 22 kg",
+    "accessories": [
+      "3-side protective safety rail",
+      "Swivel castor wheels"
+    ]
+  },
+  {
+    "id": "av-pg",
+    "model_number": "AV-PG",
+    "name": "Plain Bed (General Category)",
+    "category": "Hospital Beds & Stretchers",
+    "short_summary": "Standard stationary hospital ward bed constructed from strong mild steel with epoxy powder-coated finish for general inpatient accommodation.",
+    "page": 8,
+    "image": "assets/images/equipment/catalog/av-pg.png",
+    "intended_purpose": "General patient wards, rural clinics, observation rooms, and standard hospital inpatient stay.",
+    "key_features": [
+      "Strong mild steel frame for durability",
+      "Powder-coated finish for corrosion resistance",
+      "Fixed plain bed design for general ward use",
+      "Stable construction without wheels",
+      "Easy to clean and maintain",
+      "Suitable for hospitals and clinics"
+    ],
+    "specifications": {
+      "Bed Type": "Plain (Fixed height, stationary)",
+      "Frame Material": "Mild Steel",
+      "Elevation": "Fixed height (No elevation mechanism)",
+      "Finish": "Pre-treated epoxy powder-coated finish",
+      "Usage": "General hospital ward care"
+    },
+    "dimensions": {
+      "Length": "1830 mm (6 ft)",
+      "Width": "915 mm (3 ft)",
+      "Height": "450 – 500 mm"
+    },
+    "weight": "Approx. Net Weight: 40 – 50 kg",
+    "accessories": [
+      "Protective leg caps"
+    ]
+  },
+  {
+    "id": "av-bla",
+    "model_number": "AV-BLA",
+    "name": "Bed Side Locker ABS",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Durable, non-porous one-piece ABS plastic bedside locker equipped with top drawer, bottom storage cupboard, dual towel rails, and castor wheels.",
+    "page": 9,
+    "image": "assets/images/equipment/catalog/av-bla.png",
+    "intended_purpose": "Patient personal storage, bedside utility, medication holding, and towel storage in hospital rooms.",
+    "key_features": [
+      "Made from high-quality ABS plastic for durability",
+      "Smooth, non-porous surface for easy cleaning and hygiene",
+      "Compact design suitable for bedside patient use",
+      "Two towel rails for added convenience",
+      "Drawer for small personal items",
+      "Cupboard for larger storage needs",
+      "Mounted on smooth-rolling 5 cm castors for easy movement",
+      "Resistant to corrosion and moisture"
+    ],
+    "specifications": {
+      "Material": "High-quality ABS Plastic",
+      "Construction": "One-piece molded ABS body",
+      "Storage Configuration": "1 Drawer + 1 Lower Cupboard Box",
+      "Accessories": "Two integrated side towel rails",
+      "Mounting & Castors": "Mounted on 5 cm (50 mm) smooth castor wheels"
+    },
+    "dimensions": {
+      "Overall Size (L × W × H)": "45 × 45 × 75 cm"
+    },
+    "weight": "Approx. 12 – 14 kg",
+    "accessories": [
+      "Integrated drawer",
+      "Storage cupboard",
+      "Two side towel rails",
+      "Castor set"
+    ]
+  },
+  {
+    "id": "av-ecca",
+    "model_number": "AV-ECCA",
+    "name": "Emergency Crash Cart ABS Type",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Multi-tier emergency resuscitation trolley featuring 5 spacious storage shelves, lockable medication drawers, and smooth non-marking swivel castors.",
+    "page": 10,
+    "image": "assets/images/equipment/catalog/av-ecca.png",
+    "intended_purpose": "Emergency department resuscitation, code blue response, ICU medication staging, and acute trauma interventions.",
+    "key_features": [
+      "Durable metal and stainless steel construction",
+      "Five spacious shelves for organized medical storage",
+      "Lockable drawers for safe medicine handling",
+      "Smooth, non-marking swivel castors for easy movement",
+      "Ergonomic chrome-plated handle for comfortable pushing",
+      "Suitable for hospitals, clinics, and emergency wards",
+      "Stable structure with balanced load distribution"
+    ],
+    "specifications": {
+      "Frame Material": "Metal & Stainless Steel structure",
+      "Handle Material": "Chrome-plated metal / Stainless Steel",
+      "Castors": "4 × Non-marking swivel castors",
+      "Special Feature": "Lockable security drawers for pharmaceuticals",
+      "Shelves / Storage": "5 shelves with organized layout",
+      "Colour Combination": "Blue, Grey & Red"
+    },
+    "dimensions": {
+      "Overall Size (L × W × H)": "95 × 45 × 75 cm"
+    },
+    "weight": "Net Weight approx. 40 kg",
+    "accessories": [
+      "Push handle",
+      "Lockable drawer system",
+      "Castor wheels with brakes"
+    ]
+  },
+  {
+    "id": "av-bss",
+    "model_number": "AV-BSS",
+    "name": "Basin Stand Single",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Mobile single wash basin stand with 35 cm corrosion-resistant stainless steel basin, epoxy powder-coated tubular frame, and medical-grade castors.",
+    "page": 11,
+    "image": "assets/images/equipment/catalog/av-bss.png",
+    "intended_purpose": "Routine medical examination handwashing, fluid disposal, and clinical hygiene in examination rooms and wards.",
+    "key_features": [
+      "Stainless steel basin, corrosion-resistant and easy to clean",
+      "Smooth mobility with 50 mm medical-grade castor wheels",
+      "Durable epoxy-coated frame resistant to rust and scratches",
+      "Stable structure with non-slip plastic legs",
+      "Ideal for handwashing and fluid disposal",
+      "Suitable for routine medical and examination procedures",
+      "Easy to maintain and hygienic design"
+    ],
+    "specifications": {
+      "Product Name": "Single Wash Basin Stand",
+      "Basin Diameter": "35 cm",
+      "Basin Material": "Stainless Steel (SS)",
+      "Frame Material": "Mild Steel tubular framework",
+      "Frame Finish": "Epoxy Powder Coated",
+      "Castor Size": "50 mm medical-grade castors",
+      "Leg Material": "Plastic (non-slip type)"
+    },
+    "dimensions": {
+      "Basin Diameter": "35 cm",
+      "Overall Height": "90 – 95 cm"
+    },
+    "weight": "Approx. 6 – 7 kg",
+    "accessories": [
+      "35 cm stainless steel removable basin",
+      "50 mm castor wheels"
+    ]
+  },
+  {
+    "id": "av-obtg",
+    "model_number": "AV-OBTG",
+    "name": "Over Bed Table General Gear",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Bedside overbed utility table with smooth gear-handle mechanical height adjustment, laminated board tabletop, and swivel castors.",
+    "page": 12,
+    "image": "assets/images/equipment/catalog/av-obtg.png",
+    "intended_purpose": "Patient bedside meal service, drinking, reading, and medical nursing supplies placement.",
+    "key_features": [
+      "Smooth gear-handle height adjustment for user convenience",
+      "Strong MS rectangular frame ensures durability",
+      "Laminated top is easy to clean and maintain",
+      "Smooth mobility with swivel castors",
+      "Compact design suitable for bedside and clinical use",
+      "Powder-coated finish for corrosion resistance"
+    ],
+    "specifications": {
+      "Frame Material": "Mild Steel (MS) rectangular tube framework",
+      "Top Material": "Laminated board top",
+      "Top Size": "30\" × 16\"",
+      "Height Adjustment": "Gear handle operated height adjustment mechanism",
+      "Mobility": "Mounted on 50 mm (5 cm) swivel castors",
+      "Finish": "Epoxy powder-coated finish",
+      "Construction": "Rigid welded structure"
+    },
+    "dimensions": {
+      "Top Dimensions": "30\" × 16\"",
+      "Overall Frame (L × W × H)": "72\" × 20\" × 30\" (approx.)"
+    },
+    "weight": "Approx. Net Weight: 20 – 25 kg",
+    "accessories": [
+      "Gear crank handle",
+      "Swivel castor wheels",
+      "Laminated tabletop"
+    ]
+  },
+  {
+    "id": "av-bsch",
+    "model_number": "AV-BSCH",
+    "name": "Blood Sample Collection Chair",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Phlebotomy sampling chair featuring padded seat/backrest, stainless steel sliding footrest, dual supportive armrests, and white powder-coated MS frame.",
+    "page": 13,
+    "image": "assets/images/equipment/catalog/av-bsch.png",
+    "intended_purpose": "Blood donation centers, clinical laboratories, pathology sample collection, and intravenous infusions.",
+    "key_features": [
+      "Durable MS frame with powder-coated finish",
+      "Corrosion-resistant structure",
+      "Comfortable padded seat and backrest",
+      "Stainless steel sliding footrest for patient comfort",
+      "Adjustable positioning during blood collection",
+      "Stable design suitable for long procedures",
+      "Easy to clean and maintain"
+    ],
+    "specifications": {
+      "Chair Type": "Blood Collection Chair (Phlebotomy)",
+      "Frame Material": "Mild Steel (MS)",
+      "Finish": "White Powder Coated",
+      "Seat & Backrest": "Padded vinyl cushion",
+      "Footrest": "Stainless steel sliding footrest",
+      "Adjustment": "Adjustable patient arm position during blood collection"
+    },
+    "dimensions": {
+      "Overall Length": "115 cm",
+      "Overall Width": "65 cm",
+      "Overall Height": "110 – 115 cm (approx.)"
+    },
+    "weight": "Approx. Net Weight: 15 kg",
+    "accessories": [
+      "Sliding stainless steel footrest",
+      "Padded armrests",
+      "Contoured cushions"
+    ]
+  },
+  {
+    "id": "al-dt01",
+    "model_number": "AL-DT01",
+    "name": "Digital Thermometer",
+    "category": "Diagnostic & Monitoring Devices",
+    "short_summary": "Fast-reading digital clinical thermometer with LCD display, high accuracy sensor, fever beep indicator, and last reading recall.",
+    "page": 14,
+    "image": "assets/images/equipment/catalog/al-dt01.png",
+    "intended_purpose": "Oral, axillary, or rectal temperature measurement for pediatric, youth, and adult clinical diagnosis.",
+    "key_features": [
+      "High accuracy temperature sensing",
+      "Soft audible beep on completion",
+      "Hold button to switch between °C and °F",
+      "Low battery indicator alert",
+      "Last reading memory recall",
+      "Long-lasting battery life",
+      "Suitable for babies, kids, and adults",
+      "Protective plastic storage case included",
+      "One button simple operation with Auto Off"
+    ],
+    "specifications": {
+      "Display Type": "LCD digital display",
+      "Color": "White with Blue accent",
+      "Outer Material": "Medical-grade Plastic",
+      "Power Source": "Battery operated",
+      "Upper Temperature Rating": "42°C",
+      "Lower Temperature Rating": "32°C",
+      "Care Instructions": "Hand wash / wipe clean only",
+      "Usage": "Indoor clinical and home health use"
+    },
+    "dimensions": {
+      "Length": "15 cm (L)"
+    },
+    "weight": "20 grams",
+    "accessories": [
+      "Protective plastic carry case",
+      "Pre-installed battery"
+    ]
+  },
+  {
+    "id": "av-bd5",
+    "model_number": "AV-BD5",
+    "name": "Biphasic Defibrillator (Yellow)",
+    "category": "Critical Care & Treatment",
+    "short_summary": "Advanced portable biphasic defibrillator with 7\" color TFT screen, 2-channel waveform display, integrated thermal recorder, and external paddles.",
+    "page": 15,
+    "image": "assets/images/equipment/catalog/av-bd5.png",
+    "intended_purpose": "Cardiac emergency resuscitation, ventricular defibrillation, emergency ward cardioversion, and patient vital monitoring.",
+    "key_features": [
+      "Biphasic energy delivery technology",
+      "7-inch color display with 800 × 480 pixel resolution",
+      "2 waveforms display with heart rate and pulse monitoring",
+      "High resolution thermal array recorder (25 mm/sec)",
+      "ECG Acquisition via patient cable and external paddles",
+      "Internal rechargeable battery supporting 40-50 shocks (270 joules)",
+      "Compact transport design with rugged yellow housing"
+    ],
+    "specifications": {
+      "Channels": "2 Channel",
+      "Electrodes": "3 / 5 Leads ECG",
+      "ECG Acquisition": "Patient Cable and External Paddles",
+      "Lead Selection": "Lead I, II, III, aVR, aVL, aVF, V",
+      "Heart Rate Range": "30 – 240 bpm (Accuracy: ±2 bpm)",
+      "Frequency Response": "0.05 to 40 Hz | CMRR: > 100 dB",
+      "Printer Paper": "57 mm × 20 m thermal roll",
+      "Power Input": "AC 230V, 50 Hz & Internal 14.8V / 4400 mAh Li-Polymer Battery",
+      "Battery Charge Time": "8 Hours"
+    },
+    "dimensions": {
+      "Dimensions (L × H × W)": "403 × 152 × 324 mm"
+    },
+    "weight": "5.4 kg",
+    "accessories": [
+      "External defibrillator paddles",
+      "Patient ECG lead cable",
+      "Thermal recording paper roll",
+      "AC power cable"
+    ]
+  },
+  {
+    "id": "av-1200g",
+    "model_number": "AV-1200G",
+    "name": "12 Channel ECG Machine",
+    "category": "Diagnostic & Monitoring Devices",
+    "short_summary": "12-lead electrocardiograph featuring 7\" high-resolution color touch screen, full alphanumeric keyboard, simultaneous 12-lead acquisition, and 1000-case memory.",
+    "page": 16,
+    "image": "assets/images/equipment/catalog/av-1200g.png",
+    "intended_purpose": "Comprehensive cardiac diagnostic testing in cardiology clinics, outpatient departments, and emergency rooms.",
+    "key_features": [
+      "7 inch high resolution color touch screen",
+      "Full alphanumeric keyboard with shortcut keys for efficient operation",
+      "Simultaneous 12-lead ECG acquisition and display",
+      "Automatic ECG measurements and interpretation",
+      "Internal storage up to 1000 cases with review and statistics",
+      "Built-in rechargeable high-capacity lithium battery",
+      "ECG data transmission to PC via USB port",
+      "Playback and reporting software integration"
+    ],
+    "specifications": {
+      "Leads": "Standard 12 leads",
+      "Acquisition Mode": "Simultaneous 12-leads acquisition",
+      "Sampling Rate": "1000 Hz | A/D Converter: 24 bits",
+      "Frequency Response": "0.05 ~ 160 Hz (~3 dB)",
+      "Filter System": "AC Filter (50/60 Hz), EMG Filter (25/35/45/75/100/150 Hz), DFT Filter",
+      "Operation Modes": "Manual, Auto, Rhythm, 1-channel 1-minute"
+    },
+    "dimensions": {
+      "Dimensions": "430 × 200 × 420 mm"
+    },
+    "weight": "2600 grams (2.6 kg)",
+    "accessories": [
+      "12-lead patient cable",
+      "Chest bulb electrodes",
+      "Limb clamp electrodes",
+      "Power cord",
+      "Ground cable"
+    ]
+  },
+  {
+    "id": "av-xvb2",
+    "model_number": "AV-XVB2",
+    "name": "X Ray View Box Double Screen",
+    "category": "Diagnostic & Monitoring Devices",
+    "short_summary": "Ultra-slim double-screen LED X-ray film illuminator with uniform flicker-free lighting, heavy-duty film holding clips, and wall-mount bracket.",
+    "page": 17,
+    "image": "assets/images/equipment/catalog/av-xvb2.png",
+    "intended_purpose": "Radiographic film viewing and radiological diagnostics in clinics, radiology departments, and orthopaedic operating rooms.",
+    "key_features": [
+      "Provides clear and uniform illumination for accurate X-ray interpretation",
+      "Four-film viewing capacity improves efficiency and comparison",
+      "Ultra-slim aluminum body with rounded safety corners",
+      "Flicker-free LED light reduces eye fatigue during long diagnosis",
+      "Low power consumption with long LED lifespan",
+      "Ideal for hospitals, diagnostic centers, radiology rooms, and clinics"
+    ],
+    "specifications": {
+      "Viewer Type": "Multi-Film LED X-Ray Viewer (Double Screen, 4-Film capacity)",
+      "Light Source": "High-brightness LED panel (3000 – 5000 cd/m²)",
+      "Color Temperature": "6000 – 6500 K (Cool White / Daylight)",
+      "Body Construction": "Anodized aluminum frame with acrylic diffuser",
+      "Clips": "Heavy-duty film holding clips (top mounted)",
+      "Mounting": "Wall-mounted / Hanging type",
+      "Power Supply": "AC 220–240 V, 50/60 Hz (External power adapter included)"
+    },
+    "dimensions": {
+      "Dimensions (L × W × H)": "980 × 440 × 100 mm approx."
+    },
+    "weight": "Approx. 6.0 – 6.8 kg",
+    "accessories": [
+      "Wall mounting hardware",
+      "External power adapter",
+      "Instruction guide"
+    ]
+  },
+  {
+    "id": "av-wcfm",
+    "model_number": "AV-WCFM",
+    "name": "Folding Wheel Chair MS Powder Coated",
+    "category": "Patient Mobility",
+    "short_summary": "Foldable mild steel manual wheelchair featuring heavy-duty wire spoke rear wheels, durable powder-coated frame, and fixed armrests.",
+    "page": 18,
+    "image": "assets/images/equipment/catalog/av-wcfm.png",
+    "intended_purpose": "Mobility assistance for elderly, postoperative, and disabled patients in hospital wards and transit areas.",
+    "key_features": [
+      "Strong MS frame with durable powder-coated finish",
+      "Fixed arm design for better stability",
+      "Foldable seat for easy storage and transportation",
+      "Wire spoke rear wheels for smooth movement",
+      "Easy to maneuver with low maintenance",
+      "Comfortable seating for patient mobility"
+    ],
+    "specifications": {
+      "Frame Material": "Mild Steel (MS)",
+      "Finish": "Durable Powder Coated",
+      "Seat Type": "Foldable padded vinyl seat",
+      "Backrest": "Foldable fabric/vinyl backrest",
+      "Arm Type": "Fixed Arms",
+      "Rear Wheels": "Wire Spoke Rear Wheels with Handrims",
+      "Front Wheels": "Solid Castor Wheels",
+      "Footrest": "Fixed / Foldable footrest",
+      "Load Capacity": "Up to 100 kg weight capacity"
+    },
+    "dimensions": {
+      "Overall Length": "105 – 110 cm",
+      "Overall Width": "63 – 65 cm",
+      "Overall Height": "88 – 92 cm",
+      "Seat Width": "45 cm (approx.)"
+    },
+    "weight": "Approx. 18 – 20 kg",
+    "accessories": [
+      "Foldable footrests",
+      "Side skirt guards",
+      "Hand brake levers"
+    ]
+  },
+  {
+    "id": "av-he03",
+    "model_number": "AV-HE03",
+    "name": "Holter ECG System",
+    "category": "Diagnostic & Monitoring Devices",
+    "short_summary": "24-hour ambulatory 12-lead Holter ECG recorder with anti-jamming aseismatic design, OLED display, and high-speed USB 2.0 PC analysis interface.",
+    "page": 19,
+    "image": "assets/images/equipment/catalog/av-he03.png",
+    "intended_purpose": "Continuous 24-hour ambulatory cardiac monitoring, arrhythmia detection, and pacemaker evaluation.",
+    "key_features": [
+      "Advanced stable, dependable, and durable recorder architecture",
+      "Anti-jamming and aseismatic capability",
+      "Compact volume with OLED screen (160 × 128 resolution)",
+      "Waveform preview, record review, and event marking functions",
+      "Accurate start time record linked to internal real-time clock",
+      "Inbuilt TF card storage avoids repeating insertions",
+      "Fast data review (<40 seconds transfer via USB 2.0)",
+      "Pacemaker state recording with high sampling frequency",
+      "International 12-lead standard 24-hour continuous recording"
+    ],
+    "specifications": {
+      "Channels": "3 Channel / 12-lead compatible",
+      "Record Time": "24 hours",
+      "Interface": "USB 2.0 high-speed interface",
+      "Sensitivity": "10 mm/mV ± 5%",
+      "CMRR": "> 60 dB",
+      "Low Frequency Time Constant": "> 3.2 s",
+      "Scan Speed": "25 mm/s ± 5%",
+      "Sampling Accuracy": "12 Bit",
+      "Power": "2 × AA size batteries",
+      "Noise Level": "< 30 µV"
+    },
+    "dimensions": {
+      "Dimensions (L × W × H)": "111 × 60 × 25 mm"
+    },
+    "weight": "About 105 grams (without batteries)",
+    "accessories": [
+      "Patient lead cable",
+      "Carrying pouch with strap",
+      "USB data cable",
+      "PC analysis software"
+    ]
+  },
+  {
+    "id": "av-wcmf",
+    "model_number": "AV-WCMF",
+    "name": "Fixed Wheel Chair MS Powder Coated",
+    "category": "Patient Mobility",
+    "short_summary": "Rigid non-folding mild steel hospital transit wheelchair featuring high 120 kg weight capacity, solid seat, and wire spoke rear wheels.",
+    "page": 20,
+    "image": "assets/images/equipment/catalog/av-wcmf.png",
+    "intended_purpose": "Heavy-duty ward patient transfer, entrance reception transit, and hospital corridor transport.",
+    "key_features": [
+      "Strong MS frame with durable powder-coated finish",
+      "Fixed arm design for better stability",
+      "Solid seat for long-term durability",
+      "Wire spoke rear wheels for smooth movement",
+      "Easy to maneuver and low maintenance",
+      "Stable structure suitable for daily hospital use",
+      "Comfortable seating for patient mobility"
+    ],
+    "specifications": {
+      "Frame Material": "Mild Steel (MS)",
+      "Finish": "Powder Coated",
+      "Seat Type": "Solid Heavy-Duty Seat",
+      "Backrest": "Fixed Backrest",
+      "Arm Type": "Fixed Arms",
+      "Rear Wheels": "Wire Spoke Rear Wheels",
+      "Front Wheels": "Solid Castor Wheels",
+      "Footrest": "Fixed / Foldable Footrest",
+      "Load Capacity": "Up to 120 kg weight capacity"
+    },
+    "dimensions": {
+      "Overall Length": "105 – 110 cm",
+      "Overall Width": "63 – 65 cm",
+      "Overall Height": "88 – 92 cm",
+      "Seat Width": "45 cm (approx.)"
+    },
+    "weight": "Approx. 25 kg",
+    "accessories": [
+      "Side clothing guards",
+      "Fixed footrest plates",
+      "Push handles"
+    ]
+  },
+  {
+    "id": "av-fd101",
+    "model_number": "AV-FD101",
+    "name": "Fetal Doppler",
+    "category": "Diagnostic & Monitoring Devices",
+    "short_summary": "Portable ultrasound fetal heart detector equipped with clear LCD heartbeat display, built-in loudspeaker, and headphone audio output.",
+    "page": 21,
+    "image": "assets/images/equipment/catalog/av-fd101.png",
+    "intended_purpose": "Auscultation and rate monitoring of fetal heart tones in antenatal clinics, maternity wards, and obstetric practices.",
+    "key_features": [
+      "Heartbeat monitoring from the comfort of clinics or homes",
+      "Safe and non-invasive ultrasound technology",
+      "Clear LCD screen for displaying heart rate and battery status",
+      "Built-in loudspeaker and audio output jack for headphones",
+      "Compact and portable handheld design"
+    ],
+    "specifications": {
+      "Material": "Medical-grade ABS plastic",
+      "Colour": "White with Pink accents",
+      "Sensor Type": "Ultrasound transducer probe",
+      "Audio": "Built-in speaker & 3.5mm headphone jack",
+      "Battery Type": "2 × Lithium-ion batteries (included)",
+      "Usage": "Antenatal examination"
+    },
+    "dimensions": {
+      "Dimensions (L × W × H)": "9.5 × 12.5 × 3 cm"
+    },
+    "weight": "200 grams",
+    "accessories": [
+      "Ultrasound transducer probe",
+      "Audio cable / earphones",
+      "User manual"
+    ]
+  },
+  {
+    "id": "bys-820",
+    "model_number": "BYS-820",
+    "name": "Infusion Pump",
+    "category": "Critical Care & Treatment",
+    "short_summary": "Microprocessor volumetric infusion pump featuring 1 to 1200 ml/h delivery rate, ultrasonic bubble detection, dynamic pressure alarms, and KVO function.",
+    "page": 22,
+    "image": "assets/images/equipment/catalog/bys-820.png",
+    "intended_purpose": "Precise continuous intravenous drug delivery, anesthesia infusions, enteral nutrition, and ICU hydration.",
+    "key_features": [
+      "HD LCD display with user-friendly working status interface",
+      "Audible and visual alarms for occlusion, empty, low battery, and door open",
+      "Compatible with any standard IV infusion set after calibration",
+      "Preset solution volume reduces nursing workload",
+      "Flexible work modes: ml/h and drop/min switching",
+      "Three levels of occlusion sensitivity (high, middle, low)",
+      "Automatic KVO (keep-vein-open) function on infusion completion",
+      "Automatic history recording of last infusion parameters"
+    ],
+    "specifications": {
+      "Flow Rate Range": "1 ml/h – 1,200 ml/h",
+      "Flow Rate Accuracy": "Within ±5% (after correct calibration)",
+      "Mechanical Precision": "Within ±2%",
+      "Purge Rate": "100 ml/h – 1,000 ml/h (100 ml/h step)",
+      "Infusion Volume Setting": "0.1 ml – 9,999 ml",
+      "KVO Rate": "1 ml/h – 5 ml/h",
+      "Bubble Detector": "Ultrasonic wave detector (sensitivity ≥25 µl)",
+      "Power Supply": "AC 100V – 240V, 50/60Hz & Internal Rechargeable Li battery (≥1600 mAh)",
+      "Protection Class": "Class II, Type CF, IPX4"
+    },
+    "dimensions": {
+      "Dimensions (L × W × H)": "40 × 157 × 220 mm"
+    },
+    "weight": "1.8 kg (net weight)",
+    "accessories": [
+      "Pole mounting clamp",
+      "AC power cable",
+      "User operation manual"
+    ]
+  },
+  {
+    "id": "av-pm3",
+    "model_number": "AV-PM3",
+    "name": "3 Para Patient Monitor",
+    "category": "Diagnostic & Monitoring Devices",
+    "short_summary": "Compact 3-parameter vital signs monitor measuring NIBP, SpO2, and Temperature with 4.3\" color TFT display and rechargeable lithium battery.",
+    "page": 23,
+    "image": "assets/images/equipment/catalog/av-pm3.png",
+    "intended_purpose": "Vital signs spot-checking, minor procedure monitoring, clinic triage, and patient ward observation.",
+    "key_features": [
+      "Compact and flexible appearance",
+      "Simple and convenient operation for community care and family use",
+      "4.3-inch color TFT display with high-brightness LED readouts",
+      "Adjustable visual and audible alarms",
+      "Built-in rechargeable lithium battery for uninterrupted monitoring",
+      "Monitoring parameters: NIBP, SpO2, and Temperature"
+    ],
+    "specifications": {
+      "Parameters Monitored": "NIBP (Non-Invasive Blood Pressure), SpO2, Temperature",
+      "SpO2 Measuring Range": "0 – 100% (Resolution: 1%, Accuracy: 70%–100% ±2%)",
+      "Pulse Rate": "20 – 250 BPM (Resolution: 1 BPM, Accuracy: ±3 BPM)",
+      "Temperature": "Skin/oral temperature probe",
+      "Power": "AC power and internal rechargeable lithium battery"
+    },
+    "dimensions": {
+      "Package Dimensions": "35 × 25 × 26 cm"
+    },
+    "weight": "Single Gross Weight: 3 kg",
+    "accessories": [
+      "Main monitor unit",
+      "Adult SpO2 probe",
+      "Adult NIBP cuff",
+      "NIBP extension hose",
+      "Temperature probe",
+      "Power cable"
+    ]
+  },
+  {
+    "id": "av-pm7",
+    "model_number": "AV-PM7",
+    "name": "7 Para Patient Monitor",
+    "category": "Diagnostic & Monitoring Devices",
+    "short_summary": "Comprehensive 12.1\" multi-parameter ICU patient monitor displaying real-time waveforms for ECG, SpO2, NIBP, Respiration, Temperature, EtCO2, and Cardiac Output.",
+    "page": 24,
+    "image": "assets/images/equipment/catalog/av-pm7.png",
+    "intended_purpose": "Intensive care units, operating rooms, cardiac care units (CCU), and post-anesthesia care units (PACU).",
+    "key_features": [
+      "12.1\" high-resolution color TFT display with real-time waveforms",
+      "Heart rate range 30–300 bpm with accurate SpO2 measurement (0–100%)",
+      "NIBP measurement for Adult, Pediatric & Neonatal modes (Auto/Manual/STAT)",
+      "Audio-visual alarms with adjustable high & low safety limits",
+      "Compact bedside design with AC power supply and built-in battery backup"
+    ],
+    "specifications": {
+      "Display": "12.1 inch color TFT display with multiple waveform sweeps",
+      "Standard Parameters": "ECG, SpO2, NIBP, Respiration, Dual Temperature, EtCO2 provision, Cardiac Output",
+      "Optional Configurations": "IBP (Invasive Blood Pressure), EtCO2 sensor, Touch Screen, Built-in Thermal Printer, Central Monitoring connectivity",
+      "Patient Modes": "Adult, Pediatric, Neonatal"
+    },
+    "dimensions": {
+      "Dimensions (L × W × H)": "310 × 167 × 268 mm"
+    },
+    "weight": "Net Weight: 3.9 kg",
+    "accessories": [
+      "ECG cable & electrodes",
+      "Adult SpO2 finger sensor",
+      "NIBP cuff & hose",
+      "Temperature sensor",
+      "Power cable"
+    ]
+  },
+  {
+    "id": "av-hsc",
+    "model_number": "AV-HSC",
+    "name": "Hydraulic Stool With Cushion",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Ergonomic doctor/surgeon examination stool with pneumatic height adjustment (450–600 mm), 5-leg star base, and padded vinyl cushion.",
+    "page": 25,
+    "image": "assets/images/equipment/catalog/av-hsc.png",
+    "intended_purpose": "Surgeon and physician seating during operation theatre procedures, clinical consultations, and ultrasound scans.",
+    "key_features": [
+      "Pneumatic height adjustment for smooth and effortless operation",
+      "Five-leg base ensures excellent balance and safety",
+      "Cushioned seat provides comfort during long procedures",
+      "Smooth mobility with medical-grade castors",
+      "Strong round tube frame for durability",
+      "Knock-down design reduces transportation and storage cost"
+    ],
+    "specifications": {
+      "Frame Construction": "Mild steel round tube structure",
+      "Base Design": "5-leg star base for stability",
+      "Mobility": "Mounted on 5 swivel castors (50 mm diameter)",
+      "Height Mechanism": "Pneumatic gas spring mechanism",
+      "Seat Type": "Cushioned upholstered round seat",
+      "Finish": "Pre-treated and epoxy powder-coated / chrome plated"
+    },
+    "dimensions": {
+      "Seat Diameter": "300 – 350 mm",
+      "Height Adjustment Range": "450 – 600 mm"
+    },
+    "weight": "Approx. Net Weight: 6 – 8 kg",
+    "accessories": [
+      "5 × 50 mm swivel castors",
+      "Pneumatic gas cylinder",
+      "Padded seat cushion"
+    ]
+  },
+  {
+    "id": "av-css304",
+    "model_number": "AV-CSS304",
+    "name": "Crash Cart (SS)(304)",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Full Grade 304 stainless steel emergency resuscitation cart featuring 6 removable color-coded drawers, oxygen cage, cardiac board, and top shelves.",
+    "page": 26,
+    "image": "assets/images/equipment/catalog/av-css304.png",
+    "intended_purpose": "Acute code blue resuscitation in operating rooms, ICUs, and critical trauma suites requiring complete sterile steel durability.",
+    "key_features": [
+      "Robust round tube frame ensures high strength and stability",
+      "Removable bins for quick access during emergencies",
+      "Polystyrene drawers allow organized storage of emergency supplies",
+      "Smooth mobility with large castors and protective corner buffers",
+      "Designed for rapid response in emergency and critical care areas",
+      "Easy-to-clean surfaces suitable for hospital environments"
+    ],
+    "specifications": {
+      "Frame Construction": "FULL Stainless Steel SS 304 Round Tube",
+      "Finish": "Electropolished / Powder coated for maximum corrosion resistance",
+      "Storage Units": "Polystyrene storage units with 6 drawers (3 on each unit)",
+      "Bins": "Removable color-coded emergency plastic bins",
+      "Castors": "125 mm (12.5 cm) heavy-duty medical castors with brakes",
+      "Buffers": "Corner buffers for wall protection"
+    },
+    "dimensions": {
+      "Overall Size (L × W × H)": "95 × 50 × 155 cm"
+    },
+    "weight": "Approx. Net Weight: 40 – 50 kg",
+    "accessories": [
+      "Oxygen cylinder holder",
+      "Electric lamp provision",
+      "I.V. rod provision",
+      "Cardiac massage board",
+      "3 × storage shelves"
+    ]
+  },
+  {
+    "id": "av-obtk",
+    "model_number": "AV-OBTK",
+    "name": "Over Bed Table General With ABS Top Knob Type",
+    "category": "OT & Ward Furniture",
+    "short_summary": "Bedside overbed table featuring durable molded polypropylene (PP) top with raised spill edges, manual locking knob, and stable H-base.",
+    "page": 27,
+    "image": "assets/images/equipment/catalog/av-obtk.png",
+    "intended_purpose": "Hospital inpatient meals, medication staging, bedside reading, and personal items holding.",
+    "key_features": [
+      "Adjustable height to suit patient comfort in bed or chair",
+      "PP top is lightweight, durable, and easy to clean",
+      "Raised edges prevent items from slipping",
+      "Stable base design allows easy placement under beds",
+      "Smooth mobility with swivel castors",
+      "Ideal for meals, reading, writing, and patient care use"
+    ],
+    "specifications": {
+      "Top Material": "High-quality Polypropylene (PP) molded top (Blue)",
+      "Top Design": "Smooth surface with rounded corners and raised anti-spill edges",
+      "Frame Construction": "Mild steel tubular framework",
+      "Height Adjustment": "Manual height adjustment with locking knob",
+      "Base Design": "“H” type base for stability under beds",
+      "Mobility": "Mounted on swivel castor wheels",
+      "Finish": "Pre-treated and epoxy powder-coated frame"
+    },
+    "dimensions": {
+      "Top Length": "800 – 900 mm",
+      "Top Width": "400 – 450 mm",
+      "Adjustable Height Range": "750 – 1050 mm approx."
+    },
+    "weight": "Approx. Net Weight: 15 – 20 kg",
+    "accessories": [
+      "Polypropylene molded tray",
+      "Manual locking knob",
+      "Swivel castor wheels"
+    ]
+  },
+  {
+    "id": "av-stbm",
+    "model_number": "AV-STBM",
+    "name": "Stretcher Trolley Backrest Full (MS)",
+    "category": "Hospital Beds & Stretchers",
+    "short_summary": "Full mild steel patient transfer stretcher trolley with ratchet-adjustable backrest, removable two-section top, swing-down safety rails, and 150 mm castors.",
+    "page": 28,
+    "image": "assets/images/equipment/catalog/av-stbm.png",
+    "intended_purpose": "Inter-departmental patient transport, emergency admissions, ambulance transfers, and ward shifting.",
+    "key_features": [
+      "Ergonomic design for patient comfort",
+      "Stable structure with high load-bearing capacity",
+      "Low noise wheels for smooth movement",
+      "Easy maintenance and hospital-grade finish",
+      "Suitable for ICU, ward, and general patient care",
+      "Adjustable backrest with ratchet mechanism",
+      "Swing-down type safety side rails",
+      "Oxygen cylinder cage and storage tray included"
+    ],
+    "specifications": {
+      "Frame Structure": "CRCA tube construction, mild steel tubular framework",
+      "Surface Finish": "Pre-treated and powder-coated finish",
+      "Castors": "4 × 150 mm (6\") heavy-duty swivel castors (2 with brakes, 2 without brakes)",
+      "Stretcher Top": "Removable two-section stretcher top supported on tubular frame",
+      "Backrest Adjustment": "Adjustable backrest with ratchet mechanism",
+      "Side Rails": "MS swing-down type safety side rails",
+      "Cushion": "Fixed waterproof cushion (thickness: 50 mm)"
+    },
+    "dimensions": {
+      "Length": "2100 mm",
+      "Width": "560 mm",
+      "Height": "810 mm"
+    },
+    "weight": "Approx. Net Weight: 65 – 75 kg",
+    "accessories": [
+      "Oxygen cylinder cage",
+      "Mild steel storage tray",
+      "Stainless steel IV pole",
+      "50 mm patient cushion"
+    ]
+  }
+]
