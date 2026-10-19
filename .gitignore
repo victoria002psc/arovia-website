@@ -1,4 +1,7 @@
 scratch/
+dist/
+node_modules/
+arovia-website-cloudflare.zip
 __pycache__/
 *.pyc
 .DS_Store

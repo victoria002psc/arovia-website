@@ -1,0 +1,11 @@
+{
+  "name": "arovia-website",
+  "private": true,
+  "description": "Static Arovia Healthcare site. Cloudflare Pages build command: npm run build. Output directory: dist.",
+  "scripts": {
+    "build": "node sync-dist.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
