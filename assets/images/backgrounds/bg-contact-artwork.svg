@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Welcoming Aqua Glow Behind Desk Card (Right) -->
+    <radialGradient id="contactAquaGlow" cx="78%" cy="32%" r="50%">
+      <stop offset="0%" stop-color="#39c6c8" stop-opacity="0.24" />
+      <stop offset="50%" stop-color="#008794" stop-opacity="0.07" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Warm Reassurance Glow (Bottom-Left) -->
+    <radialGradient id="contactWarmGlow" cx="18%" cy="75%" r="45%">
+      <stop offset="0%" stop-color="#faedd5" stop-opacity="0.38" />
+      <stop offset="55%" stop-color="#fbf7ef" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="contactSoftBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="85" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#contactAquaGlow)" />
+  <rect width="1600" height="900" fill="url(#contactWarmGlow)" />
+
+  <!-- Faint Translucent Corner Accents -->
+  <path d="M1250,-50 C1460,0 1650,110 1610,320 C1570,500 1370,510 1260,400 C1160,300 1150,-90 1250,-50 Z" 
+        fill="#c7ecf0" opacity="0.20" filter="url(#contactSoftBlur)" />
+  <ellipse cx="180" cy="760" rx="260" ry="160" fill="#faeed7" opacity="0.22" filter="url(#contactSoftBlur)" />
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Warm Morning Dawn Lighting (Top-Left / Header Area) -->
+    <radialGradient id="hcWarmDawn" cx="18%" cy="25%" r="50%">
+      <stop offset="0%" stop-color="#faedd5" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#fdf6ec" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Teal Care Aura (Right Side) -->
+    <radialGradient id="hcTealAura" cx="84%" cy="36%" r="52%">
+      <stop offset="0%" stop-color="#39c6c8" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#008794" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="hcBottomWarmth" cx="80%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#faeed7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="hcSoftBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="90" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Light Washes -->
+  <rect width="1600" height="900" fill="url(#hcWarmDawn)" />
+  <rect width="1600" height="900" fill="url(#hcTealAura)" />
+  <rect width="1600" height="900" fill="url(#hcBottomWarmth)" />
+
+  <!-- Soft Organic Edge Blooms (Subtle depth without any geometric lines) -->
+  <path d="M-80,40 C140,-20 320,60 350,220 C380,380 220,460 60,440 C-80,420 -180,180 -80,40 Z" 
+        fill="#f8e7cb" opacity="0.30" filter="url(#hcSoftBlur)" />
+
+  <path d="M1200,80 C1420,20 1640,110 1620,340 C1600,540 1380,580 1240,460 C1120,360 1100,160 1200,80 Z" 
+        fill="#c8edf0" opacity="0.22" filter="url(#hcSoftBlur)" />
+</svg>

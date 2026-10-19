@@ -4,66 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Arovia Healthcare — Direct Telephone Assistance</title>
-  <meta name="description" content="Reach Arovia Healthcare directly by phone at +91 7013775996. Speak directly with our coordinators for home care, ambulance, equipment, pharmacy, and lab tests.">
+  <meta name="description" content="Reach Arovia Healthcare directly by phone. Speak directly with our coordinators for home care, ambulance, equipment, pharmacy, and lab tests.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Accessible Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar__content">
-      <div class="topbar__info">
-        <span class="topbar__item">
-          <strong>Arovia Healthcare Services</strong> — Guntur, Andhra Pradesh
-        </span>
-        <span class="topbar__item">
-          Direct Line: <a href="tel:+917013775996">+91 7013775996</a>
-        </span>
-      </div>
-      <div>
-        <span class="topbar__emergency-badge">Phone-First Healthcare Coordination</span>
+  <!-- Top Scroll Progress Line (Subtle Brand Green Indicator — Ohana Reference) -->
+  <div class="scroll-progress-line" id="scrollProgressLine" aria-hidden="true"></div>
+
+  <!-- Site Header (Coordinated 2-Row Sticky Header) -->
+  <header class="site-header" role="banner">
+    <!-- Row 1: Main Navigation Header -->
+    <div class="site-header__main">
+      <div class="container site-header__wrapper">
+        <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
+          <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
+          <div class="brand-link__text">
+            <span class="brand-link__title">AROVIA</span>
+            <span class="brand-link__caption">Care Meets Convenience</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="main-nav__list">
+            <li><a href="index.html" class="main-nav__link">Home</a></li>
+            <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
+            <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
+            <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
+            <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
+            <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
+            <li><a href="contact.html" class="main-nav__link main-nav__link--active" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Action & Mobile Menu Toggle -->
+        <div class="header-actions">
+          <div class="connect-dropdown" id="connectDropdown">
+            <div class="connect-social-dock" id="connectSocialDock" role="group" aria-label="Arovia Official Social Media Channels" aria-hidden="false">
+              <a href="#" class="connect-social-icon connect-social-icon--instagram" data-platform="instagram" aria-label="Arovia on Instagram" title="Arovia on Instagram" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--facebook" data-platform="facebook" aria-label="Arovia on Facebook" title="Arovia on Facebook" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--youtube" data-platform="youtube" aria-label="Arovia on YouTube" title="Arovia on YouTube" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+            <button type="button" id="connectBtn" class="btn btn--connect" aria-label="Connect with Arovia Healthcare" aria-expanded="true" aria-controls="connectSocialDock">
+              <span>Connect</span>
+            </button>
+          </div>
+          <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container site-header__wrapper">
-      <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
-        <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
-        <div class="brand-link__text">
-          <span class="brand-link__title">AROVIA</span>
-          <span class="brand-link__subtitle">HEALTHCARE SERVICES</span>
+    <!-- Row 2: Contact Information Strip -->
+    <div class="topbar" aria-label="Official Contact Information">
+      <div class="container topbar__container">
+        <div class="topbar__left">
+          <a href="https://maps.app.goo.gl/LxDHu9jJ4c3jgWU56" target="_blank" rel="noopener noreferrer" class="topbar__item topbar__link topbar__item--address" aria-label="Open Arovia location on Google Maps: Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur (opens in a new tab)" title="Open Arovia location on Google Maps (opens in a new tab)">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="topbar__address-text topbar__address-full">Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, AP, India</span>
+            <span class="topbar__address-text topbar__address-compact">Shop No.26, Annapurna Complex, Kakani Rd, Guntur</span>
+          </a>
         </div>
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <ul class="main-nav__list">
-          <li><a href="index.html" class="main-nav__link">Home</a></li>
-          <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
-          <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
-          <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
-          <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
-          <li><a href="clinic.html" class="main-nav__link">Clinic</a></li>
-          <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
-          <li><a href="contact.html" class="main-nav__link main-nav__link--active" aria-current="page">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header Action & Mobile Menu Toggle -->
-      <div class="header-actions">
-        <a href="tel:+917013775996" class="btn btn--call-primary" aria-label="Call Arovia at +91 7013775996">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-          <span>Call: +91 7013775996</span>
-        </a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <div class="topbar__right">
+          <a href="tel:+919649648430" class="topbar__item topbar__link topbar__item--phone" aria-label="Telephone Arovia at +91 96496 48430">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/>
+            </svg>
+            <span>+91 96496 48430</span>
+          </a>
+          <span class="topbar__divider" aria-hidden="true">|</span>
+          <a href="mailto:arovia22@gmail.com" class="topbar__item topbar__link topbar__item--email" aria-label="Email Arovia at arovia22@gmail.com">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>arovia22@gmail.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -83,14 +115,16 @@
       <a href="ambulance.html" class="mobile-drawer__link">Ambulance</a>
       <a href="medical-equipment.html" class="mobile-drawer__link">Medical Equipment</a>
       <a href="pharmacy.html" class="mobile-drawer__link">Pharmacy</a>
-      <a href="clinic.html" class="mobile-drawer__link">Clinic</a>
       <a href="lab-tests.html" class="mobile-drawer__link">Lab Tests</a>
       <a href="contact.html" class="mobile-drawer__link mobile-drawer__link--active" aria-current="page">Contact</a>
     </nav>
     <div class="mobile-drawer__footer">
-      <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+      <button type="button" id="drawerConnectBtn" class="btn btn--connect btn--connect-mobile" style="width: 100%; justify-content: center;" aria-label="Connect with Arovia on social media">
+        <span>Connect</span>
+      </button>
+      <a href="tel:+919649648430" class="btn btn--call-primary" style="width: 100%;">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-        <span>Call: +91 7013775996</span>
+        <span>Call Helpline</span>
       </a>
       <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Direct phone service only. No online forms or bookings required.</p>
     </div>
@@ -99,30 +133,81 @@
   <!-- Main Content Area -->
   <main id="main-content">
     
-    <!-- Page Header Section -->
-    <section class="page-header">
+    <!-- Page Header Section with Telecommunication Wave Motif -->
+    <section class="page-header page-header--enhanced page-header--grid bg-artwork-contact" style="padding-bottom: var(--spacing-12);">
+      <div class="container page-header__container">
+        <div>
+          <div class="page-header__breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="page-header__breadcrumb-separator">/</span>
+            <span>Contact Information</span>
+          </div>
+          <div class="page-header__badge">
+            <span>Phone-First Healthcare Coordination • No Online Forms</span>
+          </div>
+          <h1 class="page-header__title">Contact Arovia Healthcare</h1>
+          <p class="page-header__subtitle">
+            We prioritize urgent patient care and direct human communication. Reach our healthcare coordinators directly by telephone to discuss home care, ambulance arrangements, medical equipment, pharmacy products, or diagnostic lab tests.
+          </p>
+        </div>
+
+        <div class="hero-showcase hero-showcase--contact" style="position: relative;">
+          <div class="contact-desk-header">
+            <div>
+              <span style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-primary); font-weight: 700;">Live Coordination Desk</span>
+              <h3 style="font-size: var(--font-size-md); color: var(--color-dark); margin: 2px 0 0;">Direct Human Support</h3>
+            </div>
+            <div class="contact-desk-status">
+              <span class="contact-desk-status__dot" aria-hidden="true"></span>
+              <span>Desk Open</span>
+            </div>
+          </div>
+          <div class="contact-desk-main">
+            <div class="contact-desk-phone-box">
+              <div>
+                <span style="font-size: 0.72rem; color: var(--color-text-muted); display: block;">Primary Care Telephone</span>
+                <span class="contact-desk-phone-val">Available 24/7</span>
+              </div>
+              <a href="tel:+919649648430" class="btn btn--call-primary" style="padding: 8px 16px; font-size: 0.85rem;" aria-label="Call primary desk">
+                Call
+              </a>
+            </div>
+            <div class="contact-desk-loc">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-primary); flex-shrink: 0; margin-top: 2px;" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, Andhra Pradesh, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Communication Frequency Wave Section Transition Divider -->
+    <div class="section-divider section-divider--fill-white" aria-hidden="true">
+      <svg viewBox="0 0 1440 50" preserveAspectRatio="none">
+        <path d="M0,0 C320,40 640,10 960,40 C1200,60 1360,20 1440,25 L1440,50 L0,50 Z"></path>
+      </svg>
+    </div>
+
+    <!-- Responsible Emergency Advisory -->
+    <section class="section" style="padding-top: 0; padding-bottom: var(--spacing-8);">
       <div class="container">
-        <div class="page-header__breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="page-header__breadcrumb-separator">/</span>
-          <span>Contact Information</span>
-        </div>
-        <div class="page-header__badge">
-          <span>Phone-First Healthcare Coordination • No Online Forms</span>
-        </div>
-        <h1 class="page-header__title">Contact Arovia Healthcare</h1>
-        <p class="page-header__subtitle">
-          We prioritize urgent patient care and direct human communication. Reach our healthcare coordinators directly by telephone to discuss home care, ambulance arrangements, medical equipment, pharmacy products, or diagnostic lab tests.
-        </p>
-        <div class="page-header__actions">
-          <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 14px 28px; font-size: var(--font-size-base);">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            <span>Call Now: +91 7013775996</span>
-          </a>
-          <button type="button" class="btn btn--call-secondary btn-copy-phone" data-phone="+917013775996" aria-label="Copy phone number +91 7013775996 to clipboard">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-            <span>Copy Phone Number</span>
-          </button>
+        <div style="background: rgba(0, 86, 98, 0.05); border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary); border-radius: var(--radius-md); padding: var(--spacing-6);">
+          <div style="display: flex; gap: var(--spacing-4); align-items: flex-start;">
+            <div style="color: var(--color-primary); flex-shrink: 0; margin-top: 2px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: var(--font-size-base); color: var(--color-primary-dark); margin-bottom: var(--spacing-1);">
+                Responsible Healthcare Advisory: Urgent Medical Emergencies
+              </h3>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text); margin-bottom: 0; line-height: 1.6;">
+                If you or someone around you is facing an acute, life-threatening emergency—such as sudden crushing chest pain, severe acute shortness of breath, loss of consciousness, uncontrolled hemorrhaging, or signs of acute stroke—please immediately dial statutory emergency services (such as <strong>108</strong> or <strong>112</strong> in India). Arovia operates as an informational healthcare coordinator for scheduled services and telephone inquiries.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -131,10 +216,10 @@
     <section class="section">
       <div class="container">
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--spacing-8); align-items: stretch;">
+        <div class="contact-methods-grid">
           
           <!-- Card 1: Primary Telephone Line -->
-          <article style="background-color: var(--color-white); border: 2px solid var(--color-primary); border-radius: var(--radius-lg); padding: var(--spacing-8); box-shadow: var(--shadow-md); display: flex; flex-direction: column;">
+          <article class="contact-card--primary">
             <div style="width: 52px; height: 52px; border-radius: var(--radius-md); background-color: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-4);">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
             </div>
@@ -151,19 +236,19 @@
 
             <!-- Prominent Phone Box -->
             <div style="background-color: var(--color-primary-subtle); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--spacing-5); margin-bottom: var(--spacing-6); text-align: center;">
-              <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: var(--spacing-1);">Official Phone Number</div>
-              <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary); letter-spacing: 0.5px;">
-                <a href="tel:+917013775996" style="color: inherit; text-decoration: none;">+91 7013775996</a>
+              <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: var(--spacing-1);">Official Helpline Desk</div>
+              <div class="contact-phone-display" style="font-size: var(--font-size-xl); font-weight: var(--font-weight-bold); color: var(--color-primary-dark);">
+                Available 24/7
               </div>
             </div>
 
             <!-- Action Buttons -->
             <div style="display: flex; flex-direction: column; gap: var(--spacing-3); margin-bottom: var(--spacing-6);">
-              <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 16px 28px; font-size: var(--font-size-base); width: 100%;">
+              <a href="tel:+919649648430" class="btn btn--call-primary" style="padding: 16px 28px; font-size: var(--font-size-base); width: 100%;">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-                <span>Call Now: +91 7013775996</span>
+                <span>Call Helpline</span>
               </a>
-              <button type="button" class="btn btn--call-secondary btn-copy-phone" data-phone="+917013775996" style="width: 100%;">
+              <button type="button" class="btn btn--call-secondary btn-copy-phone" data-phone="+919649648430" style="width: 100%;">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
                 <span>Copy Phone Number</span>
               </button>
@@ -175,7 +260,7 @@
           </article>
 
           <!-- Card 2: Registered Office Premises -->
-          <article style="background-color: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--spacing-8); display: flex; flex-direction: column;">
+          <article class="contact-card--secondary">
             <div style="width: 52px; height: 52px; border-radius: var(--radius-md); background-color: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-4);">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             </div>
@@ -215,7 +300,7 @@
             </div>
 
             <div style="margin-top: auto; border-top: 1px solid var(--color-border-light); padding-top: var(--spacing-4); font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">
-              <strong>Visits & Inquiries:</strong> Please telephone ahead at <a href="tel:+917013775996" class="phone-inline-link">+91 7013775996</a> to ensure our coordination personnel are available to receive you.
+              <strong>Visits & Inquiries:</strong> Please telephone ahead to ensure our coordination personnel are available to receive you.
             </div>
           </article>
 
@@ -237,7 +322,7 @@
           </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-6);">
+        <div class="contact-quick-grid">
           
           <!-- Guide 1: Home Care -->
           <div style="background-color: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--spacing-6);">
@@ -246,10 +331,10 @@
               <span>Home Care Coordination</span>
             </h3>
             <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: var(--line-height-normal); margin-bottom: var(--spacing-4);">
-              Let us know whether you need a <strong>Caregiver</strong> (daily routine support) or a <strong>Registered Nurse</strong> (clinical care, injections, wound dressing), patient condition, and location in Guntur.
+              Clarify whether you need non-clinical Caregiver assistance (daily living support, bathing, mobility) or Registered Nursing (clinical observations, physician-prescribed injections, sterile wound care), patient condition, and location in Guntur.
             </p>
-            <a href="tel:+917013775996" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
-              <span>Call for Home Care: +91 7013775996</span>
+            <a href="tel:+919649648430" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
+              <span>Call Home Care Desk</span>
             </a>
           </div>
 
@@ -260,10 +345,10 @@
               <span>Ambulance Transportation</span>
             </h3>
             <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: var(--line-height-normal); margin-bottom: var(--spacing-4);">
-              State the exact pickup address, destination hospital or home, and patient's physical state (stretcher or wheelchair) so our desk can verify availability and confirm applicable charges.
+              State the exact pickup address (including apartment, floor, and elevator status), destination hospital or residence, and patient posture (stretcher or wheelchair) so our desk can verify vehicle availability and confirm applicable charges.
             </p>
-            <a href="tel:+917013775996" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
-              <span>Call Ambulance Desk: +91 7013775996</span>
+            <a href="tel:+919649648430" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
+              <span>Call Ambulance Desk</span>
             </a>
           </div>
 
@@ -271,13 +356,13 @@
           <div style="background-color: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--spacing-6);">
             <h3 style="font-size: var(--font-size-md); color: var(--color-dark); margin-bottom: var(--spacing-2); display: flex; align-items: center; gap: var(--spacing-2);">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
-              <span>Medical Equipment & Pricing</span>
+              <span>Medical Equipment (Export Supply)</span>
             </h3>
             <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: var(--line-height-normal); margin-bottom: var(--spacing-4);">
-              Mention the specific product name or catalog model code (e.g., AV-HET ICU Bed, AV-EI3A Electric Bed, AV-PM7 Monitor) to receive exact specifications and quotation details.
+              Mention the specific product name or catalog model code (e.g., AV-HET ICU Bed, AV-EI3A Electric Bed, AV-PM7 Multi-Para Monitor) to request formal proforma invoices and discuss international export shipping terms.
             </p>
-            <a href="tel:+917013775996" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
-              <span>Call for Equipment: +91 7013775996</span>
+            <a href="tel:+919649648430" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
+              <span>Call Equipment Desk</span>
             </a>
           </div>
 
@@ -285,13 +370,13 @@
           <div style="background-color: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--spacing-6);">
             <h3 style="font-size: var(--font-size-md); color: var(--color-dark); margin-bottom: var(--spacing-2); display: flex; align-items: center; gap: var(--spacing-2);">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-15zM10.5 4.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-15z"/></svg>
-              <span>Pharmacy & Medicine Support</span>
+              <span>Pharmacy &amp; Prescription Inquiries</span>
             </h3>
             <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: var(--line-height-normal); margin-bottom: var(--spacing-4);">
-              Have your registered doctor's prescription ready for verification and specify the medicine names, dosage strengths, and quantities required.
+              Have your registered doctor's prescription ready for verification, and specify the medication brand/generic names, dosage strengths (e.g. 250 mg or 500 mg), and required pack quantities.
             </p>
-            <a href="tel:+917013775996" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
-              <span>Call Pharmacy: +91 7013775996</span>
+            <a href="tel:+919649648430" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
+              <span>Call Pharmacy Desk</span>
             </a>
           </div>
 
@@ -302,24 +387,10 @@
               <span>Diagnostic Lab Tests</span>
             </h3>
             <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: var(--line-height-normal); margin-bottom: var(--spacing-4);">
-              Specify the tests or health check packages required, and confirm whether you need a technician sent for home sample collection or center visit.
+              Specify the tests or health check packages required, confirm fasting status (e.g. 8-12 hour overnight fasting for glucose or lipid panels), and discuss testing arrangements and pricing with our team.
             </p>
-            <a href="tel:+917013775996" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
-              <span>Call Lab Desk: +91 7013775996</span>
-            </a>
-          </div>
-
-          <!-- Guide 6: Clinic Updates -->
-          <div style="background-color: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--spacing-6);">
-            <h3 style="font-size: var(--font-size-md); color: var(--color-dark); margin-bottom: var(--spacing-2); display: flex; align-items: center; gap: var(--spacing-2);">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M19 2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 16H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V20z"/></svg>
-              <span>Clinic Services Updates</span>
-            </h3>
-            <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: var(--line-height-normal); margin-bottom: var(--spacing-4);">
-              Our clinic services are currently being prepared. Speak with our team to inquire about future schedules or general healthcare support.
-            </p>
-            <a href="tel:+917013775996" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
-              <span>Call Helpline: +91 7013775996</span>
+            <a href="tel:+919649648430" class="btn btn--call-secondary" style="width: 100%; font-size: var(--font-size-xs); padding: 8px 14px;">
+              <span>Call Lab Desk</span>
             </a>
           </div>
 
@@ -342,10 +413,69 @@
                 Healthcare needs are personal, urgent, and unique. In critical situations—such as requesting medical transportation, arranging a registered nurse for clinical procedures, or confirming hospital equipment—online forms create unnecessary delays and automated checkout systems cannot assess medical needs.
               </p>
               <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: var(--line-height-relaxed); margin-bottom: 0;">
-                By placing our official phone number (<a href="tel:+917013775996" class="phone-inline-link">+91 7013775996</a>) at the center of our service, we ensure every caller speaks directly to a knowledgeable healthcare coordinator without forms, spam filters, or account sign-ups.
+                By placing our official phone helpline at the center of our service, we ensure every caller speaks directly to a knowledgeable healthcare coordinator without forms, spam filters, or account sign-ups.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact FAQs Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Communication Inquiries</span>
+          </div>
+          <h2>Frequently Asked Questions About Contacting Arovia</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Answers regarding our telephone-first model, response arrangements, and visiting our office.
+          </p>
+        </div>
+
+        <div class="service-detail-grid">
+          
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Why does Arovia prioritize telephone calls instead of online contact forms?
+            </h3>
+            <p class="service-detail-card__text">
+              Healthcare needs involve nuanced clinical details—such as patient mobility status, specific medical dosages, and physical access conditions—that automated forms cannot evaluate safely. Speaking directly with our healthcare coordinator ensures immediate mutual understanding without waiting for email replies.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Does calling Arovia guarantee immediate service availability?
+            </h3>
+            <p class="service-detail-card__text">
+              Calling connects you directly with our coordinator to verify real-time availability in your area. Service provision depends on nurse schedules, vehicle routes, and current clinical capacity, which is why immediate verbal confirmation over the telephone is required before finalizing arrangements.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Can I visit the Arovia office in Guntur in person?
+            </h3>
+            <p class="service-detail-card__text">
+              Yes, our registered office is located at Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur. We recommend telephoning ahead to ensure the relevant department coordinator is present to assist you.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What should I do if someone needs immediate emergency medical intervention?
+            </h3>
+            <p class="service-detail-card__text">
+              For sudden, life-threatening medical emergencies, always call statutory emergency services (such as 108 or 112 in India) immediately for priority dispatch. Arovia provides scheduled, assisted, and non-emergency healthcare coordination.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -376,7 +506,6 @@
             <li><a href="ambulance.html" class="footer-nav__link">Ambulance Services</a></li>
             <li><a href="medical-equipment.html" class="footer-nav__link">Medical Equipment</a></li>
             <li><a href="pharmacy.html" class="footer-nav__link">Pharmacy Services</a></li>
-            <li><a href="clinic.html" class="footer-nav__link">Clinic Services</a></li>
             <li><a href="lab-tests.html" class="footer-nav__link">Diagnostic Lab Tests</a></li>
           </ul>
         </div>
@@ -397,7 +526,7 @@
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
               <div>
                 <div>Direct Phone Number:</div>
-                <a href="tel:+917013775996" class="footer-contact__link">+91 7013775996</a>
+                <a href="tel:+919649648430" class="footer-contact__link">+91 96496 48430</a>
               </div>
             </div>
             <div class="footer-contact__item">
@@ -425,14 +554,16 @@
   </footer>
 
   <!-- Floating Mobile/Desktop Phone Action -->
-  <a href="tel:+917013775996" class="floating-call-btn" aria-label="Call Arovia Healthcare at +91 7013775996">
+  <a href="tel:+919649648430" class="floating-call-btn" aria-label="Call Arovia Healthcare Helpline">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-    <span>Call +91 7013775996</span>
+    <span>Call Helpline</span>
   </a>
 
   <!-- ARIA Live Region for Screen Reader Announcements -->
   <div id="liveAnnouncement" class="sr-only" aria-live="polite"></div>
 
+  <script src="js/social-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>

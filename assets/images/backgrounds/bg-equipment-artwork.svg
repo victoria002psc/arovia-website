@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Clinical Pale Teal Light Bloom (Right Side) -->
+    <radialGradient id="eqTealBloom" cx="80%" cy="30%" r="52%">
+      <stop offset="0%" stop-color="#39c6c8" stop-opacity="0.20" />
+      <stop offset="50%" stop-color="#008794" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ice Mint Underlight (Bottom Edge) -->
+    <radialGradient id="eqIceBloom" cx="25%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#dff2f5" stop-opacity="0.45" />
+      <stop offset="65%" stop-color="#f2f9fa" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="eqSoftBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Washes -->
+  <rect width="1600" height="900" fill="url(#eqTealBloom)" />
+  <rect width="1600" height="900" fill="url(#eqIceBloom)" />
+
+  <!-- Ultra-soft Translucent Corner Accents -->
+  <path d="M1220,-40 C1420,-10 1620,80 1590,300 C1560,480 1380,500 1260,400 C1160,300 1140,-80 1220,-40 Z" 
+        fill="#c7ecf0" opacity="0.22" filter="url(#eqSoftBlur)" />
+  <ellipse cx="140" cy="820" rx="260" ry="160" fill="#d8f1f5" opacity="0.25" filter="url(#eqSoftBlur)" />
+</svg>

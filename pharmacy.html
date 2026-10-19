@@ -3,70 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pharmacy — Informational Medicine Catalog | Arovia Healthcare</title>
-  <meta name="description" content="Browse medicines listed by Arovia, read product details, check prices, and confirm availability. Call our pharmacy desk at +91 7013775996 for prescription verification.">
+  <title>Pharmacy — Medicine Enquiries | Arovia Healthcare</title>
+  <meta name="description" content="Enquire with Arovia's pharmacy desk about medicines and healthcare supplies. Availability, prescription requirements, and applicable pricing are confirmed by phone.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pharmacy.css">
 </head>
-<body>
+<body class="pharmacy-page">
   <!-- Accessible Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar__content">
-      <div class="topbar__info">
-        <span class="topbar__item">
-          <strong>Arovia Healthcare Services</strong> — Guntur, Andhra Pradesh
-        </span>
-        <span class="topbar__item">
-          Pharmacy Desk: <a href="tel:+917013775996">+91 7013775996</a>
-        </span>
-      </div>
-      <div>
-        <span class="topbar__emergency-badge" style="background: rgba(0, 86, 98, 0.2); color: #c9e6eb; border-color: rgba(0, 86, 98, 0.4);">
-          Registered Pharmacist Consultation
-        </span>
+  <!-- Top Scroll Progress Line (Subtle Brand Green Indicator — Ohana Reference) -->
+  <div class="scroll-progress-line" id="scrollProgressLine" aria-hidden="true"></div>
+
+  <!-- Site Header (Coordinated 2-Row Sticky Header) -->
+  <header class="site-header" role="banner">
+    <!-- Row 1: Main Navigation Header -->
+    <div class="site-header__main">
+      <div class="container site-header__wrapper">
+        <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
+          <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
+          <div class="brand-link__text">
+            <span class="brand-link__title">AROVIA</span>
+            <span class="brand-link__caption">Care Meets Convenience</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="main-nav__list">
+            <li><a href="index.html" class="main-nav__link">Home</a></li>
+            <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
+            <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
+            <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
+            <li><a href="pharmacy.html" class="main-nav__link main-nav__link--active" aria-current="page">Pharmacy</a></li>
+            <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
+            <li><a href="contact.html" class="main-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Action & Mobile Menu Toggle -->
+        <div class="header-actions">
+          <div class="connect-dropdown" id="connectDropdown">
+            <div class="connect-social-dock" id="connectSocialDock" role="group" aria-label="Arovia Official Social Media Channels" aria-hidden="false">
+              <a href="#" class="connect-social-icon connect-social-icon--instagram" data-platform="instagram" aria-label="Arovia on Instagram" title="Arovia on Instagram" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--facebook" data-platform="facebook" aria-label="Arovia on Facebook" title="Arovia on Facebook" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--youtube" data-platform="youtube" aria-label="Arovia on YouTube" title="Arovia on YouTube" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+            <button type="button" id="connectBtn" class="btn btn--connect" aria-label="Connect with Arovia Healthcare" aria-expanded="true" aria-controls="connectSocialDock">
+              <span>Connect</span>
+            </button>
+          </div>
+          <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container site-header__wrapper">
-      <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
-        <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
-        <div class="brand-link__text">
-          <span class="brand-link__title">AROVIA</span>
-          <span class="brand-link__subtitle">HEALTHCARE SERVICES</span>
+    <!-- Row 2: Contact Information Strip -->
+    <div class="topbar" aria-label="Official Contact Information">
+      <div class="container topbar__container">
+        <div class="topbar__left">
+          <a href="https://maps.app.goo.gl/LxDHu9jJ4c3jgWU56" target="_blank" rel="noopener noreferrer" class="topbar__item topbar__link topbar__item--address" aria-label="Open Arovia location on Google Maps: Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur (opens in a new tab)" title="Open Arovia location on Google Maps (opens in a new tab)">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="topbar__address-text topbar__address-full">Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, AP, India</span>
+            <span class="topbar__address-text topbar__address-compact">Shop No.26, Annapurna Complex, Kakani Rd, Guntur</span>
+          </a>
         </div>
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <ul class="main-nav__list">
-          <li><a href="index.html" class="main-nav__link">Home</a></li>
-          <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
-          <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
-          <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
-          <li><a href="pharmacy.html" class="main-nav__link main-nav__link--active" aria-current="page">Pharmacy</a></li>
-          <li><a href="clinic.html" class="main-nav__link">Clinic</a></li>
-          <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
-          <li><a href="contact.html" class="main-nav__link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header Action & Mobile Menu Toggle -->
-      <div class="header-actions">
-        <a href="tel:+917013775996" class="btn btn--call-primary" aria-label="Call Arovia at +91 7013775996">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-          <span>Call: +91 7013775996</span>
-        </a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <div class="topbar__right">
+          <a href="tel:+919649648430" class="topbar__item topbar__link topbar__item--phone" aria-label="Telephone Arovia at +91 96496 48430">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/>
+            </svg>
+            <span>+91 96496 48430</span>
+          </a>
+          <span class="topbar__divider" aria-hidden="true">|</span>
+          <a href="mailto:arovia22@gmail.com" class="topbar__item topbar__link topbar__item--email" aria-label="Email Arovia at arovia22@gmail.com">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>arovia22@gmail.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -75,7 +105,10 @@
   <div id="drawerOverlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
   <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
     <div class="mobile-drawer__header">
-      <span class="brand-link__title">AROVIA</span>
+      <div class="brand-link__text">
+        <span class="brand-link__title">AROVIA</span>
+        <span class="brand-link__caption">Care Meets Convenience</span>
+      </div>
       <button id="drawerClose" class="mobile-drawer__close" aria-label="Close navigation menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
@@ -86,14 +119,16 @@
       <a href="ambulance.html" class="mobile-drawer__link">Ambulance</a>
       <a href="medical-equipment.html" class="mobile-drawer__link">Medical Equipment</a>
       <a href="pharmacy.html" class="mobile-drawer__link mobile-drawer__link--active" aria-current="page">Pharmacy</a>
-      <a href="clinic.html" class="mobile-drawer__link">Clinic</a>
       <a href="lab-tests.html" class="mobile-drawer__link">Lab Tests</a>
       <a href="contact.html" class="mobile-drawer__link">Contact</a>
     </nav>
     <div class="mobile-drawer__footer">
-      <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+      <button type="button" class="btn btn--connect btn--connect-mobile" aria-label="Connect with Arovia on social media" style="width: 100%;">
+        <span>Connect</span>
+      </button>
+      <a href="tel:+919649648430" class="btn btn--call-primary" style="width: 100%;">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-        <span>Call: +91 7013775996</span>
+        <span>Call Helpline</span>
       </a>
       <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Direct phone service only — No online shopping cart or checkout.</p>
     </div>
@@ -102,115 +137,459 @@
   <!-- Main Content Area -->
   <main id="main-content">
     
-    <!-- 6.1 Page Introduction -->
-    <section class="page-header">
-      <div class="container">
-        <div class="page-header__breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="page-header__breadcrumb-separator">/</span>
-          <span>Pharmacy</span>
+    <!-- Page Introduction & Educational Scope with Molecular Lattice Theme -->
+    <section class="page-header page-header--enhanced page-header--grid bg-artwork-pharmacy pharmacy-hero" style="padding-bottom: var(--spacing-12);">
+      <div class="container page-header__container">
+        <div class="pharmacy-hero__copy pharmacy-reveal pharmacy-reveal--now">
+          <div class="page-header__breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="page-header__breadcrumb-separator">/</span>
+            <span>Pharmacy</span>
+          </div>
+          <div class="page-header__badge">
+            <span>Pharmacy Coordination &amp; Dispensation</span>
+          </div>
+          <h1 class="page-header__title">Pharmacy Services &amp; Medicine Information</h1>
+          <p class="page-header__subtitle">
+            Call Arovia's pharmacy desk to enquire about medicines and healthcare supplies for ongoing treatment, recovery after a procedure, and day-to-day care. Availability, prescription requirements, and the applicable price are confirmed with you on the call.
+          </p>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-3);">
+            * Direct phone consultation only. Prescription medicines are supplied only after the required prescription is checked, in line with statutory drug regulations.
+          </p>
         </div>
-        <div class="page-header__badge">
-          <span>Informational Medicine Catalog</span>
+
+        <div class="hero-showcase pharmacy-reveal pharmacy-reveal--now">
+          <div class="hero-showcase__media">
+            <img src="assets/images/pharmacy_consultation.jpg" alt="Arovia pharmacist providing professional consultation on verified prescription medications to patient" class="hero-showcase__img" width="700" height="420">
+          </div>
         </div>
-        <h1 class="page-header__title">Pharmacy</h1>
-        <p class="page-header__subtitle">
-          Browse the medicines listed by Arovia, read the available product details, and check their prices. Contact us to confirm availability and any applicable prescription requirements.
-        </p>
-        <div class="page-header__actions">
-          <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 14px 28px; font-size: var(--font-size-base);">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            <span>Call Pharmacy Desk: +91 7013775996</span>
-          </a>
-        </div>
-        <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-3);">
-          * Direct phone consultation only. Prescriptions are verified by registered pharmacists in accordance with medical regulations.
-        </p>
       </div>
     </section>
 
-    <!-- Prescription & Regulation Guidance Notice -->
-    <section class="section" style="padding-bottom: 0;">
+    <!-- Pill-Curved Section Transition Divider -->
+    <div class="section-divider section-divider--fill-white" aria-hidden="true">
+      <svg viewBox="0 0 1440 50" preserveAspectRatio="none">
+        <path d="M0,0 C360,40 1080,40 1440,0 L1440,50 L0,50 Z"></path>
+      </svg>
+    </div>
+
+    <!-- Prescription & Statutory Drug Safety Notice -->
+    <section class="section pharmacy-dispensing" style="padding-top: 0;">
       <div class="container">
-        <div class="callout-box" style="margin-top: 0; background-color: #f0fdf4; border-color: #bbf7d0; border-left-color: var(--color-success);">
+        <div class="callout-box pharmacy-reveal" style="margin-top: 0; background-color: #f0fdf4; border-color: #bbf7d0; border-left-color: var(--color-success);">
           <div class="callout-box__title" style="color: #166534;">
             <svg viewBox="0 0 24 24" style="fill: var(--color-success);"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-            <span>Important Prescription & Dispensation Information</span>
+            <span>Responsible Pharmaceutical Dispensation &amp; Prescription Standards</span>
           </div>
-          <p class="callout-box__text" style="color: #14532d;">
-            Prescription medications require a valid medical prescription from a registered medical practitioner. Arovia does not sell prescription medicines without verification. We do not provide automated online checkout, shopping carts, or digital payment processing. Please call our pharmacy desk directly at <strong>+91 7013775996</strong> to confirm current batch availability, check prices, and review prescription guidelines.
+          <p class="callout-box__text" style="color: #14532d; line-height: 1.6;">
+            In accordance with the Drugs and Cosmetics Act and national pharmaceutical regulations, prescription medicines (including Schedule H, H1, and X therapeutic agents) require a valid, legible prescription issued by a registered medical practitioner. Arovia does not dispense prescription medicines without that check, and this website does not offer online ordering or checkout. Call the pharmacy desk to enquire. Whether an item can be supplied, and the price that applies, is confirmed during that conversation.
+          </p>
+        </div>
+
+        <div class="pharmacy-reveal" style="max-width: 760px; margin-top: var(--spacing-10); margin-bottom: var(--spacing-6);">
+          <h2>Responsible Dispensing and Product Checks</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            Before a medicine or healthcare supply goes ahead, the pharmacy desk works through the details of that enquiry. These are dispensing checks. They are not a laboratory test, a batch-tracking system, or a guarantee that packaging alone proves a product is authentic.
+          </p>
+        </div>
+
+        <div class="info-cards-grid" style="margin-top: 0;">
+          <div class="info-card pharmacy-reveal">
+            <h3 class="info-card__title">Prescription and dispensing requirements</h3>
+            <p class="info-card__text">
+              Where a prescription is required, the desk checks that it is available and legible, and that the details needed to dispense are clear. Missing or unclear information is clarified before the enquiry proceeds.
+            </p>
+          </div>
+          <div class="info-card pharmacy-reveal">
+            <h3 class="info-card__title">Name, strength, formulation, and quantity</h3>
+            <p class="info-card__text">
+              Where a prescription applies, the request is matched to the medicine name, strength, formulation, and quantity written on it. A mismatch is not resolved by changing the prescribed treatment on your behalf.
+            </p>
+          </div>
+          <div class="info-card pharmacy-reveal">
+            <h3 class="info-card__title">Packaging and expiry</h3>
+            <p class="info-card__text">
+              Relevant packaging and expiry information are reviewed before a product is supplied. This check supports safe dispensing. It does not, by itself, certify authenticity.
+            </p>
+          </div>
+          <div class="info-card pharmacy-reveal">
+            <h3 class="info-card__title">If something does not look right</h3>
+            <p class="info-card__text">
+              If a product appears damaged, incorrect, or questionable, do not use it. Call the pharmacy desk with the product details so the concern can be clarified. Unclear clinical instructions should go back to the treating healthcare professional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Pharmaceutical Categories -->
+    <section class="section pharmacy-categories">
+      <div class="container">
+        <div class="pharmacy-reveal" style="max-width: 760px; margin-bottom: var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Medication Categories</span>
+          </div>
+          <h2>Understanding Healthcare &amp; Medicine Categories</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            These four areas describe the kinds of enquiries the pharmacy desk handles. Individual medicines are not listed on this page.
+          </p>
+        </div>
+
+        <div class="info-cards-grid">
+          <div class="info-card pharmacy-reveal">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+            </div>
+            <h3 class="info-card__title">Chronic Disease Maintenance</h3>
+            <p class="info-card__text">
+              Ongoing medicines for long-term conditions, including treatments a doctor has prescribed for the heart, blood pressure, diabetes, thyroid, or breathing. If a repeat supply is running low, call before it finishes so availability can be checked. This page does not advise you to start, stop, or change a treatment.
+            </p>
+          </div>
+
+          <div class="info-card pharmacy-reveal">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            </div>
+            <h3 class="info-card__title">Post-Surgical &amp; Acute Therapies</h3>
+            <p class="info-card__text">
+              Enquiries for medicines and supplies prescribed after discharge or a procedure, including the course written by the treating doctor. If a discharge note or dose is unclear, ask that healthcare professional before requesting a different product.
+            </p>
+          </div>
+
+          <div class="info-card pharmacy-reveal">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <h3 class="info-card__title">Clinical &amp; Nursing Consumables</h3>
+            <p class="info-card__text">
+              Enquiries for wound-care, dressing, and nursing supplies used during recovery at home. When you call, share the specification if you know it — for example the dressing type, size, or the item named in the care instructions.
+            </p>
+          </div>
+
+          <div class="info-card pharmacy-reveal">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            </div>
+            <h3 class="info-card__title">Supportive Wellness &amp; First Aid</h3>
+            <p class="info-card__text">
+              General healthcare and first-aid items, such as oral rehydration salts, antiseptic solutions, and simple bedside supplies. Not every item is held at all times, and this category is not a prompt to self-medicate. For a new or worsening symptom, speak to a healthcare professional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How the pharmacy enquiry proceeds, then what to have ready -->
+    <section class="section section--alt pharmacy-process">
+      <div class="container">
+        <div class="pharmacy-reveal" style="max-width: 760px; margin-bottom: var(--spacing-6);">
+          <div class="page-header__badge">
+            <span>Enquiry Process</span>
+          </div>
+          <h2>How Arovia Pharmacy Works</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Four steps describe what to expect when you contact the pharmacy desk. They do not promise a response time or a supply date.
+          </p>
+        </div>
+
+        <div class="prep-item-list">
+          <div class="prep-item pharmacy-reveal">
+            <div class="prep-item__num">1</div>
+            <div class="prep-item__content">
+              <h4>Make an Enquiry</h4>
+              <p>
+                Contact the pharmacy desk with the medicine or healthcare supply you need. Keep the prescription, or the relevant product details, available when they apply.
+              </p>
+            </div>
+          </div>
+          <div class="prep-item pharmacy-reveal">
+            <div class="prep-item__num">2</div>
+            <div class="prep-item__content">
+              <h4>Verify the Requirement</h4>
+              <p>
+                The relevant prescription requirements and the details you provide are checked. Anything unclear, or any discrepancy, is clarified before the enquiry goes further.
+              </p>
+            </div>
+          </div>
+          <div class="prep-item pharmacy-reveal">
+            <div class="prep-item__num">3</div>
+            <div class="prep-item__content">
+              <h4>Confirm Availability and Pricing</h4>
+              <p>
+                The desk confirms whether the item is available and what price applies. This website does not show live stock, and an enquiry is not a guarantee that an item is in hand.
+              </p>
+            </div>
+          </div>
+          <div class="prep-item pharmacy-reveal">
+            <div class="prep-item__num">4</div>
+            <div class="prep-item__content">
+              <h4>Confirm Fulfilment Arrangements</h4>
+              <p>
+                You are told which collection or delivery arrangements can be offered for that enquiry, and what the next step is. A supply is not confirmed until those arrangements are agreed on the call.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pharmacy-reveal" style="max-width: 760px; margin-top: var(--spacing-12); margin-bottom: var(--spacing-6);">
+          <div class="page-header__badge">
+            <span>Inquiry Process</span>
+          </div>
+          <h2>What to Prepare When Calling the Pharmacy Desk</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Have these details ready so the desk can check the requirement. The desk does not set or change a prescribed dose.
+          </p>
+        </div>
+
+        <div class="prep-item-list">
+          
+          <div class="prep-item pharmacy-reveal">
+            <div class="prep-item__num">1</div>
+            <div class="prep-item__content">
+              <h4>Doctor's Written Prescription</h4>
+              <p>
+                Have your current doctor's prescription clearly accessible. Ensure it includes the doctor's name, medical registration number, patient name, date of consultation, and precise medication instructions.
+              </p>
+            </div>
+          </div>
+
+          <div class="prep-item pharmacy-reveal">
+            <div class="prep-item__num">2</div>
+            <div class="prep-item__content">
+              <h4>Specific Strength &amp; Dosage Formulation</h4>
+              <p>
+                Confirm whether the prescription specifies tablets, capsules, oral syrups, topical ointments, or injectables, along with exact strengths (e.g. 250 mg, 500 mg, 10 mg/ml, or sustained-release formulations).
+              </p>
+            </div>
+          </div>
+
+          <div class="prep-item pharmacy-reveal">
+            <div class="prep-item__num">3</div>
+            <div class="prep-item__content">
+              <h4>Required Duration &amp; Pack Quantity</h4>
+              <p>
+                Know the prescribed duration of treatment—whether you are filling a 5-day acute post-surgical antibiotic regimen or an ongoing 30-day chronic maintenance supply for cardiac or diabetic care.
+              </p>
+            </div>
+          </div>
+
+          <div class="prep-item pharmacy-reveal">
+            <div class="prep-item__num">4</div>
+            <div class="prep-item__content">
+              <h4>Patient Sensitivities or Known Allergies</h4>
+              <p>
+                Inform the pharmacy coordinator of any known patient drug allergies (such as penicillin, sulfa drugs, or NSAIDs) so appropriate notes and precautions can be referenced before dispensing.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct pharmacy-desk enquiry. No product catalogue. -->
+    <section class="section pharmacy-availability">
+      <div class="container">
+        <div class="pharmacy-reveal" style="max-width: 760px; margin-bottom: var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Pharmacy Desk</span>
+          </div>
+          <h2>Medicine Availability and Supply Confirmation</h2>
+          <p style="color: var(--color-text); margin-top: var(--spacing-4); font-size: var(--font-size-md);">
+            Looking for a medicine or healthcare supply? Contact Arovia's pharmacy desk to enquire about availability, prescription requirements and applicable pricing. Our team will explain the available next steps based on your requirements.
+          </p>
+        </div>
+
+        <div class="info-cards-grid" style="margin-top: 0;">
+          <div class="info-card pharmacy-reveal">
+            <h3 class="info-card__title">Enquire through the pharmacy desk</h3>
+            <p class="info-card__text">
+              Medicines and healthcare supplies are not searched or listed on this page. Call the desk with the prescription or product details.
+            </p>
+          </div>
+          <div class="info-card pharmacy-reveal">
+            <h3 class="info-card__title">Availability and price come first</h3>
+            <p class="info-card__text">
+              The desk confirms whether the item can be supplied and what price applies before you proceed. The website is not a live inventory.
+            </p>
+          </div>
+          <div class="info-card pharmacy-reveal">
+            <h3 class="info-card__title">Keep the details ready</h3>
+            <p class="info-card__text">
+              Have the product name, strength, formulation, and quantity, and the prescription when one is required. Known drug allergies should be mentioned.
+            </p>
+          </div>
+          <div class="info-card pharmacy-reveal">
+            <h3 class="info-card__title">If the item is unavailable</h3>
+            <p class="info-card__text">
+              The desk will say so. Do not change a prescribed medicine, dose, or treatment on your own. Speak to the treating prescriber before requesting something different.
+            </p>
+          </div>
+        </div>
+
+        <div class="pharmacy-availability__action pharmacy-reveal" style="margin-top: var(--spacing-8);">
+          <a href="tel:+919649648430" class="btn btn--call-primary" style="display: inline-flex;">
+            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
+            <span>Call Pharmacy Desk</span>
+          </a>
+        </div>
+
+        <div class="callout-box pharmacy-panel pharmacy-reveal" style="margin-top: var(--spacing-10); background-color: var(--color-white); border-color: var(--color-border); border-left-color: var(--color-primary);">
+          <div class="callout-box__title" style="color: var(--color-primary-dark);">
+            <svg viewBox="0 0 24 24" style="fill: var(--color-primary);"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Collection, Delivery and Service Availability</span>
+          </div>
+          <p class="callout-box__text" style="color: var(--color-text); margin-bottom: var(--spacing-3);">
+            The registered premises are Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, Andhra Pradesh. Collection from this address can be discussed when you call.
+          </p>
+          <p class="callout-box__text" style="color: var(--color-text); margin-bottom: var(--spacing-3);">
+            Whether delivery can be arranged, and for which locations, is confirmed on the enquiry. Delivery areas and delivery charges are not published here.
+          </p>
+          <p class="callout-box__text" style="color: var(--color-text); margin-bottom: var(--spacing-3);">
+            The desk explains the next step for that enquiry. A fulfilment time is not fixed on the website. Any charge, and how payment is to be made, is confirmed before you proceed.
+          </p>
+          <p class="callout-box__text" style="color: var(--color-text);">
+            Confirm the arrangement with the pharmacy desk before you rely on a particular medicine or supply being ready.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Medicine Catalog Container -->
-    <section class="section">
+    <!-- Frequently Asked Questions About Pharmacy Services -->
+    <section class="section section--alt pharmacy-faq">
       <div class="container">
-        
-        <!-- Search & Filter Controls -->
-        <div class="catalog-toolbar">
-          <div class="catalog-search-wrap">
-            <svg class="catalog-search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-            <input type="text" id="medicineSearch" class="catalog-search-input" placeholder="Search medicines by brand, generic name, or composition..." aria-label="Search medicines">
+        <div class="pharmacy-reveal" style="text-align: center; max-width: 760px; margin: 0 auto var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Common Questions</span>
           </div>
-          
-          <div id="medicineCategories" class="catalog-categories" role="tablist" aria-label="Medicine Categories">
-            <button type="button" class="category-tab category-tab--active" data-cat="all" role="tab" aria-selected="true">
-              All Medicines
-            </button>
-          </div>
-        </div>
-
-        <!-- Catalog Status Bar -->
-        <div class="catalog-status-bar">
-          <div>
-            Showing <strong id="medicineCount">0</strong> listed medicines
-          </div>
-          <div style="font-size: var(--font-size-xs);">
-            Official Arovia Pharmacy List
-          </div>
-        </div>
-
-        <!-- Medicine Product Cards Grid -->
-        <div id="medicineGrid" class="equipment-grid">
-          <!-- Populated dynamically when medicine list is supplied -->
-        </div>
-
-        <!-- Awaiting Medicine List Information Box -->
-        <div id="awaitingDataBox" style="text-align: center; padding: var(--spacing-12); background-color: var(--color-white); border: 1px dashed var(--color-border); border-radius: var(--radius-lg); margin-top: var(--spacing-6);">
-          <div style="width: 56px; height: 56px; border-radius: 50%; background-color: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-4);">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-15zM10.5 4.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-15z"/></svg>
-          </div>
-          <h3 style="color: var(--color-dark); margin-bottom: var(--spacing-2);">Ready for Official Medicine Catalog Data</h3>
-          <p style="color: var(--color-text-muted); font-size: var(--font-size-sm); max-width: 600px; margin: 0 auto var(--spacing-4); line-height: 1.6;">
-            The medicine catalog structure is fully prepared in accordance with Module 6 specifications. As instructed, no medicine names or prices will be invented. Please supply the official medicine list, available product details, and prices to populate the listings.
+          <h2>Frequently Asked Questions About Pharmacy Services</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Short answers about enquiries, prescriptions, pricing, and what the pharmacy desk confirms by phone.
           </p>
-          <a href="tel:+917013775996" class="btn btn--call-primary" style="display: inline-flex;">
-            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            <span>Direct Inquiries: +91 7013775996</span>
-          </a>
         </div>
 
+        <div class="service-detail-grid">
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Do I need a prescription to enquire about a medicine?
+            </h3>
+            <p class="service-detail-card__text">
+              Prescription medicines, including Schedule H, H1, and X products, need a valid prescription from a registered medical practitioner. You may still call to ask what is required. General first-aid and many over-the-counter items do not need a prescription.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              How do I confirm whether a medicine is available?
+            </h3>
+            <p class="service-detail-card__text">
+              Call the pharmacy desk with the prescription or product details. Availability is confirmed on that call. This page does not show live stock.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What happens if my requested medicine is unavailable?
+            </h3>
+            <p class="service-detail-card__text">
+              The desk will tell you it cannot be supplied at that time. Arovia does not automatically source a replacement. Ask the treating prescriber before changing a prescribed medicine, dose, or formulation.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              How is the applicable price confirmed?
+            </h3>
+            <p class="service-detail-card__text">
+              The pharmacy desk states the price on the call, before you proceed. Prices are not listed here. Packaged medicines in India also carry a manufacturer maximum retail price under National Pharmaceutical Pricing Authority rules.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Can a family member enquire on behalf of a patient?
+            </h3>
+            <p class="service-detail-card__text">
+              Yes, a family member or caregiver may call to ask about a requirement. Any extra step for collecting a prescription medicine is explained by the desk on that call. It is not set out on this page.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              How do I confirm collection or delivery arrangements?
+            </h3>
+            <p class="service-detail-card__text">
+              Ask the pharmacy desk during the enquiry. Collection is from the Guntur premises. Whether delivery is possible for your location is confirmed then, along with any charge. Do not assume a delivery until it is agreed.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What should I do if a supplied product appears damaged or incorrect?
+            </h3>
+            <p class="service-detail-card__text">
+              Do not use it. Call the pharmacy desk, name the product, and describe what looks wrong. The desk will explain the next step. A separate returns policy is not published on this page.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What information should I keep ready before calling?
+            </h3>
+            <p class="service-detail-card__text">
+              The prescription when one is required, or the product name, plus strength, formulation, and quantity. Mention any drug allergy you already know about.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Can the pharmacy change my dose or substitute a medicine?
+            </h3>
+            <p class="service-detail-card__text">
+              No. Arovia does not change a prescribed dose, strength, or medicine on its own. Any change must come from the treating healthcare professional.
+            </p>
+          </div>
+
+          <div class="service-detail-card pharmacy-reveal">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Why is there no medicine list or online checkout?
+            </h3>
+            <p class="service-detail-card__text">
+              Individual medicines are not displayed, and there is no cart or checkout. The pharmacy desk confirms the requirement, availability, and price directly, so a supply is not placed through the website.
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
 
     <!-- Bottom Contact Section -->
-    <section class="home-contact-section">
+    <section class="home-contact-section pharmacy-cta">
       <div class="container">
-        <div class="home-contact-card">
+        <div class="home-contact-card pharmacy-reveal">
           <div>
             <h2 class="home-contact-card__title">
               Have Questions About a Prescription or Medicine?
             </h2>
             <p class="home-contact-card__desc">
-              Contact Arovia's registered pharmacy desk directly to verify medicine availability, discuss prescription requirements, or confirm pricing.
+              Call the pharmacy desk to enquire. Availability, prescription requirements, and the applicable price are confirmed on the call.
             </p>
           </div>
           <div class="home-contact-card__actions">
-            <a href="tel:+917013775996" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
+            <a href="tel:+919649648430" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
               <svg viewBox="0 0 24 24" style="fill: var(--color-primary-dark);"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              <span>Call Now: +91 7013775996</span>
+              <span>Call Now</span>
             </a>
           </div>
         </div>
@@ -243,7 +622,6 @@
             <li><a href="ambulance.html" class="footer-nav__link">Ambulance</a></li>
             <li><a href="medical-equipment.html" class="footer-nav__link">Medical Equipment</a></li>
             <li><a href="pharmacy.html" class="footer-nav__link">Pharmacy</a></li>
-            <li><a href="clinic.html" class="footer-nav__link">Clinic</a></li>
             <li><a href="lab-tests.html" class="footer-nav__link">Lab Tests</a></li>
           </ul>
         </div>
@@ -264,7 +642,7 @@
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
               <div>
                 <div>Official Phone Number:</div>
-                <a href="tel:+917013775996" class="footer-contact__link">+91 7013775996</a>
+                <a href="tel:+919649648430" class="footer-contact__link">+91 96496 48430</a>
               </div>
             </div>
             <div class="footer-contact__item">
@@ -291,11 +669,14 @@
   </footer>
 
   <!-- Floating Mobile Call Button -->
-  <a href="tel:+917013775996" class="floating-call-btn" aria-label="Call Arovia Healthcare at +91 7013775996">
+  <a href="tel:+919649648430" class="floating-call-btn" aria-label="Call Arovia Healthcare Helpline">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-    <span>Call +91 7013775996</span>
+    <span>Call Helpline</span>
   </a>
 
+  <script src="js/social-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/pharmacy-ui.js"></script>
 </body>
 </html>

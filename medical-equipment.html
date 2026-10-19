@@ -4,69 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medical Equipment — Hospital Infrastructure & Devices | Arovia Healthcare</title>
-  <meta name="description" content="Explore Arovia's complete catalog of 28 hospital-grade medical equipment: electric ICU beds, patient monitors, trolleys, wheelchairs, and defibrillators. Direct phone quotes: +91 7013775996.">
+  <meta name="description" content="Explore Arovia's complete catalog of 28 hospital-grade medical equipment: electric ICU beds, patient monitors, trolleys, wheelchairs, and defibrillators. Direct phone quotes via helpline.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Accessible Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar__content">
-      <div class="topbar__info">
-        <span class="topbar__item">
-          <strong>Arovia Healthcare Services</strong> — Guntur, Andhra Pradesh
-        </span>
-        <span class="topbar__item">
-          Equipment Desk: <a href="tel:+917013775996">+91 7013775996</a>
-        </span>
-      </div>
-      <div>
-        <span class="topbar__emergency-badge" style="background: rgba(0, 86, 98, 0.2); color: #c9e6eb; border-color: rgba(0, 86, 98, 0.4);">
-          Official Catalog Specifications
-        </span>
+  <!-- Top Scroll Progress Line (Subtle Brand Green Indicator — Ohana Reference) -->
+  <div class="scroll-progress-line" id="scrollProgressLine" aria-hidden="true"></div>
+
+  <!-- Site Header (Coordinated 2-Row Sticky Header) -->
+  <header class="site-header" role="banner">
+    <!-- Row 1: Main Navigation Header -->
+    <div class="site-header__main">
+      <div class="container site-header__wrapper">
+        <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
+          <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
+          <div class="brand-link__text">
+            <span class="brand-link__title">AROVIA</span>
+            <span class="brand-link__caption">Care Meets Convenience</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="main-nav__list">
+            <li><a href="index.html" class="main-nav__link">Home</a></li>
+            <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
+            <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
+            <li><a href="medical-equipment.html" class="main-nav__link main-nav__link--active" aria-current="page">Medical Equipment</a></li>
+            <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
+            <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
+            <li><a href="contact.html" class="main-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Action & Mobile Menu Toggle -->
+        <div class="header-actions">
+          <div class="connect-dropdown" id="connectDropdown">
+            <div class="connect-social-dock" id="connectSocialDock" role="group" aria-label="Arovia Official Social Media Channels" aria-hidden="false">
+              <a href="#" class="connect-social-icon connect-social-icon--instagram" data-platform="instagram" aria-label="Arovia on Instagram" title="Arovia on Instagram" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--facebook" data-platform="facebook" aria-label="Arovia on Facebook" title="Arovia on Facebook" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--youtube" data-platform="youtube" aria-label="Arovia on YouTube" title="Arovia on YouTube" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+            <button type="button" id="connectBtn" class="btn btn--connect" aria-label="Connect with Arovia Healthcare" aria-expanded="true" aria-controls="connectSocialDock">
+              <span>Connect</span>
+            </button>
+          </div>
+          <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container site-header__wrapper">
-      <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
-        <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
-        <div class="brand-link__text">
-          <span class="brand-link__title">AROVIA</span>
-          <span class="brand-link__subtitle">HEALTHCARE SERVICES</span>
+    <!-- Row 2: Contact Information Strip -->
+    <div class="topbar" aria-label="Official Contact Information">
+      <div class="container topbar__container">
+        <div class="topbar__left">
+          <a href="https://maps.app.goo.gl/LxDHu9jJ4c3jgWU56" target="_blank" rel="noopener noreferrer" class="topbar__item topbar__link topbar__item--address" aria-label="Open Arovia location on Google Maps: Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur (opens in a new tab)" title="Open Arovia location on Google Maps (opens in a new tab)">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="topbar__address-text topbar__address-full">Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, AP, India</span>
+            <span class="topbar__address-text topbar__address-compact">Shop No.26, Annapurna Complex, Kakani Rd, Guntur</span>
+          </a>
         </div>
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <ul class="main-nav__list">
-          <li><a href="index.html" class="main-nav__link">Home</a></li>
-          <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
-          <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
-          <li><a href="medical-equipment.html" class="main-nav__link main-nav__link--active" aria-current="page">Medical Equipment</a></li>
-          <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
-          <li><a href="clinic.html" class="main-nav__link">Clinic</a></li>
-          <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
-          <li><a href="contact.html" class="main-nav__link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header Action & Mobile Menu Toggle -->
-      <div class="header-actions">
-        <a href="tel:+917013775996" class="btn btn--call-primary" aria-label="Call Arovia at +91 7013775996">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-          <span>Call: +91 7013775996</span>
-        </a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <div class="topbar__right">
+          <a href="tel:+919649648430" class="topbar__item topbar__link topbar__item--phone" aria-label="Telephone Arovia at +91 96496 48430">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/>
+            </svg>
+            <span>+91 96496 48430</span>
+          </a>
+          <span class="topbar__divider" aria-hidden="true">|</span>
+          <a href="mailto:arovia22@gmail.com" class="topbar__item topbar__link topbar__item--email" aria-label="Email Arovia at arovia22@gmail.com">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>arovia22@gmail.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -75,7 +104,10 @@
   <div id="drawerOverlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
   <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
     <div class="mobile-drawer__header">
-      <span class="brand-link__title">AROVIA</span>
+      <div class="brand-link__text">
+        <span class="brand-link__title">AROVIA</span>
+        <span class="brand-link__caption">Care Meets Convenience</span>
+      </div>
       <button id="drawerClose" class="mobile-drawer__close" aria-label="Close navigation menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
@@ -86,14 +118,16 @@
       <a href="ambulance.html" class="mobile-drawer__link">Ambulance</a>
       <a href="medical-equipment.html" class="mobile-drawer__link mobile-drawer__link--active" aria-current="page">Medical Equipment</a>
       <a href="pharmacy.html" class="mobile-drawer__link">Pharmacy</a>
-      <a href="clinic.html" class="mobile-drawer__link">Clinic</a>
       <a href="lab-tests.html" class="mobile-drawer__link">Lab Tests</a>
       <a href="contact.html" class="mobile-drawer__link">Contact</a>
     </nav>
     <div class="mobile-drawer__footer">
-      <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+      <button type="button" class="btn btn--connect btn--connect-mobile" aria-label="Connect with Arovia on social media" style="width: 100%;">
+        <span>Connect</span>
+      </button>
+      <a href="tel:+919649648430" class="btn btn--call-primary" style="width: 100%;">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-        <span>Call: +91 7013775996</span>
+        <span>Call Helpline</span>
       </a>
       <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Direct phone quotations only — No online cart or checkout required.</p>
     </div>
@@ -102,30 +136,66 @@
   <!-- Main Content Area -->
   <main id="main-content">
     
-    <!-- 5.4 Page Introduction -->
-    <section class="page-header">
+    <!-- Page Introduction & Educational Scope with Technical CAD Grid -->
+    <section class="page-header page-header--enhanced page-header--grid bg-artwork-equipment" style="padding-bottom: var(--spacing-12);">
+      <div class="container page-header__container">
+        <div>
+          <div class="page-header__breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="page-header__breadcrumb-separator">/</span>
+            <span>Medical Equipment</span>
+          </div>
+          <div class="page-header__badge">
+            <span>Official Catalog &bull; International Export Supply</span>
+          </div>
+          <h1 class="page-header__title">Medical Equipment & Hospital Infrastructure</h1>
+          <p class="page-header__subtitle">
+            Explore Arovia's verified catalog of 28 hospital-grade equipment items spanning critical care devices, ward furniture, patient mobility aids, and diagnostic systems. All products are supplied for international export. Review product specifications below and call our equipment desk for Proforma Invoices, shipping quotes, and technical inquiries.
+          </p>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-3);">
+            * International shipping only. No online prices or digital cart checkouts. Direct telephone and proforma invoice consultation for institutional and healthcare buyers.
+          </p>
+        </div>
+
+        <div class="hero-showcase hero-showcase--tech">
+          <div class="hero-showcase__media">
+            <img src="assets/images/equipment/catalog/av-ecca.png" alt="Arovia emergency recovery hydraulic trolley hospital equipment" class="hero-showcase__img" width="500" height="360">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Stepped Section Transition Divider -->
+    <div class="section-divider section-divider--fill-white" aria-hidden="true">
+      <svg viewBox="0 0 1440 45" preserveAspectRatio="none">
+        <path d="M0,0 L720,25 L1440,0 L1440,45 L0,45 Z"></path>
+      </svg>
+    </div>
+
+    <!-- Essential Guidance & International Shipping Advisory -->
+    <section class="section" style="padding-top: 0; padding-bottom: var(--spacing-8);">
       <div class="container">
-        <div class="page-header__breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="page-header__breadcrumb-separator">/</span>
-          <span>Medical Equipment</span>
+        <div class="grid-2col" style="align-items: stretch; gap: var(--spacing-6);">
+          <div style="background: rgba(0, 86, 98, 0.05); border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary); border-radius: var(--radius-md); padding: var(--spacing-6);">
+            <h3 style="font-size: var(--font-size-base); color: var(--color-primary-dark); margin-bottom: var(--spacing-2); display: flex; align-items: center; gap: var(--spacing-2);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              Clinical Guidance on Selecting Equipment
+            </h3>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text); line-height: 1.6; margin-bottom: 0;">
+              Selecting appropriate medical equipment requires careful clinical alignment with patient acuity and facility protocols. Before procuring critical care items such as ICU beds, multi-parameter monitors, or infusion pumps, always consult a qualified healthcare professional, attending physician, or biomedical engineer to confirm clinical suitability and power/installation requirements.
+            </p>
+          </div>
+
+          <div style="background: rgba(0, 86, 98, 0.05); border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary); border-radius: var(--radius-md); padding: var(--spacing-6);">
+            <h3 style="font-size: var(--font-size-base); color: var(--color-primary-dark); margin-bottom: var(--spacing-2); display: flex; align-items: center; gap: var(--spacing-2);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              International Export Only Notice
+            </h3>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text); line-height: 1.6; margin-bottom: 0;">
+              Arovia supplies medical equipment exclusively for international export and institutional shipments. Deliveries are packaged to export standards. Because port clearances, freight rates, and import regulations vary by destination country, serviceable routes and exact delivery timelines are confirmed individually upon telephone inquiry.
+            </p>
+          </div>
         </div>
-        <div class="page-header__badge">
-          <span>Authoritative Equipment Catalog</span>
-        </div>
-        <h1 class="page-header__title">Medical Equipment</h1>
-        <p class="page-header__subtitle">
-          Explore our range of hospital-related medical equipment. Each product is presented with its available description and technical details to help you understand what it is and how it may be used. For pricing, availability, and international shipping, please contact us directly.
-        </p>
-        <div class="page-header__actions">
-          <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 14px 28px; font-size: var(--font-size-base);">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            <span>Call for Pricing & Orders: +91 7013775996</span>
-          </a>
-        </div>
-        <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-3);">
-          * Direct phone consultation only. We provide transparent telephone quotations for hospital supplies, clinic setups, and home patient care.
-        </p>
       </div>
     </section>
 
@@ -199,7 +269,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-HET">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-HET">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -231,7 +301,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-EI3A">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-EI3A">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -263,7 +333,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-EI3C">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-EI3C">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -295,7 +365,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-FSS1">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-FSS1">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -327,7 +397,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-GE2">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-GE2">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -359,7 +429,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-MTN">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-MTN">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -391,7 +461,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-ITS">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-ITS">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -423,7 +493,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-PG">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-PG">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -455,7 +525,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-BLA">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-BLA">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -487,7 +557,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-ECCA">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-ECCA">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -519,7 +589,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-BSS">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-BSS">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -551,7 +621,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-OBTG">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-OBTG">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -583,7 +653,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-BSCH">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-BSCH">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -615,7 +685,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AL-DT01">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AL-DT01">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -647,7 +717,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-BD5">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-BD5">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -679,7 +749,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-1200G">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-1200G">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -711,7 +781,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-XVB2">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-XVB2">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -743,7 +813,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-WCFM">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-WCFM">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -775,7 +845,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-HE03">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-HE03">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -807,7 +877,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-WCMF">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-WCMF">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -839,7 +909,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-FD101">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-FD101">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -871,7 +941,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on BYS-820">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on BYS-820">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -903,7 +973,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-PM3">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-PM3">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -935,7 +1005,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-PM7">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-PM7">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -967,7 +1037,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-HSC">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-HSC">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -999,7 +1069,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-CSS304">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-CSS304">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -1031,7 +1101,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-OBTK">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-OBTK">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -1063,7 +1133,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                   <span>View Details</span>
                 </button>
-                <a href="tel:+917013775996" class="btn--call-pricing" aria-label="Call for pricing on AV-STBM">
+                <a href="tel:+919649648430" class="btn--call-pricing" aria-label="Call for pricing on AV-STBM">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   <span>Call for Pricing</span>
                 </a>
@@ -1079,41 +1149,120 @@
           <button type="button" class="btn btn--secondary" onclick="resetFilters()">Reset All Filters</button>
         </div>
 
-        <!-- Catalog Commercial Policies (Referencing Page 29 Terms & Conditions) -->
+        <!-- Catalog Commercial Policies (Referencing Official Export Terms) -->
         <div class="catalog-policies-card">
           <div class="policy-block">
             <h4>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-              12-Month Warranty
+              Manufacturer Warranty
             </h4>
-            <p>Products carry a 12-month manufacturer warranty against defects. Terms match the actual manufacturer warranty applicable to the quoted equipment model.</p>
+            <p>Products carry a 12-month manufacturer warranty against manufacturing defects, or the manufacturer's actual warranty period if different and expressly stated. Excludes misuse, physical damage, and unauthorized modifications.</p>
           </div>
 
           <div class="policy-block">
             <h4>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
-              Quality & Inspection
+              Export Payment Terms
             </h4>
-            <p>Every unit undergoes strict quality control and functional verification before dispatch. Factory inspection reports available upon institutional request.</p>
+            <p>Standard recommended export terms: 30% advance upon acceptance of Proforma Invoice, and 70% balance prior to shipment against agreed shipping documents (or Irrevocable LC at Sight for approved transactions). Payments in USD via wire transfer.</p>
           </div>
 
           <div class="policy-block">
             <h4>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-              International Shipping
+              International Export Packing
             </h4>
-            <p>For international bulk procurement, proforma invoices and shipping quotations are handled directly by phone or email. Packing complies with export standards.</p>
+            <p>Shipments are packed in compliance with international export standards to protect delicate medical electronics and heavy hospital furniture during ocean or air transit. Serviceable destinations verified on inquiry.</p>
           </div>
 
           <div class="policy-block">
             <h4>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              Direct Phone Ordering
+              Direct Phone Consultations
             </h4>
-            <p>We do not use confusing shopping carts or online checkouts. Speak directly with our medical desk at <strong>+91 7013775996</strong> for availability and pricing.</p>
+            <p>No online checkout or automated carts. Speak directly with our medical desk to discuss volume orders, request technical data sheets, and receive formal proforma documentation.</p>
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- Equipment FAQ Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Procurement & Technical Insights</span>
+          </div>
+          <h2>Frequently Asked Questions About Medical Equipment</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Key questions regarding product specifications, export shipping, ordering procedures, and clinical selection.
+          </p>
+        </div>
+
+        <div class="service-detail-grid">
+          
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What product categories are included in the Arovia equipment catalog?
+            </h3>
+            <p class="service-detail-card__text">
+              The 28-item catalog includes five core categories: Hospital Beds & Stretchers (such as motorized ICU beds and emergency trolleys), OT & Ward Furniture (crash carts, bedside lockers, instrument tables, and examination stools), Patient Mobility (folding and fixed transit wheelchairs), Diagnostic & Monitoring Devices (multi-parameter patient monitors, 12-channel ECG machines, Holter systems, and digital thermometers), and Critical Care & Treatment (biphasic defibrillators and micro-infusion pumps).
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Why are prices not listed on the website?
+            </h3>
+            <p class="service-detail-card__text">
+              Because our equipment is supplied through institutional export, pricing varies based on order volume, customized accessories, international freight method (ocean vs. air cargo), and destination import duties. We provide tailored, transparent telephone quotes and formal Proforma Invoices for all inquiries.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Is this equipment intended for local retail or international export?
+            </h3>
+            <p class="service-detail-card__text">
+              The medical equipment catalog is structured strictly for international export and institutional supply. Buyers outside India can coordinate directly with our desk to establish serviceable shipping destinations, documentation, and wire transfer terms.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              How should buyers determine the appropriate equipment specifications?
+            </h3>
+            <p class="service-detail-card__text">
+              Equipment selection must be guided by qualified healthcare professionals or hospital biomedical departments. Important factors include clinical intended use, room dimensions, patient weight limits, electrical voltage compatibility (220V vs. other standards), and cleaning/sanitization protocols.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What are the standard international payment and order terms?
+            </h3>
+            <p class="service-detail-card__text">
+              Standard terms require a 30% advance deposit upon acceptance of the formal Proforma Invoice, with the remaining 70% balance payable prior to shipment against agreed export shipping documents. For qualified institutional accounts, Irrevocable Letters of Credit (LC) at sight may be accommodated. Payments are settled in USD via bank wire transfer.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              How are warranties and manufacturer support handled?
+            </h3>
+            <p class="service-detail-card__text">
+              Products carry a 12-month manufacturer warranty against manufacturing defects, or the manufacturer's actual warranty period where expressly specified. Routine wear and tear, consumables, physical damage, and unauthorized alterations are excluded under standard warranty terms.
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -1123,16 +1272,16 @@
         <div class="home-contact-card">
           <div>
             <h2 class="home-contact-card__title">
-              Looking for Specific Medical Equipment?
+              Contact Arovia for Medical Equipment Inquiries & Export Quotations
             </h2>
             <p class="home-contact-card__desc">
-              Contact Arovia's equipment desk to discuss hospital ward outfitting, clinic equipment supply, or home care rentals with our coordinator.
+              Speak directly with our equipment desk to request formal Proforma Invoices, discuss hospital ward outfitting, verify international shipping feasibility, and clarify technical specifications.
             </p>
           </div>
           <div class="home-contact-card__actions">
-            <a href="tel:+917013775996" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
+            <a href="tel:+919649648430" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
               <svg viewBox="0 0 24 24" style="fill: var(--color-primary-dark);"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              <span>Call Now: +91 7013775996</span>
+              <span>Call Now</span>
             </a>
           </div>
         </div>
@@ -1199,9 +1348,9 @@
         <div class="modal-footer__note">
           Speak with our coordinator for institutional quotation, stock availability, and delivery timelines.
         </div>
-        <a id="modalCallBtn" href="tel:+917013775996" class="btn btn--call-primary" style="padding: 10px 20px;">
+        <a id="modalCallBtn" href="tel:+919649648430" class="btn btn--call-primary" style="padding: 10px 20px;">
           <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-          <span>Call for Pricing: +91 7013775996</span>
+          <span>Call for Pricing</span>
         </a>
       </div>
     </div>
@@ -1231,7 +1380,6 @@
             <li><a href="ambulance.html" class="footer-nav__link">Ambulance</a></li>
             <li><a href="medical-equipment.html" class="footer-nav__link">Medical Equipment</a></li>
             <li><a href="pharmacy.html" class="footer-nav__link">Pharmacy</a></li>
-            <li><a href="clinic.html" class="footer-nav__link">Clinic</a></li>
             <li><a href="lab-tests.html" class="footer-nav__link">Lab Tests</a></li>
           </ul>
         </div>
@@ -1252,7 +1400,7 @@
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
               <div>
                 <div>Official Phone Number:</div>
-                <a href="tel:+917013775996" class="footer-contact__link">+91 7013775996</a>
+                <a href="tel:+919649648430" class="footer-contact__link">+91 96496 48430</a>
               </div>
             </div>
             <div class="footer-contact__item">
@@ -1279,9 +1427,9 @@
   </footer>
 
   <!-- Floating Mobile Call Button -->
-  <a href="tel:+917013775996" class="floating-call-btn" aria-label="Call Arovia Healthcare at +91 7013775996">
+  <a href="tel:+919649648430" class="floating-call-btn" aria-label="Call Arovia Healthcare Helpline">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-    <span>Call +91 7013775996</span>
+    <span>Call Helpline</span>
   </a>
 
   <!-- Catalog Data & Interactive Logic -->
@@ -1447,6 +1595,8 @@
       }
     });
   </script>
+  <script src="js/social-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>

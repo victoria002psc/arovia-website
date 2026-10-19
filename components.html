@@ -7,7 +7,7 @@
   <meta name="description" content="Arovia Healthcare design system, reusable component library, brand typography, and foundation elements.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
     .component-spec {
@@ -67,57 +67,88 @@
   <!-- Accessible Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar__content">
-      <div class="topbar__info">
-        <span class="topbar__item">
-          <strong>Arovia Healthcare Services</strong> — Guntur, Andhra Pradesh
-        </span>
-        <span class="topbar__item">
-          Direct Phone: <a href="tel:+917013775996">+91 7013775996</a>
-        </span>
-      </div>
-      <div>
-        <span class="topbar__emergency-badge">Emergency Care Ready</span>
+  <!-- Top Scroll Progress Line (Subtle Brand Green Indicator — Ohana Reference) -->
+  <div class="scroll-progress-line" id="scrollProgressLine" aria-hidden="true"></div>
+
+  <!-- Site Header (Coordinated 2-Row Sticky Header) -->
+  <header class="site-header" role="banner">
+    <!-- Row 1: Main Navigation Header -->
+    <div class="site-header__main">
+      <div class="container site-header__wrapper">
+        <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
+          <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
+          <div class="brand-link__text">
+            <span class="brand-link__title">AROVIA</span>
+            <span class="brand-link__caption">Care Meets Convenience</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="main-nav__list">
+            <li><a href="index.html" class="main-nav__link">Home</a></li>
+            <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
+            <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
+            <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
+            <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
+            <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
+            <li><a href="contact.html" class="main-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Action & Mobile Menu Toggle -->
+        <div class="header-actions">
+          <div class="connect-dropdown" id="connectDropdown">
+            <div class="connect-social-dock" id="connectSocialDock" role="group" aria-label="Arovia Official Social Media Channels" aria-hidden="false">
+              <a href="#" class="connect-social-icon connect-social-icon--instagram" data-platform="instagram" aria-label="Arovia on Instagram" title="Arovia on Instagram" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--facebook" data-platform="facebook" aria-label="Arovia on Facebook" title="Arovia on Facebook" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--youtube" data-platform="youtube" aria-label="Arovia on YouTube" title="Arovia on YouTube" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+            <button type="button" id="connectBtn" class="btn btn--connect" aria-label="Connect with Arovia Healthcare" aria-expanded="true" aria-controls="connectSocialDock">
+              <span>Connect</span>
+            </button>
+          </div>
+          <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container site-header__wrapper">
-      <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
-        <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
-        <div class="brand-link__text">
-          <span class="brand-link__title">AROVIA</span>
-          <span class="brand-link__subtitle">HEALTHCARE SERVICES</span>
+    <!-- Row 2: Contact Information Strip -->
+    <div class="topbar" aria-label="Official Contact Information">
+      <div class="container topbar__container">
+        <div class="topbar__left">
+          <a href="https://maps.app.goo.gl/LxDHu9jJ4c3jgWU56" target="_blank" rel="noopener noreferrer" class="topbar__item topbar__link topbar__item--address" aria-label="Open Arovia location on Google Maps: Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur (opens in a new tab)" title="Open Arovia location on Google Maps (opens in a new tab)">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="topbar__address-text topbar__address-full">Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, AP, India</span>
+            <span class="topbar__address-text topbar__address-compact">Shop No.26, Annapurna Complex, Kakani Rd, Guntur</span>
+          </a>
         </div>
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <ul class="main-nav__list">
-          <li><a href="index.html" class="main-nav__link">Home</a></li>
-          <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
-          <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
-          <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
-          <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
-          <li><a href="clinic.html" class="main-nav__link">Clinic</a></li>
-          <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
-          <li><a href="contact.html" class="main-nav__link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header Action & Mobile Menu Toggle -->
-      <div class="header-actions">
-        <a href="tel:+917013775996" class="btn btn--call-primary" aria-label="Call Arovia at +91 7013775996">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-          <span>Call: +91 7013775996</span>
-        </a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <div class="topbar__right">
+          <a href="tel:+919649648430" class="topbar__item topbar__link topbar__item--phone" aria-label="Telephone Arovia at +91 96496 48430">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/>
+            </svg>
+            <span>+91 96496 48430</span>
+          </a>
+          <span class="topbar__divider" aria-hidden="true">|</span>
+          <a href="mailto:arovia22@gmail.com" class="topbar__item topbar__link topbar__item--email" aria-label="Email Arovia at arovia22@gmail.com">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>arovia22@gmail.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -137,14 +168,16 @@
       <a href="ambulance.html" class="mobile-drawer__link">Ambulance</a>
       <a href="medical-equipment.html" class="mobile-drawer__link">Medical Equipment</a>
       <a href="pharmacy.html" class="mobile-drawer__link">Pharmacy</a>
-      <a href="clinic.html" class="mobile-drawer__link">Clinic</a>
       <a href="lab-tests.html" class="mobile-drawer__link">Lab Tests</a>
       <a href="contact.html" class="mobile-drawer__link">Contact</a>
     </nav>
     <div class="mobile-drawer__footer">
-      <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+      <button type="button" id="drawerConnectBtn" class="btn btn--connect btn--connect-mobile" style="width: 100%; justify-content: center;" aria-label="Connect with Arovia on social media">
+        <span>Connect</span>
+      </button>
+      <a href="tel:+919649648430" class="btn btn--call-primary" style="width: 100%;">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-        <span>Call: +91 7013775996</span>
+        <span>Call Helpline</span>
       </a>
       <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Direct phone service only. No online forms or bookings required.</p>
     </div>
@@ -152,8 +185,8 @@
 
   <!-- Main Content Area -->
   <main id="main-content">
-    <!-- Page Header Component -->
-    <section class="page-header">
+    <!-- Page Header Component with Healthcare Design System Motif -->
+    <section class="page-header page-header--enhanced bg-artwork-equipment">
       <div class="container">
         <div class="page-header__breadcrumb">
           <a href="index.html">Arovia</a>
@@ -161,23 +194,21 @@
           <span>Design System & Reusable Components</span>
         </div>
         <div class="page-header__badge">
-          <span>Module 1 Foundation Complete</span>
+          <span>Design System & Pattern Library</span>
         </div>
         <h1 class="page-header__title">Arovia Healthcare Design System</h1>
         <p class="page-header__subtitle">
-          Authoritative brand assets, color palette, responsive navigation, and standardized reusable components built for healthcare trust, clarity, and direct telephone contact.
+          Authoritative brand assets, color palette, responsive navigation, background design motifs, and standardized reusable components built for healthcare trust, clarity, and direct telephone contact.
         </p>
-        <div class="page-header__actions">
-          <a href="tel:+917013775996" class="btn btn--call-primary">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            <span>Official Helpline: +91 7013775996</span>
-          </a>
-          <a href="index.html" class="btn btn--call-secondary">
-            <span>View Homepage</span>
-          </a>
-        </div>
       </div>
     </section>
+
+    <!-- Design System Wave Section Transition Divider -->
+    <div class="section-divider section-divider--fill-white" aria-hidden="true">
+      <svg viewBox="0 0 1440 45" preserveAspectRatio="none">
+        <path d="M0,0 C480,35 960,35 1440,0 L1440,45 L0,45 Z"></path>
+      </svg>
+    </div>
 
     <!-- Components Showcase Content -->
     <div class="container section">
@@ -235,26 +266,26 @@
       <!-- 2. Phone Links & Call Now Buttons -->
       <section class="component-spec">
         <h2 class="component-spec__title">2. Phone Contact Links & Call Now Buttons</h2>
-        <p class="component-spec__desc">Core conversion mechanism across all pages. Direct telephone links with official number (+91 7013775996).</p>
+        <p class="component-spec__desc">Core conversion mechanism across all pages. Direct telephone links.</p>
         <div style="display: flex; gap: var(--spacing-4); flex-wrap: wrap; align-items: center; margin-bottom: var(--spacing-6);">
-          <a href="tel:+917013775996" class="btn btn--call-primary">
+          <a href="tel:+919649648430" class="btn btn--call-primary">
             <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            Call Now: +91 7013775996
+            Call Now
           </a>
-          <a href="tel:+917013775996" class="btn btn--call-secondary">
+          <a href="tel:+919649648430" class="btn btn--call-secondary">
             <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
             Call to Inquire
           </a>
-          <a href="tel:+917013775996" class="btn btn--emergency">
+          <a href="tel:+919649648430" class="btn btn--emergency">
             <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            Ambulance Helpline: +91 7013775996
+            Ambulance Helpline
           </a>
-          <a href="tel:+917013775996" class="phone-badge">
+          <a href="tel:+919649648430" class="phone-badge">
             <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            +91 7013775996
+            Helpline Active
           </a>
           <span style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
-            Inline link: For questions, <a href="tel:+917013775996" class="phone-inline-link"><svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg> call +91 7013775996</a> directly.
+            Inline link: For questions, <a href="tel:+919649648430" class="phone-inline-link"><svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg> call our helpline</a> directly.
           </span>
         </div>
       </section>
@@ -262,7 +293,7 @@
       <!-- 3. Service Cards -->
       <section class="component-spec">
         <h2 class="component-spec__title">3. Reusable Service Cards</h2>
-        <p class="component-spec__desc">Used across Home Care, Ambulance, Clinic, Pharmacy, and Lab Test overviews.</p>
+        <p class="component-spec__desc">Used across Home Care, Ambulance, Pharmacy, and Lab Test overviews.</p>
         <div class="component-spec__grid">
           
           <!-- Sample Service Card 1 -->
@@ -289,7 +320,7 @@
               </li>
             </ul>
             <div class="service-card__footer">
-              <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+              <a href="tel:+919649648430" class="btn btn--call-primary" style="width: 100%;">
                 <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                 Call for Home Care
               </a>
@@ -320,7 +351,7 @@
               </li>
             </ul>
             <div class="service-card__footer">
-              <a href="tel:+917013775996" class="btn btn--emergency" style="width: 100%;">
+              <a href="tel:+919649648430" class="btn btn--emergency" style="width: 100%;">
                 <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                 Call Ambulance Now
               </a>
@@ -369,7 +400,7 @@
                   <span class="price-tag__label">Sale & Rental</span>
                   <span class="price-tag__inquire">Call for Quotation</span>
                 </div>
-                <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 8px 14px; font-size: var(--font-size-xs);">
+                <a href="tel:+919649648430" class="btn btn--call-primary" style="padding: 8px 14px; font-size: var(--font-size-xs);">
                   <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
                   Order
                 </a>
@@ -402,16 +433,38 @@
             </svg>
             <h3 class="state-box__title">Need Immediate Information?</h3>
             <p class="state-box__text">If details are taking too long to load, reach our duty team right away by phone.</p>
-            <a href="tel:+917013775996" class="btn btn--call-primary">
+            <a href="tel:+919649648430" class="btn btn--call-primary">
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              Call Us: +91 7013775996
+              Call Helpline
             </a>
           </div>
 
         </div>
       </section>
 
-      <!-- 6. Reusable Callout Banner -->
+      <!-- 6. Top Scroll Progress Line Spec (Visual Reference: Ohana Clinic) -->
+      <section class="component-spec" id="scroll-progress-line-spec">
+        <h2 class="component-spec__title">6. Top Scroll Progress Line (Subtle Brand Green Indicator)</h2>
+        <p class="component-spec__desc">A horizontal line approximately 3px high fixed at the absolute top of the viewport above the sticky navigation header. Uses Arovia's brand green/teal gradient (<code>var(--color-primary)</code> to <code>var(--color-accent)</code>). Dynamically tracks scroll progress from left to right as the user scrolls, and retracts/disappears at scroll position 0. Zero layout shift, overlaying via <code>position: fixed</code> with <code>z-index: 1005</code>.</p>
+        
+        <div style="background: var(--color-bg); padding: var(--spacing-6); border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--spacing-3);">
+            <span style="font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-primary-dark);">Visual Preview (Simulated Progress at 65%)</span>
+            <span style="font-size: var(--font-size-xs); color: var(--color-text-muted);">Height: 3px | Brand Green/Teal Gradient</span>
+          </div>
+          <div style="position: relative; width: 100%; height: 3px; background: rgba(0, 86, 98, 0.08); border-radius: 2px; overflow: hidden;">
+            <div style="width: 65%; height: 100%; background: linear-gradient(90deg, var(--color-primary, #005662) 0%, var(--color-accent, #008794) 50%, #00b4b6 100%); box-shadow: 0 1px 3px rgba(0, 86, 98, 0.2);"></div>
+          </div>
+          <div style="margin-top: var(--spacing-4); font-size: var(--font-size-xs); color: var(--color-text-muted); display: flex; gap: var(--spacing-6); flex-wrap: wrap;">
+            <div><strong>Position:</strong> <code>fixed; top: 0; left: 0;</code></div>
+            <div><strong>Z-Index:</strong> <code>1005</code> (Above sticky header <code>1000</code>)</div>
+            <div><strong>Layout Shift:</strong> <code>0px (CLS: 0.000)</code></div>
+            <div><strong>Reference:</strong> Ohana Care Clinic Africa</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Reusable Callout Banner -->
       <section class="helpline-banner">
         <div class="container helpline-banner__wrapper">
           <div>
@@ -419,9 +472,9 @@
             <p class="helpline-banner__desc">No online queues, forms, or delayed confirmations. Call our desk directly for answers in minutes.</p>
           </div>
           <div class="helpline-banner__cta">
-            <a href="tel:+917013775996" class="helpline-banner__btn">
+            <a href="tel:+919649648430" class="helpline-banner__btn">
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              <span>+91 7013775996</span>
+              <span>Call Helpline</span>
             </a>
           </div>
         </div>
@@ -454,7 +507,6 @@
             <li><a href="ambulance.html" class="footer-nav__link">Ambulance Services</a></li>
             <li><a href="medical-equipment.html" class="footer-nav__link">Medical Equipment</a></li>
             <li><a href="pharmacy.html" class="footer-nav__link">Pharmacy Services</a></li>
-            <li><a href="clinic.html" class="footer-nav__link">Clinical Consultations</a></li>
             <li><a href="lab-tests.html" class="footer-nav__link">Diagnostic Lab Tests</a></li>
           </ul>
         </div>
@@ -475,7 +527,7 @@
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
               <div>
                 <div>Official Phone Number:</div>
-                <a href="tel:+917013775996" class="footer-contact__link">+91 7013775996</a>
+                <a href="tel:+919649648430" class="footer-contact__link">+91 96496 48430</a>
               </div>
             </div>
             <div class="footer-contact__item">
@@ -496,11 +548,13 @@
   </footer>
 
   <!-- Floating Mobile Call Button (Always accessible on phones) -->
-  <a href="tel:+917013775996" class="floating-call-btn" aria-label="Call Arovia Healthcare at +91 7013775996">
+  <a href="tel:+919649648430" class="floating-call-btn" aria-label="Call Arovia Healthcare Helpline">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-    <span>Call +91 7013775996</span>
+    <span>Call Helpline</span>
   </a>
 
+  <script src="js/social-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>

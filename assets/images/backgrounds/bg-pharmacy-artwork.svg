@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Refreshing Mint / Aqua Ambient Glow -->
+    <radialGradient id="pharmaMintGlow" cx="80%" cy="30%" r="52%">
+      <stop offset="0%" stop-color="#39c6c8" stop-opacity="0.22" />
+      <stop offset="45%" stop-color="#10b981" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="pharmaPaleGlow" cx="15%" cy="80%" r="48%">
+      <stop offset="0%" stop-color="#e0f6f0" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#f0faf7" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="pharmaSoftBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="85" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pharmaMintGlow)" />
+  <rect width="1600" height="900" fill="url(#pharmaPaleGlow)" />
+
+  <!-- Very Soft Translucent Organic Edge Blooms -->
+  <path d="M1250,-60 C1460,0 1650,120 1620,340 C1590,520 1390,540 1280,420 C1180,300 1160,-100 1250,-60 Z" 
+        fill="#c1ede7" opacity="0.20" filter="url(#pharmaSoftBlur)" />
+  <ellipse cx="160" cy="760" rx="280" ry="180" fill="#d3f4ee" opacity="0.25" filter="url(#pharmaSoftBlur)" />
+</svg>

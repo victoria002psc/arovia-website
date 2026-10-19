@@ -4,69 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ambulance Services — Patient Medical Transportation | Arovia Healthcare</title>
-  <meta name="description" content="Medical transportation for patients needing support getting to or from healthcare facilities. Call Arovia at +91 7013775996 to check availability and discuss requirements.">
+  <meta name="description" content="Medical transportation for patients needing support getting to or from healthcare facilities. Call Arovia to check availability and discuss requirements.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Accessible Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar__content">
-      <div class="topbar__info">
-        <span class="topbar__item">
-          <strong>Arovia Healthcare Services</strong> — Guntur, Andhra Pradesh
-        </span>
-        <span class="topbar__item">
-          Transportation Desk: <a href="tel:+917013775996">+91 7013775996</a>
-        </span>
-      </div>
-      <div>
-        <span class="topbar__emergency-badge" style="background: rgba(0, 86, 98, 0.2); color: #c9e6eb; border-color: rgba(0, 86, 98, 0.4);">
-          Direct Telephone Inquiries
-        </span>
+  <!-- Top Scroll Progress Line (Subtle Brand Green Indicator — Ohana Reference) -->
+  <div class="scroll-progress-line" id="scrollProgressLine" aria-hidden="true"></div>
+
+  <!-- Site Header (Coordinated 2-Row Sticky Header) -->
+  <header class="site-header" role="banner">
+    <!-- Row 1: Main Navigation Header -->
+    <div class="site-header__main">
+      <div class="container site-header__wrapper">
+        <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
+          <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
+          <div class="brand-link__text">
+            <span class="brand-link__title">AROVIA</span>
+            <span class="brand-link__caption">Care Meets Convenience</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="main-nav__list">
+            <li><a href="index.html" class="main-nav__link">Home</a></li>
+            <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
+            <li><a href="ambulance.html" class="main-nav__link main-nav__link--active" aria-current="page">Ambulance</a></li>
+            <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
+            <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
+            <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
+            <li><a href="contact.html" class="main-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Action & Mobile Menu Toggle -->
+        <div class="header-actions">
+          <div class="connect-dropdown" id="connectDropdown">
+            <div class="connect-social-dock" id="connectSocialDock" role="group" aria-label="Arovia Official Social Media Channels" aria-hidden="false">
+              <a href="#" class="connect-social-icon connect-social-icon--instagram" data-platform="instagram" aria-label="Arovia on Instagram" title="Arovia on Instagram" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--facebook" data-platform="facebook" aria-label="Arovia on Facebook" title="Arovia on Facebook" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--youtube" data-platform="youtube" aria-label="Arovia on YouTube" title="Arovia on YouTube" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+            <button type="button" id="connectBtn" class="btn btn--connect" aria-label="Connect with Arovia Healthcare" aria-expanded="true" aria-controls="connectSocialDock">
+              <span>Connect</span>
+            </button>
+          </div>
+          <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container site-header__wrapper">
-      <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
-        <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
-        <div class="brand-link__text">
-          <span class="brand-link__title">AROVIA</span>
-          <span class="brand-link__subtitle">HEALTHCARE SERVICES</span>
+    <!-- Row 2: Contact Information Strip -->
+    <div class="topbar" aria-label="Official Contact Information">
+      <div class="container topbar__container">
+        <div class="topbar__left">
+          <a href="https://maps.app.goo.gl/LxDHu9jJ4c3jgWU56" target="_blank" rel="noopener noreferrer" class="topbar__item topbar__link topbar__item--address" aria-label="Open Arovia location on Google Maps: Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur (opens in a new tab)" title="Open Arovia location on Google Maps (opens in a new tab)">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="topbar__address-text topbar__address-full">Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, AP, India</span>
+            <span class="topbar__address-text topbar__address-compact">Shop No.26, Annapurna Complex, Kakani Rd, Guntur</span>
+          </a>
         </div>
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <ul class="main-nav__list">
-          <li><a href="index.html" class="main-nav__link">Home</a></li>
-          <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
-          <li><a href="ambulance.html" class="main-nav__link main-nav__link--active" aria-current="page">Ambulance</a></li>
-          <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
-          <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
-          <li><a href="clinic.html" class="main-nav__link">Clinic</a></li>
-          <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
-          <li><a href="contact.html" class="main-nav__link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header Action & Mobile Menu Toggle -->
-      <div class="header-actions">
-        <a href="tel:+917013775996" class="btn btn--call-primary" aria-label="Call Arovia at +91 7013775996">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-          <span>Call: +91 7013775996</span>
-        </a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <div class="topbar__right">
+          <a href="tel:+919649648430" class="topbar__item topbar__link topbar__item--phone" aria-label="Telephone Arovia at +91 96496 48430">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/>
+            </svg>
+            <span>+91 96496 48430</span>
+          </a>
+          <span class="topbar__divider" aria-hidden="true">|</span>
+          <a href="mailto:arovia22@gmail.com" class="topbar__item topbar__link topbar__item--email" aria-label="Email Arovia at arovia22@gmail.com">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>arovia22@gmail.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -75,7 +104,10 @@
   <div id="drawerOverlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
   <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
     <div class="mobile-drawer__header">
-      <span class="brand-link__title">AROVIA</span>
+      <div class="brand-link__text">
+        <span class="brand-link__title">AROVIA</span>
+        <span class="brand-link__caption">Care Meets Convenience</span>
+      </div>
       <button id="drawerClose" class="mobile-drawer__close" aria-label="Close navigation menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
@@ -86,14 +118,16 @@
       <a href="ambulance.html" class="mobile-drawer__link mobile-drawer__link--active" aria-current="page">Ambulance</a>
       <a href="medical-equipment.html" class="mobile-drawer__link">Medical Equipment</a>
       <a href="pharmacy.html" class="mobile-drawer__link">Pharmacy</a>
-      <a href="clinic.html" class="mobile-drawer__link">Clinic</a>
       <a href="lab-tests.html" class="mobile-drawer__link">Lab Tests</a>
       <a href="contact.html" class="mobile-drawer__link">Contact</a>
     </nav>
     <div class="mobile-drawer__footer">
-      <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+      <button type="button" class="btn btn--connect btn--connect-mobile" aria-label="Connect with Arovia on social media" style="width: 100%;">
+        <span>Connect</span>
+      </button>
+      <a href="tel:+919649648430" class="btn btn--call-primary" style="width: 100%;">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-        <span>Call: +91 7013775996</span>
+        <span>Call Helpline</span>
       </a>
       <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Direct phone service only. No online forms or bookings required.</p>
     </div>
@@ -102,59 +136,76 @@
   <!-- Main Content Area -->
   <main id="main-content">
     
-    <!-- 4.1 & 4.3 Page Introduction with Image Alongside -->
-    <section class="page-header" style="padding-bottom: var(--spacing-12);">
-      <div class="container">
-        <div class="page-header__breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="page-header__breadcrumb-separator">/</span>
-          <span>Ambulance Services</span>
-        </div>
-        <div class="page-header__badge">
-          <span>Medical Transportation</span>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: var(--spacing-10); align-items: center; margin-top: var(--spacing-4);">
-          <div>
-            <h1 class="page-header__title" style="margin-bottom: var(--spacing-4);">
-              Ambulance Services
-            </h1>
-            <p class="page-header__subtitle" style="margin-bottom: var(--spacing-6);">
-              When a patient needs transportation for medical care, arranging the right ambulance service matters. Contact Arovia to discuss your transportation requirements and check service availability.
-            </p>
-            <div class="page-header__actions">
-              <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 14px 28px; font-size: var(--font-size-base);">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-                <span>Call to Inquire: +91 7013775996</span>
-              </a>
-            </div>
-            <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-3);">
-              * Calling opens your phone dialer to speak with our coordinator. It does not automatically dispatch a vehicle online.
-            </p>
+    <!-- Page Introduction with Vehicle Image & Directional Transit Theme -->
+    <section class="page-header page-header--enhanced page-header--grid page-header--ambulance bg-artwork-ambulance" style="padding-bottom: var(--spacing-12);">
+      <div class="container page-header__container">
+        <div>
+          <div class="page-header__breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="page-header__breadcrumb-separator">/</span>
+            <span>Ambulance Services</span>
           </div>
+          <div class="page-header__badge">
+            <span>Medical Transportation</span>
+          </div>
+          <h1 class="page-header__title" style="margin-bottom: var(--spacing-4);">
+            Ambulance & Assisted Patient Transportation
+          </h1>
+          <p class="page-header__subtitle" style="margin-bottom: var(--spacing-6);">
+            Safe, coordinated patient transportation for hospital admissions, post-treatment discharges, diagnostic appointments, and inter-facility transfers. Dial our transportation desk to verify current vehicle availability and coordinate travel requirements.
+          </p>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-3);">
+            * Direct telephone coordination with our transportation desk. Calling does not automatically dispatch a vehicle online.
+          </p>
+        </div>
 
-          <!-- 4.3 Sharp, Realistic Ambulance Photo -->
-          <div class="hero__image-card">
-            <img src="assets/images/ambulance_transport.jpg" alt="Arovia patient transportation ambulance vehicle parked outside a healthcare medical facility" class="hero__image" style="height: 380px;" width="700" height="380">
-            <div class="hero__image-caption">
-              <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-              <span>Patient transportation vehicle for hospital transfers and appointments</span>
+        <!-- Sharp, Realistic Ambulance Photo Showcase -->
+        <div class="hero-showcase">
+          <div class="hero-showcase__media">
+            <img src="assets/images/ambulance_transport.jpg" alt="Arovia patient transportation ambulance vehicle parked outside a healthcare medical facility" class="hero-showcase__img" width="700" height="380">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Directional Angular Section Transition Divider -->
+    <div class="section-divider section-divider--fill-white" aria-hidden="true">
+      <svg viewBox="0 0 1440 45" preserveAspectRatio="none">
+        <path d="M0,0 L1440,30 L1440,45 L0,45 Z"></path>
+      </svg>
+    </div>
+
+    <!-- Important Responsible Emergency Advisory Box -->
+    <section class="section" style="padding-top: 0; padding-bottom: var(--spacing-8);">
+      <div class="container">
+        <div style="background: rgba(0, 86, 98, 0.05); border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary); border-radius: var(--radius-md); padding: var(--spacing-6);">
+          <div style="display: flex; gap: var(--spacing-4); align-items: flex-start;">
+            <div style="color: var(--color-primary); flex-shrink: 0; margin-top: 2px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: var(--font-size-base); color: var(--color-primary-dark); margin-bottom: var(--spacing-1);">
+                Responsible Healthcare Advisory: Acute Emergencies vs. Scheduled Patient Transport
+              </h3>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text); margin-bottom: 0; line-height: 1.6;">
+                If a person is experiencing a sudden, life-threatening medical emergency—such as severe unremitting chest pain, sudden loss of consciousness, acute respiratory failure, severe uncontrolled bleeding, or signs of acute stroke (facial drooping, arm weakness, slurred speech)—please immediately dial statutory emergency services (such as <strong>108</strong> or <strong>112</strong> in India) for priority emergency dispatch. Arovia's transportation service specializes in planned, assisted, and non-emergency medical transfers where vehicle availability is confirmed by telephone before dispatch.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4.2 Main Content Section 1: What the Ambulance Service is For -->
+    <!-- Main Content Section 1: When Ambulance Assistance is Required -->
     <section class="section">
       <div class="container">
-        <div style="max-width: 720px; margin-bottom: var(--spacing-6);">
+        <div style="max-width: 760px; margin-bottom: var(--spacing-8);">
           <div class="page-header__badge">
-            <span>Service Scope</span>
+            <span>Clinical Scope</span>
           </div>
-          <h2>What the Ambulance Service is For</h2>
-          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
-            Our ambulance transportation service is intended for patients who require assisted, recumbent, or medically supported transport that cannot be comfortably managed in a standard passenger vehicle:
+          <h2>Situations Requiring Assisted Patient Transportation</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            Standard passenger cars and commercial taxis are rarely equipped to safely transport patients with restricted physical mobility, spinal fragility, surgical drains, or IV lines. Coordinated ambulance transport provides the necessary vehicle layout, stretcher support, and handling care across these key scenarios:
           </p>
         </div>
 
@@ -165,7 +216,7 @@
             </div>
             <h3 class="info-card__title">Hospital Admissions & Consultations</h3>
             <p class="info-card__text">
-              Transportation for planned medical admissions, doctor consultations, chemotherapy visits, or dialysis sessions where patient comfort and stretcher transit are required.
+              Assisted transit from home to hospitals for scheduled surgical admissions, specialized doctor consultations, regular hemodialysis sessions, or radiotherapy visits where patients cannot tolerate seated travel in ordinary cars.
             </p>
           </div>
 
@@ -175,7 +226,7 @@
             </div>
             <h3 class="info-card__title">Post-Treatment Hospital Discharges</h3>
             <p class="info-card__text">
-              Safe return travel from the hospital to the patient's residence after surgery, inpatient therapy, or specialized treatment, accompanied by supportive handling.
+              Dignified, comfortable transit returning home following orthopedic surgery, abdominal procedures, cardiac interventions, or prolonged inpatient recovery. Includes gentle stretcher transfers from hospital bed to the home bedroom.
             </p>
           </div>
 
@@ -183,58 +234,88 @@
             <div class="info-card__icon">
               <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
             </div>
-            <h3 class="info-card__title">Inter-Facility Transfers</h3>
+            <h3 class="info-card__title">Inter-Facility & Diagnostic Transfers</h3>
             <p class="info-card__text">
-              Assisted transfers between different clinics, diagnostic centers, nursing homes, and regional healthcare institutions according to patient requirements.
+              Assisted transfers between different medical centers, nursing homes, rehabilitation facilities, or imaging laboratories (such as MRI, CT scan, or PET centers) requiring continuous supine positioning and skilled handling.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            </div>
+            <h3 class="info-card__title">Supported Stretcher & Recumbent Transit</h3>
+            <p class="info-card__text">
+              Dedicated transportation for individuals who are bed-bound, elderly patients experiencing acute frailty, or patients with hip fractures, casts, or spinal braces who must strictly remain horizontal throughout transit.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M3 13h3.5l2-5 3.5 10 2.5-7 2 3.5H21v-2h-5.5l-1.5-2.6-2.5 7-3.5-10L6 11H3v2z"/></svg>
+            </div>
+            <h3 class="info-card__title">Continuous Oxygen & Medical Device Support</h3>
+            <p class="info-card__text">
+              Specialized transit for patients requiring continuous supplemental oxygen delivery, portable suction, or medical line maintenance during travel, ensuring clinical stability between residences, diagnostic labs, and medical centers.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h3 class="info-card__title">Palliative & Compassionate Home Care Transfers</h3>
+            <p class="info-card__text">
+              Dignified, gentle patient transit for individuals under palliative care or transitioning from prolonged acute hospitalization back to the comfort and privacy of their family residence, managed with utmost empathy and physical handling care.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4.2 Main Content Section 2: How Patients or Family Members Can Contact Arovia -->
+    <!-- Main Content Section 2: Why Direct Telephone Inquiries Protect Care -->
     <section class="section section--alt">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-10); align-items: center;">
+        <div class="grid-2col">
           <div>
             <div class="page-header__badge">
-              <span>Direct Communication</span>
+              <span>Direct Coordination</span>
             </div>
-            <h2>How to Contact Arovia for Transportation</h2>
+            <h2>Why Arovia Coordinates Transport by Direct Phone Call</h2>
             <p style="color: var(--color-text-muted); margin-top: var(--spacing-3); font-size: var(--font-size-md);">
-              To arrange transportation, simply dial our official phone number. You will speak directly with an Arovia coordinator rather than navigating an online form or automated chatbot.
+              Unlike standard ride-hailing apps, medical transportation involves vulnerable individuals with fragile physical needs. Automated online bookings cannot evaluate whether a patient can sit upright, whether stairs must be navigated, or if a stretcher is mandatory.
             </p>
             <p style="font-size: var(--font-size-sm); color: var(--color-text); line-height: 1.6;">
-              Speaking by phone allows our coordinator to understand the patient's specific comfort needs, check current vehicle availability in your area, and provide practical advice regarding the route and timing.
+              When you call Arovia, our coordinator speaks directly with you to understand the exact route, patient posture, building accessibility, and timing. This direct interaction ensures you receive realistic availability updates and clear pricing before any vehicle is confirmed.
             </p>
             <div style="margin-top: var(--spacing-6);">
-              <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 14px 28px;">
+              <a href="tel:+919649648430" class="btn btn--call-primary" style="padding: 14px 28px;">
                 <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-                <span>Call Desk: +91 7013775996</span>
+                <span>Call Ambulance Desk</span>
               </a>
             </div>
           </div>
 
           <div style="background-color: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--spacing-8); box-shadow: var(--shadow-sm);">
             <h3 style="color: var(--color-primary-dark); margin-bottom: var(--spacing-3); font-size: var(--font-size-lg);">
-              Why We Rely on Direct Phone Calls
+              Key Benefits of Direct Phone Communication
             </h3>
             <ul style="display: flex; flex-direction: column; gap: var(--spacing-3); font-size: var(--font-size-sm); color: var(--color-text);">
               <li style="display: flex; gap: var(--spacing-2); align-items: flex-start;">
                 <span style="color: var(--color-success); font-weight: bold;">&#10003;</span>
-                <span>Immediate two-way clarification about the patient's mobility state.</span>
+                <span><strong>Accurate Mobility Assessment:</strong> Immediate clarification of whether the patient requires stretcher support, wheelchair transit, or stair assistance.</span>
               </li>
               <li style="display: flex; gap: var(--spacing-2); align-items: flex-start;">
                 <span style="color: var(--color-success); font-weight: bold;">&#10003;</span>
-                <span>Real-time verification of vehicle availability for your specific route.</span>
+                <span><strong>Real-Time Route Availability:</strong> Immediate verification of current vehicle availability for your specific pickup location and destination.</span>
               </li>
               <li style="display: flex; gap: var(--spacing-2); align-items: flex-start;">
                 <span style="color: var(--color-success); font-weight: bold;">&#10003;</span>
-                <span>Clear discussion of pickup addresses, landmarks, and building access.</span>
+                <span><strong>Building Access Planning:</strong> Review of elevators, stairs, narrow hallways, and parking access to avoid unnecessary delays during patient transfer.</span>
               </li>
               <li style="display: flex; gap: var(--spacing-2); align-items: flex-start;">
                 <span style="color: var(--color-success); font-weight: bold;">&#10003;</span>
-                <span>Transparent verbal confirmation of charges before any journey begins.</span>
+                <span><strong>Clear Upfront Quotation:</strong> Transparent discussion of standard distance-based transportation fees before confirming the journey.</span>
               </li>
             </ul>
           </div>
@@ -242,16 +323,16 @@
       </div>
     </section>
 
-    <!-- 4.2 Main Content Section 3: Details the Caller Should Be Ready to Discuss -->
+    <!-- Main Content Section 3: Details the Caller Should Be Ready to Discuss -->
     <section class="section">
       <div class="container">
-        <div style="max-width: 720px; margin-bottom: var(--spacing-4);">
+        <div style="max-width: 760px; margin-bottom: var(--spacing-6);">
           <div class="page-header__badge">
-            <span>Helpful Guide</span>
+            <span>Preparation Guide</span>
           </div>
-          <h2>Details to Have Ready When You Call</h2>
+          <h2>Details to Have Ready When Calling Our Transportation Desk</h2>
           <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
-            To help our coordinator give you accurate information promptly, it is helpful to have the following details ready when you call. This is provided as helpful guidance, not a mandatory checklist:
+            Having the following details at hand when you dial allows our coordinator to quickly assess your requirements, verify vehicle availability, and provide an accurate timeline:
           </p>
         </div>
 
@@ -260,9 +341,9 @@
           <div class="prep-item">
             <div class="prep-item__num">1</div>
             <div class="prep-item__content">
-              <h4>Pickup Location Details</h4>
+              <h4>Exact Pickup Location & Building Access</h4>
               <p>
-                The exact address, including apartment name, floor number, elevator availability, and a well-known nearby landmark to help the driver navigate smoothly.
+                Provide the full street address, apartment or colony name, floor number, whether an elevator is functional and wide enough for a stretcher, and prominent local landmarks. If narrow staircases are involved, inform the coordinator so appropriate transfer assistance can be planned.
               </p>
             </div>
           </div>
@@ -270,9 +351,9 @@
           <div class="prep-item">
             <div class="prep-item__num">2</div>
             <div class="prep-item__content">
-              <h4>Destination Hospital or Residence</h4>
+              <h4>Destination Healthcare Facility or Residence</h4>
               <p>
-                The destination facility name, specific wing/ward (for hospital arrivals), or the residential address where the patient is to be transferred.
+                Specify the hospital name, specific wing, block, emergency department, outpatient department, or private residential address where the patient is heading. Knowing the exact receiving point enables the driver to choose optimal gates and parking approaches.
               </p>
             </div>
           </div>
@@ -280,9 +361,9 @@
           <div class="prep-item">
             <div class="prep-item__num">3</div>
             <div class="prep-item__content">
-              <h4>Patient's Physical Condition & Transportation Needs</h4>
+              <h4>Patient's Physical Condition & Mobility Posture</h4>
               <p>
-                Whether the patient can sit upright or needs to remain lying down on a stretcher, whether assistance is required for carrying or stairs, and whether ongoing oxygen or an accompanying family member will travel with them.
+                Describe whether the patient is bedridden, can sit in a supported chair, or must strictly remain supine on a stretcher. Mention if they have active intravenous lines, urinary catheters, surgical drains, supplemental oxygen needs, or orthopedic splints.
               </p>
             </div>
           </div>
@@ -290,9 +371,9 @@
           <div class="prep-item">
             <div class="prep-item__num">4</div>
             <div class="prep-item__content">
-              <h4>Preferred Timing</h4>
+              <h4>Timing & Coordination Preferences</h4>
               <p>
-                Whether you need assistance as soon as a vehicle can be scheduled, or if you are coordinating in advance for a planned hospital discharge or scheduled specialist appointment.
+                Indicate whether the transfer is requested as soon as a vehicle can be scheduled, or if you are coordinating in advance for a planned hospital discharge timing, scheduled dialysis slot, or clinical appointment.
               </p>
             </div>
           </div>
@@ -301,34 +382,91 @@
       </div>
     </section>
 
-    <!-- 4.2 Main Content Section 4: Confirming Availability & Charges by Phone -->
+    <!-- Main Content Section 4: Safety Guidance While Waiting for Vehicle Arrival -->
     <section class="section section--alt">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Patient Safety</span>
+          </div>
+          <h2>Practical Guidance While Waiting for Transport Assistance</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            Taking a few simple preparation steps before the transport vehicle arrives ensures a smooth, stress-free transfer for the patient and reduces unnecessary transit delays:
+          </p>
+        </div>
+
+        <div class="info-cards-grid info-cards-grid--4col">
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <h3 class="info-card__title">Clear Access Pathways & Corridors</h3>
+            <p class="info-card__text">
+              Ensure entryways, hallways, and elevators are well-lit and free of obstacles or loose rugs. Notify building security in advance so gates and stretcher routes remain completely unblocked.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+            </div>
+            <h3 class="info-card__title">Assemble Medical Records & IDs</h3>
+            <p class="info-card__text">
+              Gather the hospital discharge summary, physician notes, photo ID, insurance card, and current medications. Having these readily accessible prevents delays upon arrival at the hospital.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            </div>
+            <h3 class="info-card__title">Maintain Patient Rest & Posture</h3>
+            <p class="info-card__text">
+              Keep the patient comfortably rested and calm. Avoid offering heavy solid meals or excessive fluids immediately before transit to reduce motion sickness, nausea, or discomfort during travel.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            </div>
+            <h3 class="info-card__title">Designate an Escort or Guardian</h3>
+            <p class="info-card__text">
+              Appoint one family member or guardian to carry personal valuables, manage medical documents, and ride along. A single dedicated contact ensures seamless communication with coordinators.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Section 5: Confirming Availability and Applicable Charges by Phone -->
+    <section class="section">
       <div class="container">
         <div style="max-width: 760px; margin: 0 auto; text-align: center;">
           <div class="page-header__badge">
-            <span>Transparent Pricing</span>
+            <span>Transparent Coordination</span>
           </div>
           <h2>Confirming Availability and Applicable Charges</h2>
           <p style="color: var(--color-text-muted); margin-top: var(--spacing-3); font-size: var(--font-size-md);">
-            Ambulance availability and transportation fees vary depending on the travel distance, pickup route, and the specific patient handling requirements involved.
+            Ambulance availability and transportation fees are calculated based on travel distance, specific pickup and drop route, and any specialized physical handling involved.
           </p>
           <div style="background-color: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--spacing-8); margin-top: var(--spacing-8); text-align: left; box-shadow: var(--shadow-sm);">
             <h3 style="color: var(--color-primary-dark); font-size: var(--font-size-lg); margin-bottom: var(--spacing-3);">
-              How Pricing & Availability Are Handled:
+              How Availability and Rates Are Confirmed
             </h3>
             <p style="font-size: var(--font-size-sm); color: var(--color-text); line-height: 1.6; margin-bottom: var(--spacing-4);">
-              When you call our coordinator, they will review your pickup location and destination to check if a vehicle is currently free or can be scheduled for your desired time.
+              When you call our coordinator, they will evaluate the requested pickup location and destination to verify whether a vehicle is currently free or can be scheduled for your desired time slot. Arovia operates as a direct telephone service and does not guarantee instantaneous availability in all areas at all times without prior phone confirmation.
             </p>
             <p style="font-size: var(--font-size-sm); color: var(--color-text); line-height: 1.6; margin-bottom: var(--spacing-4);">
-              Any applicable standard charges—including base transportation fees and distance-related costs—will be clearly stated over the phone before you confirm the arrangement. There are no hidden digital fees or automated booking charges.
+              Applicable transportation fees—including base charges and distance calculations—will be stated clearly and transparently over the phone before you confirm the arrangement. Arovia does not charge online booking fees, convenience surcharges, or automated digital platform fees.
             </p>
             <div style="border-top: 1px solid var(--color-border-light); padding-top: var(--spacing-4); display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-4); flex-wrap: wrap;">
               <span style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
-                Questions about rates for your route?
+                Need a rate quote or availability check for your route?
               </span>
-              <a href="tel:+917013775996" class="phone-badge" style="font-size: var(--font-size-sm);">
+              <a href="tel:+919649648430" class="phone-badge" style="font-size: var(--font-size-sm);">
                 <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-                <span>Call +91 7013775996 for Quotation</span>
+                <span>Call for Quotation</span>
               </a>
             </div>
           </div>
@@ -336,22 +474,101 @@
       </div>
     </section>
 
-    <!-- 4.4 Prominent Contact Section -->
+    <!-- Main Content Section 6: Frequently Asked Questions -->
+    <section class="section section--alt">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Common Questions</span>
+          </div>
+          <h2>Frequently Asked Questions About Ambulance Services</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Answers to common questions about booking patient transport, emergency distinctions, vehicle handling, and trip arrangements.
+          </p>
+        </div>
+
+        <div class="service-detail-grid">
+          
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              When should I call statutory emergency services (108/112) versus calling Arovia?
+            </h3>
+            <p class="service-detail-card__text">
+              Call statutory emergency services (such as 108 or 112) immediately in life-threatening medical crises, including suspected heart attacks, severe sudden breathing difficulty, major accidents, severe trauma, or unconsciousness, where emergency dispatch is essential. Call Arovia for coordinated medical transport, planned hospital admissions, post-surgical discharges, and inter-facility patient transfers.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What information should I have ready when calling to inquire?
+            </h3>
+            <p class="service-detail-card__text">
+              Have the exact pickup address (with apartment details, floor, and elevator status), destination facility or residence, the patient's mobility state (stretcher/recumbent vs seated), any medical equipment accompanying them, and your preferred timing. This allows our coordinator to give you accurate availability and pricing.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Can a family member accompany the patient in the ambulance?
+            </h3>
+            <p class="service-detail-card__text">
+              Yes. Typically, an accompanying family member or guardian travels alongside the patient to manage medical documents, communicate with hospital staff, and provide emotional support throughout the journey.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Can I schedule transportation in advance for a planned hospital discharge?
+            </h3>
+            <p class="service-detail-card__text">
+              Yes. Advance coordination is encouraged for planned hospital discharges, scheduled dialysis appointments, or specialist consultations. Calling ahead allows our coordinator to plan vehicle scheduling around your anticipated discharge time.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              How are transportation charges determined?
+            </h3>
+            <p class="service-detail-card__text">
+              Transportation charges depend on total travel distance, the pickup and destination points, and patient handling requirements. All applicable rates are quoted directly and transparently over the telephone before you confirm the journey. There are no online booking or surprise platform fees.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Does calling Arovia guarantee immediate vehicle availability?
+            </h3>
+            <p class="service-detail-card__text">
+              Calling connects you directly with our coordinator to check current vehicle status in your area. Availability depends on active routes and schedules at the time of your call, which is why immediate verbal confirmation over the telephone is required.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Prominent Contact Section -->
     <section class="home-contact-section">
       <div class="container">
         <div class="home-contact-card">
           <div>
             <h2 class="home-contact-card__title">
-              Contact Arovia for Ambulance Inquiries
+              Contact Arovia to Inquire About Ambulance Availability
             </h2>
             <p class="home-contact-card__desc">
-              Speak directly with our coordinator to verify vehicle availability, check applicable transportation charges, and discuss patient travel needs.
+              Speak directly with our transportation coordinator to verify vehicle availability, discuss patient travel requirements, and receive a transparent rate quotation for your route.
             </p>
           </div>
           <div class="home-contact-card__actions">
-            <a href="tel:+917013775996" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
+            <a href="tel:+919649648430" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
               <svg viewBox="0 0 24 24" style="fill: var(--color-primary-dark);"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              <span>Call Now: +91 7013775996</span>
+              <span>Call Now</span>
             </a>
           </div>
         </div>
@@ -384,7 +601,6 @@
             <li><a href="ambulance.html" class="footer-nav__link">Ambulance</a></li>
             <li><a href="medical-equipment.html" class="footer-nav__link">Medical Equipment</a></li>
             <li><a href="pharmacy.html" class="footer-nav__link">Pharmacy</a></li>
-            <li><a href="clinic.html" class="footer-nav__link">Clinic</a></li>
             <li><a href="lab-tests.html" class="footer-nav__link">Lab Tests</a></li>
           </ul>
         </div>
@@ -405,7 +621,7 @@
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
               <div>
                 <div>Official Phone Number:</div>
-                <a href="tel:+917013775996" class="footer-contact__link">+91 7013775996</a>
+                <a href="tel:+919649648430" class="footer-contact__link">+91 96496 48430</a>
               </div>
             </div>
             <div class="footer-contact__item">
@@ -432,11 +648,13 @@
   </footer>
 
   <!-- Floating Mobile Call Button -->
-  <a href="tel:+917013775996" class="floating-call-btn" aria-label="Call Arovia Healthcare at +91 7013775996">
+  <a href="tel:+919649648430" class="floating-call-btn" aria-label="Call Arovia Healthcare Helpline">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-    <span>Call +91 7013775996</span>
+    <span>Call Helpline</span>
   </a>
 
+  <script src="js/social-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>

@@ -4,69 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab Tests and Health Packages — Arovia Healthcare</title>
-  <meta name="description" content="Explore laboratory tests and health packages available through Arovia. Factual test listings, transparent pricing, and direct phone inquiries at +91 7013775996.">
+  <meta name="description" content="Explore laboratory tests and health packages available through Arovia. Factual test listings, transparent pricing, and direct phone inquiries via our helpline.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Accessible Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar__content">
-      <div class="topbar__info">
-        <span class="topbar__item">
-          <strong>Arovia Healthcare Services</strong> — Guntur, Andhra Pradesh
-        </span>
-        <span class="topbar__item">
-          Diagnostic Desk: <a href="tel:+917013775996">+91 7013775996</a>
-        </span>
-      </div>
-      <div>
-        <span class="topbar__emergency-badge" style="background: rgba(0, 86, 98, 0.2); color: #c9e6eb; border-color: rgba(0, 86, 98, 0.4);">
-          Direct Telephone Inquiries
-        </span>
+  <!-- Top Scroll Progress Line (Subtle Brand Green Indicator — Ohana Reference) -->
+  <div class="scroll-progress-line" id="scrollProgressLine" aria-hidden="true"></div>
+
+  <!-- Site Header (Coordinated 2-Row Sticky Header) -->
+  <header class="site-header" role="banner">
+    <!-- Row 1: Main Navigation Header -->
+    <div class="site-header__main">
+      <div class="container site-header__wrapper">
+        <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
+          <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
+          <div class="brand-link__text">
+            <span class="brand-link__title">AROVIA</span>
+            <span class="brand-link__caption">Care Meets Convenience</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="main-nav__list">
+            <li><a href="index.html" class="main-nav__link">Home</a></li>
+            <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
+            <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
+            <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
+            <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
+            <li><a href="lab-tests.html" class="main-nav__link main-nav__link--active" aria-current="page">Lab Tests</a></li>
+            <li><a href="contact.html" class="main-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Action & Mobile Menu Toggle -->
+        <div class="header-actions">
+          <div class="connect-dropdown" id="connectDropdown">
+            <div class="connect-social-dock" id="connectSocialDock" role="group" aria-label="Arovia Official Social Media Channels" aria-hidden="false">
+              <a href="#" class="connect-social-icon connect-social-icon--instagram" data-platform="instagram" aria-label="Arovia on Instagram" title="Arovia on Instagram" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--facebook" data-platform="facebook" aria-label="Arovia on Facebook" title="Arovia on Facebook" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--youtube" data-platform="youtube" aria-label="Arovia on YouTube" title="Arovia on YouTube" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+            <button type="button" id="connectBtn" class="btn btn--connect" aria-label="Connect with Arovia Healthcare" aria-expanded="true" aria-controls="connectSocialDock">
+              <span>Connect</span>
+            </button>
+          </div>
+          <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container site-header__wrapper">
-      <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
-        <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
-        <div class="brand-link__text">
-          <span class="brand-link__title">AROVIA</span>
-          <span class="brand-link__subtitle">HEALTHCARE SERVICES</span>
+    <!-- Row 2: Contact Information Strip -->
+    <div class="topbar" aria-label="Official Contact Information">
+      <div class="container topbar__container">
+        <div class="topbar__left">
+          <a href="https://maps.app.goo.gl/LxDHu9jJ4c3jgWU56" target="_blank" rel="noopener noreferrer" class="topbar__item topbar__link topbar__item--address" aria-label="Open Arovia location on Google Maps: Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur (opens in a new tab)" title="Open Arovia location on Google Maps (opens in a new tab)">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="topbar__address-text topbar__address-full">Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, AP, India</span>
+            <span class="topbar__address-text topbar__address-compact">Shop No.26, Annapurna Complex, Kakani Rd, Guntur</span>
+          </a>
         </div>
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <ul class="main-nav__list">
-          <li><a href="index.html" class="main-nav__link">Home</a></li>
-          <li><a href="home-care.html" class="main-nav__link">Home Care</a></li>
-          <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
-          <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
-          <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
-          <li><a href="clinic.html" class="main-nav__link">Clinic</a></li>
-          <li><a href="lab-tests.html" class="main-nav__link main-nav__link--active" aria-current="page">Lab Tests</a></li>
-          <li><a href="contact.html" class="main-nav__link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header Action & Mobile Menu Toggle -->
-      <div class="header-actions">
-        <a href="tel:+917013775996" class="btn btn--call-primary" aria-label="Call Arovia at +91 7013775996">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-          <span>Call: +91 7013775996</span>
-        </a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <div class="topbar__right">
+          <a href="tel:+919649648430" class="topbar__item topbar__link topbar__item--phone" aria-label="Telephone Arovia at +91 96496 48430">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/>
+            </svg>
+            <span>+91 96496 48430</span>
+          </a>
+          <span class="topbar__divider" aria-hidden="true">|</span>
+          <a href="mailto:arovia22@gmail.com" class="topbar__item topbar__link topbar__item--email" aria-label="Email Arovia at arovia22@gmail.com">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>arovia22@gmail.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -86,14 +115,16 @@
       <a href="ambulance.html" class="mobile-drawer__link">Ambulance</a>
       <a href="medical-equipment.html" class="mobile-drawer__link">Medical Equipment</a>
       <a href="pharmacy.html" class="mobile-drawer__link">Pharmacy</a>
-      <a href="clinic.html" class="mobile-drawer__link">Clinic</a>
       <a href="lab-tests.html" class="mobile-drawer__link mobile-drawer__link--active" aria-current="page">Lab Tests</a>
       <a href="contact.html" class="mobile-drawer__link">Contact</a>
     </nav>
     <div class="mobile-drawer__footer">
-      <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+      <button type="button" id="drawerConnectBtn" class="btn btn--connect btn--connect-mobile" style="width: 100%; justify-content: center;" aria-label="Connect with Arovia on social media">
+        <span>Connect</span>
+      </button>
+      <a href="tel:+919649648430" class="btn btn--call-primary" style="width: 100%;">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-        <span>Call: +91 7013775996</span>
+        <span>Call Helpline</span>
       </a>
       <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Direct phone service only — No online booking or forms required.</p>
     </div>
@@ -102,49 +133,174 @@
   <!-- Main Content Area -->
   <main id="main-content">
     
-    <!-- 7.1 Page Introduction -->
-    <section class="page-header">
-      <div class="container">
-        <div class="page-header__breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="page-header__breadcrumb-separator">/</span>
-          <span>Lab Tests & Packages</span>
+    <!-- Page Introduction with Diagnostic Biochemistry Theme -->
+    <section class="page-header page-header--enhanced page-header--grid bg-artwork-lab" style="padding-bottom: var(--spacing-12);">
+      <div class="container page-header__container">
+        <div>
+          <div class="page-header__breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="page-header__breadcrumb-separator">/</span>
+            <span>Lab Tests &amp; Packages</span>
+          </div>
+          <div class="page-header__badge">
+            <span>Diagnostic Pathology Services</span>
+          </div>
+          <h1 class="page-header__title">Diagnostic Laboratory Tests &amp; Health Packages</h1>
+          <p class="page-header__subtitle">
+            Essential pathology testing and comprehensive health screening panels to support clinical evaluation, preventive monitoring, and chronic disease oversight. Contact our diagnostic desk directly to verify specific test requirements, confirm fasting instructions, and check current charges.
+          </p>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-3);">
+            * Direct telephone consultation. Test inquiries, preparation advice, and pricing are confirmed directly with our team without online data submission.
+          </p>
         </div>
-        <div class="page-header__badge">
-          <span>Diagnostic Services</span>
+
+        <div class="hero-showcase">
+          <div class="hero-showcase__media">
+            <img src="assets/images/lab_diagnostic.jpg" alt="Arovia medical laboratory testing facility with automated analyzer and clinical pathologist" class="hero-showcase__img" width="700" height="420">
+          </div>
         </div>
-        <h1 class="page-header__title">Lab Tests and Health Packages</h1>
-        <p class="page-header__subtitle">
-          Explore the laboratory tests and health packages available through Arovia. Each listing explains the tests included and displays the applicable price, helping you understand the available options before contacting us.
-        </p>
-        <div class="page-header__actions">
-          <a href="tel:+917013775996" class="btn btn--call-primary" style="padding: 14px 28px; font-size: var(--font-size-base);">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            <span>Call to Inquire: +91 7013775996</span>
-          </a>
-        </div>
-        <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-3);">
-          * Diagnostic testing details and applicable fees are confirmed directly over the phone with our team. No digital booking forms or personal data collection.
-        </p>
       </div>
     </section>
 
-    <!-- Transparent Information Notice -->
-    <section class="section" style="padding-bottom: 0;">
+    <!-- Precision Diagnostic Wave Section Transition Divider -->
+    <div class="section-divider section-divider--fill-white" aria-hidden="true">
+      <svg viewBox="0 0 1440 50" preserveAspectRatio="none">
+        <path d="M0,0 C360,35 720,15 1080,45 C1260,60 1380,20 1440,25 L1440,50 L0,50 Z"></path>
+      </svg>
+    </div>
+
+    <!-- Clinical Accuracy & Responsible Guidance Notice -->
+    <section class="section" style="padding-top: 0; padding-bottom: var(--spacing-8);">
       <div class="container">
         <div class="callout-box" style="margin-top: 0; background-color: var(--color-white); border-color: var(--color-border); border-left-color: var(--color-primary);">
           <div class="callout-box__title" style="color: var(--color-primary-dark);">
             <svg viewBox="0 0 24 24" style="fill: var(--color-primary);"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-            <span>Clinical Accuracy & Patient Guidance</span>
+            <span>Clinical Accuracy &amp; Professional Medical Interpretation</span>
           </div>
-          <p class="callout-box__text" style="color: var(--color-text);">
-            Laboratory investigations are clinical tools that support diagnosis and monitoring when interpreted in conjunction with a medical consultation. Diagnostic tests do not independently diagnose conditions without professional medical review. To inquire about test preparation, fasting requirements, or pricing, please contact our diagnostic desk directly.
+          <p class="callout-box__text" style="color: var(--color-text); line-height: 1.6;">
+            Laboratory tests are diagnostic tools designed to provide objective physiological information to your healthcare provider. A test result outside standard reference ranges does not automatically confirm an illness in isolation; it must be interpreted in clinical context alongside medical history and a physician's examination. Arovia provides direct phone-first guidance to help you understand test parameters, sample readiness, and transparent costs.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Lab Catalog Section -->
+    <!-- Educational Section: Understanding Laboratory Testing & Health Packages -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Clinical Guidance</span>
+          </div>
+          <h2>Understanding Laboratory Testing &amp; Health Packages</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            Diagnostic investigations fulfill different clinical purposes depending on whether you require a single targeted parameter or a broad systemic evaluation:
+          </p>
+        </div>
+
+        <div class="info-cards-grid">
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+            </div>
+            <h3 class="info-card__title">Individual Targeted Tests</h3>
+            <p class="info-card__text">
+              Focused laboratory investigations ordered by a physician to investigate specific symptoms or monitor established medical conditions. Common examples include Glycated Hemoglobin (HbA1c) for diabetes control, Complete Blood Count (CBC) for anemia or infection, Serum Creatinine for kidney function, and Thyroid Stimulating Hormone (TSH).
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            </div>
+            <h3 class="info-card__title">Comprehensive Health Packages</h3>
+            <p class="info-card__text">
+              Multi-parameter screening panels that bundle related tests across vital organ systems. These packages provide a holistic baseline assessment of cardiovascular risk (Lipid Profile), liver health (LFT), renal filtration (KFT), and metabolic markers, offering value for periodic preventive reviews.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <h3 class="info-card__title">Preparation &amp; Fasting Protocols</h3>
+            <p class="info-card__text">
+              Certain biochemical tests require strict 8 to 12-hour overnight fasting—notably Fasting Blood Sugar and Lipid Panels—to avoid transient dietary spikes. Conversely, tests such as CBC, Liver Enzymes, or HbA1c typically do not require fasting. Always confirm preparation rules before your sample is drawn.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            </div>
+            <h3 class="info-card__title">Physician Evaluation of Reports</h3>
+            <p class="info-card__text">
+              Laboratory reference intervals represent statistical baselines across healthy populations. Variations can occur due to age, gender, hydration, medications, or minor physiological factors. Reports should always be shared with your attending doctor for qualified clinical interpretation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step-by-Step Calling Guide -->
+    <section class="section section--alt">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: var(--spacing-6);">
+          <div class="page-header__badge">
+            <span>Inquiry Process</span>
+          </div>
+          <h2>What to Prepare When Calling About Diagnostic Testing</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Having these essential details ready when you dial our diagnostic desk ensures fast clarification of test requirements and accurate cost estimates:
+          </p>
+        </div>
+
+        <div class="prep-item-list">
+          
+          <div class="prep-item">
+            <div class="prep-item__num">1</div>
+            <div class="prep-item__content">
+              <h4>Doctor's Test Requisition or Exact Test Name</h4>
+              <p>
+                Have the specific test name or physician's requisition slip ready. Knowing the precise investigation (e.g. HbA1c vs. fasting blood sugar, or complete lipid profile vs. total cholesterol) prevents duplicate or unnecessary sample draws.
+              </p>
+            </div>
+          </div>
+
+          <div class="prep-item">
+            <div class="prep-item__num">2</div>
+            <div class="prep-item__content">
+              <h4>Fasting Status &amp; Timing Verification</h4>
+              <p>
+                Confirm when you last consumed food or beverages (other than water). Our coordinator will verify whether your requested test requires overnight fasting, early morning collection, or post-prandial timing.
+              </p>
+            </div>
+          </div>
+
+          <div class="prep-item">
+            <div class="prep-item__num">3</div>
+            <div class="prep-item__content">
+              <h4>Current Prescription Medications</h4>
+              <p>
+                Inform the coordinator if the patient is actively taking medications such as blood thinners (which require special pressure bandage care after venipuncture), thyroid hormones, corticosteroids, or diabetes drugs that affect test results.
+              </p>
+            </div>
+          </div>
+
+          <div class="prep-item">
+            <div class="prep-item__num">4</div>
+            <div class="prep-item__content">
+              <h4>Transparent Fee &amp; Scheduling Confirmation</h4>
+              <p>
+                Applicable test charges and available testing arrangements are quoted directly and transparently over the telephone before any testing is arranged, with no hidden platform fees.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Lab Catalog Section with Search & Filtering -->
     <section class="section">
       <div class="container">
         
@@ -174,13 +330,13 @@
             Showing <strong id="labCount">0</strong> listed diagnostic offerings
           </div>
           <div style="font-size: var(--font-size-xs);">
-            Official Arovia Diagnostic Catalog
+            Official Arovia Diagnostic Verification Desk
           </div>
         </div>
 
         <!-- Tests & Packages Grid -->
         <div id="labGrid" class="equipment-grid">
-          <!-- Populated when user supplies verified tests and packages list -->
+          <!-- Populated when verified test and package listings are integrated -->
         </div>
 
         <!-- Awaiting Data Box -->
@@ -188,16 +344,95 @@
           <div style="width: 56px; height: 56px; border-radius: 50%; background-color: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-4);">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
           </div>
-          <h3 style="color: var(--color-dark); margin-bottom: var(--spacing-2);">Ready for Official Lab Tests & Packages Data</h3>
-          <p style="color: var(--color-text-muted); font-size: var(--font-size-sm); max-width: 600px; margin: 0 auto var(--spacing-4); line-height: 1.6;">
-            The Lab Tests page framework is fully prepared in accordance with Module 7 specifications. As strictly required, no fictional test names, packages, or arbitrary prices will be invented. Please supply the verified test list, package breakdowns, and official prices to populate the listings.
+          <h3 style="color: var(--color-dark); margin-bottom: var(--spacing-2);">Verified Diagnostic Coordination Desk</h3>
+          <p style="color: var(--color-text-muted); font-size: var(--font-size-sm); max-width: 620px; margin: 0 auto var(--spacing-4); line-height: 1.6;">
+            Arovia adheres strictly to diagnostic accuracy: we do not display arbitrary test fees or unverified package listings online. Our diagnostic catalog is maintained in coordination with verified laboratory testing protocols. For specific test availability, fasting guidelines, and exact charges, please contact our diagnostic desk directly.
           </p>
-          <a href="tel:+917013775996" class="btn btn--call-primary" style="display: inline-flex;">
+          <a href="tel:+919649648430" class="btn btn--call-primary" style="display: inline-flex;">
             <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            <span>Direct Inquiries: +91 7013775996</span>
+            <span>Call Diagnostic Desk</span>
           </a>
         </div>
 
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions About Diagnostic Testing -->
+    <section class="section section--alt">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Common Questions</span>
+          </div>
+          <h2>Frequently Asked Questions About Lab Tests &amp; Packages</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Answers regarding preparation, packages versus individual tests, pricing, and report reviews.
+          </p>
+        </div>
+
+        <div class="service-detail-grid">
+          
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What is the difference between an individual test and a health package?
+            </h3>
+            <p class="service-detail-card__text">
+              An individual test measures a specific biochemical or hematological parameter (e.g. Fasting Glucose or Serum Creatinine) to address a targeted diagnostic question. A health package bundles multiple tests across organ systems (such as liver function, lipid profile, and renal markers) to provide a broad preventive overview.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Why do some blood tests require fasting while others do not?
+            </h3>
+            <p class="service-detail-card__text">
+              Certain markers—such as glucose, triglycerides, and specific lipid fractions—fluctuate immediately following food digestion. Fasting for 8–12 hours establishes a stable baseline. Other tests, such as complete hemograms or HbA1c, reflect long-term or cellular metrics that are unaffected by recent meals.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Can a laboratory test result alone diagnose an illness?
+            </h3>
+            <p class="service-detail-card__text">
+              No. Laboratory results provide objective data that must always be interpreted in conjunction with a patient's clinical history, physical symptoms, and a doctor's examination. Normal reference ranges are statistical guidelines and require medical context.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What details should I have ready when calling about a test?
+            </h3>
+            <p class="service-detail-card__text">
+              Have the specific test name or doctor's prescription slip, the patient's approximate age, fasting status (how long since last meal), and a list of current medications. This allows our coordinator to confirm preparation requirements and applicable charges immediately.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              How are diagnostic test charges determined?
+            </h3>
+            <p class="service-detail-card__text">
+              Fees are determined based on the specific pathology investigation, the methodology required, and whether an individual test or package panel is selected. Standard charges are confirmed verbally over the phone with complete transparency before testing.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Is a doctor's prescription required for all lab tests?
+            </h3>
+            <p class="service-detail-card__text">
+              Routine preventive wellness packages and basic health screening tests can often be undertaken for general monitoring. However, specific therapeutic or diagnostic monitoring tests are best guided by a doctor's prescription to ensure the appropriate investigations are performed.
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -210,13 +445,13 @@
               Have Questions About a Diagnostic Test or Package?
             </h2>
             <p class="home-contact-card__desc">
-              Speak directly with our team to check test availability, fasting instructions, sample handling, and applicable charges.
+              Speak directly with our diagnostic desk to check test availability, fasting instructions, sample handling, and applicable charges.
             </p>
           </div>
           <div class="home-contact-card__actions">
-            <a href="tel:+917013775996" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
+            <a href="tel:+919649648430" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
               <svg viewBox="0 0 24 24" style="fill: var(--color-primary-dark);"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              <span>Call Now: +91 7013775996</span>
+              <span>Call Now</span>
             </a>
           </div>
         </div>
@@ -249,7 +484,6 @@
             <li><a href="ambulance.html" class="footer-nav__link">Ambulance</a></li>
             <li><a href="medical-equipment.html" class="footer-nav__link">Medical Equipment</a></li>
             <li><a href="pharmacy.html" class="footer-nav__link">Pharmacy</a></li>
-            <li><a href="clinic.html" class="footer-nav__link">Clinic</a></li>
             <li><a href="lab-tests.html" class="footer-nav__link">Lab Tests</a></li>
           </ul>
         </div>
@@ -270,7 +504,7 @@
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
               <div>
                 <div>Official Phone Number:</div>
-                <a href="tel:+917013775996" class="footer-contact__link">+91 7013775996</a>
+                <a href="tel:+919649648430" class="footer-contact__link">+91 96496 48430</a>
               </div>
             </div>
             <div class="footer-contact__item">
@@ -297,11 +531,13 @@
   </footer>
 
   <!-- Floating Mobile Call Button -->
-  <a href="tel:+917013775996" class="floating-call-btn" aria-label="Call Arovia Healthcare at +91 7013775996">
+  <a href="tel:+919649648430" class="floating-call-btn" aria-label="Call Arovia Healthcare Helpline">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-    <span>Call +91 7013775996</span>
+    <span>Call Helpline</span>
   </a>
 
+  <script src="js/social-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>

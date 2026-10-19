@@ -4,76 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Care Services — Caregivers & Registered Nurses | Arovia Healthcare</title>
-  <meta name="description" content="Arovia provides compassionate caregivers for everyday assistance and registered nurses for clinical care at home. Call +91 7013775996 to discuss care requirements.">
+  <meta name="description" content="Arovia provides compassionate caregivers for everyday assistance and registered nurses for clinical care at home. Call our helpline to discuss care requirements.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Accessible Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar__content">
-      <div class="topbar__info">
-        <span class="topbar__item">
-          <strong>Arovia Healthcare Services</strong> — Guntur, Andhra Pradesh
-        </span>
-        <span class="topbar__item">
-          Direct Phone: <a href="tel:+917013775996">+91 7013775996</a>
-        </span>
-      </div>
-      <div>
-        <span class="topbar__emergency-badge">Home Care Support Line</span>
+  <!-- Top Scroll Progress Line (Subtle Brand Green Indicator — Ohana Reference) -->
+  <div class="scroll-progress-line" id="scrollProgressLine" aria-hidden="true"></div>
+
+  <!-- Site Header (Coordinated 2-Row Sticky Header) -->
+  <header class="site-header" role="banner">
+    <!-- Row 1: Main Navigation Header -->
+    <div class="site-header__main">
+      <div class="container site-header__wrapper">
+        <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
+          <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
+          <div class="brand-link__text">
+            <span class="brand-link__title">AROVIA</span>
+            <span class="brand-link__caption">Care Meets Convenience</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="main-nav__list">
+            <li><a href="index.html" class="main-nav__link">Home</a></li>
+            <li><a href="home-care.html" class="main-nav__link main-nav__link--active" aria-current="page">Home Care</a></li>
+            <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
+            <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
+            <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
+            <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
+            <li><a href="contact.html" class="main-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Action & Mobile Menu Toggle -->
+        <div class="header-actions">
+          <div class="connect-dropdown" id="connectDropdown">
+            <div class="connect-social-dock" id="connectSocialDock" role="group" aria-label="Arovia Official Social Media Channels" aria-hidden="false">
+              <a href="#" class="connect-social-icon connect-social-icon--instagram" data-platform="instagram" aria-label="Arovia on Instagram" title="Arovia on Instagram" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--facebook" data-platform="facebook" aria-label="Arovia on Facebook" title="Arovia on Facebook" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="connect-social-icon connect-social-icon--youtube" data-platform="youtube" aria-label="Arovia on YouTube" title="Arovia on YouTube" role="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+            <button type="button" id="connectBtn" class="btn btn--connect" aria-label="Connect with Arovia Healthcare" aria-expanded="true" aria-controls="connectSocialDock">
+              <span>Connect</span>
+            </button>
+          </div>
+          <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container site-header__wrapper">
-      <a href="index.html" class="brand-link" aria-label="Arovia Healthcare Homepage">
-        <img src="Arovia_Logo.png" alt="Arovia Healthcare Logo" class="brand-link__logo" width="120" height="52">
-        <div class="brand-link__text">
-          <span class="brand-link__title">AROVIA</span>
-          <span class="brand-link__subtitle">HEALTHCARE SERVICES</span>
+    <!-- Row 2: Contact Information Strip -->
+    <div class="topbar" aria-label="Official Contact Information">
+      <div class="container topbar__container">
+        <div class="topbar__left">
+          <a href="https://maps.app.goo.gl/LxDHu9jJ4c3jgWU56" target="_blank" rel="noopener noreferrer" class="topbar__item topbar__link topbar__item--address" aria-label="Open Arovia location on Google Maps: Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur (opens in a new tab)" title="Open Arovia location on Google Maps (opens in a new tab)">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="topbar__address-text topbar__address-full">Shop No.26, Ground Floor, Annapurna Complex, Kakani Road, Guntur – 522 001, AP, India</span>
+            <span class="topbar__address-text topbar__address-compact">Shop No.26, Annapurna Complex, Kakani Rd, Guntur</span>
+          </a>
         </div>
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <ul class="main-nav__list">
-          <li><a href="index.html" class="main-nav__link">Home</a></li>
-          <li><a href="home-care.html" class="main-nav__link main-nav__link--active" aria-current="page">Home Care</a></li>
-          <li><a href="ambulance.html" class="main-nav__link">Ambulance</a></li>
-          <li><a href="medical-equipment.html" class="main-nav__link">Medical Equipment</a></li>
-          <li><a href="pharmacy.html" class="main-nav__link">Pharmacy</a></li>
-          <li><a href="clinic.html" class="main-nav__link">Clinic</a></li>
-          <li><a href="lab-tests.html" class="main-nav__link">Lab Tests</a></li>
-          <li><a href="contact.html" class="main-nav__link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header Action & Mobile Menu Toggle -->
-      <div class="header-actions">
-        <a href="tel:+917013775996" class="btn btn--call-primary" aria-label="Call Arovia at +91 7013775996">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-          <span>Call: +91 7013775996</span>
-        </a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <div class="topbar__right">
+          <a href="tel:+919649648430" class="topbar__item topbar__link topbar__item--phone" aria-label="Telephone Arovia at +91 96496 48430">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/>
+            </svg>
+            <span>+91 96496 48430</span>
+          </a>
+          <span class="topbar__divider" aria-hidden="true">|</span>
+          <a href="mailto:arovia22@gmail.com" class="topbar__item topbar__link topbar__item--email" aria-label="Email Arovia at arovia22@gmail.com">
+            <svg class="topbar__icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>arovia22@gmail.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer Overlay & Menu -->
+  <!-- Mobile Navigation Drawer -->
   <div id="drawerOverlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
   <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
     <div class="mobile-drawer__header">
-      <span class="brand-link__title">AROVIA</span>
+      <div class="brand-link__text">
+        <span class="brand-link__title">AROVIA</span>
+        <span class="brand-link__caption">Care Meets Convenience</span>
+      </div>
       <button id="drawerClose" class="mobile-drawer__close" aria-label="Close navigation menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
@@ -84,14 +118,16 @@
       <a href="ambulance.html" class="mobile-drawer__link">Ambulance</a>
       <a href="medical-equipment.html" class="mobile-drawer__link">Medical Equipment</a>
       <a href="pharmacy.html" class="mobile-drawer__link">Pharmacy</a>
-      <a href="clinic.html" class="mobile-drawer__link">Clinic</a>
       <a href="lab-tests.html" class="mobile-drawer__link">Lab Tests</a>
       <a href="contact.html" class="mobile-drawer__link">Contact</a>
     </nav>
     <div class="mobile-drawer__footer">
-      <a href="tel:+917013775996" class="btn btn--call-primary" style="width: 100%;">
+      <button type="button" class="btn btn--connect btn--connect-mobile" aria-label="Connect with Arovia on social media" style="width: 100%;">
+        <span>Connect</span>
+      </button>
+      <a href="tel:+919649648430" class="btn btn--call-primary" style="width: 100%;">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-        <span>Call: +91 7013775996</span>
+        <span>Call Helpline</span>
       </a>
       <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-align: center;">Direct phone service only. No online forms or bookings required.</p>
     </div>
@@ -100,57 +136,63 @@
   <!-- Main Content Area -->
   <main id="main-content">
     
-    <!-- 3.1 Home Care Landing Page Hero -->
-    <section class="page-header">
-      <div class="container">
-        <div class="page-header__breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="page-header__breadcrumb-separator">/</span>
-          <span>Home Care</span>
+    <!-- 3.1 Home Care Landing Page Hero with Warm Reassuring Motif -->
+    <section class="page-header page-header--enhanced page-header--grid bg-artwork-homecare">
+      <div class="container page-header__container">
+        <div>
+          <div class="page-header__breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="page-header__breadcrumb-separator">/</span>
+            <span>Home Care</span>
+          </div>
+          <div class="page-header__badge">
+            <span>Personal Support & Clinical In-Home Nursing</span>
+          </div>
+          <h1 class="page-header__title">Care and Support in the Comfort of Home</h1>
+          <p class="page-header__subtitle">
+            Recovering from an illness, managing reduced mobility, or navigating the physical challenges of aging often requires thoughtful in-home support. Arovia provides two distinct categories of home care: compassionate caregivers who assist with everyday physical routines and personal dignity, and qualified registered nurses who deliver skilled clinical care and medical monitoring in accordance with physician guidance.
+          </p>
         </div>
-        <div class="page-header__badge">
-          <span>Personal Support & Clinical In-Home Nursing</span>
-        </div>
-        <h1 class="page-header__title">Care and Support in the Comfort of Home</h1>
-        <p class="page-header__subtitle">
-          Some people need a little help with everyday activities, while others need professional nursing care. Arovia's home care services cover both needs, with caregivers supporting daily routines and registered nurses providing clinical care at home.
-        </p>
-        <div class="page-header__actions">
-          <a href="tel:+917013775996" class="btn btn--call-primary">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-            <span>Call for Home Care: +91 7013775996</span>
-          </a>
-          <a href="#comparison" class="btn btn--call-secondary">
-            <span>View Service Comparison</span>
-          </a>
+
+        <div class="hero-showcase">
+          <div class="hero-showcase__media">
+            <img src="assets/images/hero_homecare.jpg" alt="Arovia healthcare professional providing compassionate home care to an elderly patient" class="hero-showcase__img" width="700" height="420">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Top Two Choice Navigation Cards -->
+    <!-- Gentle Wave Section Transition Divider -->
+    <div class="section-divider section-divider--fill-white" aria-hidden="true">
+      <svg viewBox="0 0 1440 50" preserveAspectRatio="none">
+        <path d="M0,0 C480,40 960,10 1440,35 L1440,50 L0,50 Z"></path>
+      </svg>
+    </div>
+
+    <!-- Top Choice Navigation Cards -->
     <section class="section" style="padding-bottom: 0;">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-8);">
+        <div class="grid-2col">
           
-          <div class="homecare-hero-card">
+          <div class="homecare-hero-card card-aura--caregiver">
             <span class="care-type-card__tag">Everyday Personal Care</span>
-            <h3 style="margin-bottom: var(--spacing-2);">Caregivers</h3>
+            <h3 style="margin-bottom: var(--spacing-2);">Caregiver Services</h3>
             <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-4);">
-              Assistance with daily physical routines, personal grooming, bathing, meal support, and friendly company.
+              Non-clinical assistance with bathing, personal grooming, safe mobility, meal support, daily routines, and friendly companionship at home.
             </p>
             <a href="#caregivers" class="btn btn--call-secondary" style="margin-top: auto;">
-              <span>Jump to Caregivers Section &darr;</span>
+              <span>Explore Caregiver Support &darr;</span>
             </a>
           </div>
 
-          <div class="homecare-hero-card">
+          <div class="homecare-hero-card card-aura--nurse">
             <span class="care-type-card__tag" style="background-color: #e0f2fe; color: #0369a1;">Clinical Healthcare</span>
-            <h3 style="margin-bottom: var(--spacing-2);">Registered Nurses</h3>
+            <h3 style="margin-bottom: var(--spacing-2);">Registered Nursing</h3>
             <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-4);">
-              Skilled nursing procedures, doctor-prescribed injections, wound dressing changes, and clinical monitoring at home.
+              Professional clinical care at home: physician-prescribed injections, sterile wound dressing, vital signs monitoring, and catheter management.
             </p>
             <a href="#nurses" class="btn btn--call-primary" style="margin-top: auto;">
-              <span>Jump to Registered Nurses Section &darr;</span>
+              <span>Explore Clinical Nursing &darr;</span>
             </a>
           </div>
 
@@ -158,124 +200,178 @@
       </div>
     </section>
 
-    <!-- 3.2 Caregivers Section -->
+    <!-- 2. Caregivers Section -->
     <section id="caregivers" class="section">
       <div class="container">
         <div style="border-top: 2px solid var(--color-border); padding-top: var(--spacing-10);">
           
-          <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--spacing-10); align-items: center; margin-bottom: var(--spacing-10);">
+          <div class="grid-2col--asymmetric" style="margin-bottom: var(--spacing-10);">
             <div>
               <span class="care-type-card__tag">Non-Clinical Personal Support</span>
               <h2 style="font-size: var(--font-size-3xl); color: var(--color-primary-dark); margin-bottom: var(--spacing-4);">
-                Caregivers — Help With Everyday Activities
+                Caregivers — Practical Help With Everyday Living
               </h2>
               <p style="font-size: var(--font-size-md); color: var(--color-text); line-height: var(--line-height-relaxed); margin-bottom: var(--spacing-4);">
-                Everyday activities can become difficult when someone is older, recovering, or needs extra support. A caregiver helps with personal routines and daily tasks, allowing the person to receive assistance in their own home.
+                A caregiver (often referred to as a patient attendant or home care aide) is a compassionate, trained individual who assists patients with activities of daily living (ADLs). Caregiving focuses on personal care, safety, comfort, and routine physical support rather than medical diagnosis or clinical treatments.
               </p>
-              <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
-                Our caregivers provide respectful, patient assistance tailored to each individual's comfort and dignity, helping families maintain steady daily schedules.
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: var(--line-height-relaxed); margin-bottom: var(--spacing-4);">
+                <strong>Who Benefits From Caregiver Support?</strong> Older adults experiencing age-related physical frailty or memory difficulties, individuals recovering from surgery who temporarily lack the stamina to manage alone, and patients living with chronic mobility impairments all benefit greatly from having an attentive caregiver by their side.
+              </p>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: var(--line-height-relaxed);">
+                <strong>Why Routine Activities Become Challenging:</strong> Natural declines in muscle tone, joint stiffness, reduced balance, sensory impairment, and fatigue can turn simple everyday tasks into frustrating or risky hurdles. Dedicated caregiver assistance removes the fear of falling, relieves burden on family members, and enables patients to remain comfortably in familiar home surroundings.
               </p>
             </div>
 
             <!-- Caregiver Image (Photo 1) -->
             <div class="hero__image-card">
-              <img src="assets/images/caregiver_daily.jpg" alt="Arovia caregiver helping an older adult walk comfortably at home with everyday personal assistance" class="hero__image" style="height: 380px;" width="640" height="380">
-              <div class="hero__image-caption">
-                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                <span>A caregiver providing daily mobility assistance and friendly company at home</span>
-              </div>
+              <img src="assets/images/caregiver_daily.jpg" alt="Arovia caregiver helping an older adult walk comfortably at home with everyday personal assistance" class="hero__image" width="640" height="380">
             </div>
           </div>
 
-          <!-- Six Caregiver Activity Headings -->
-          <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-2);">Services Provided by Caregivers</h3>
-          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">The following everyday non-clinical activities are provided by our trained home caregivers:</p>
+          <!-- Caregiver Activities Explained in Practical Terms -->
+          <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-2);">How Caregivers Support Daily Life</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-6);">
+            Caregiving is not merely a checklist of chores; it is thoughtful, respectful assistance designed to protect patient dignity, independence, and peace of mind. Here is what our caregiver support involves in practical terms:
+          </p>
 
           <div class="service-detail-grid">
             
             <div class="service-detail-card">
               <h4 class="service-detail-card__title">
                 <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                Personal grooming and dressing
-              </h4>
-              <p class="service-detail-card__text">
-                Caregivers can assist with getting dressed, changing clothes, grooming, and other personal routines according to the person's needs.
-              </p>
-            </div>
-
-            <div class="service-detail-card">
-              <h4 class="service-detail-card__title">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
                 Bathing and personal hygiene
               </h4>
               <p class="service-detail-card__text">
-                Provide assistance with bathing and everyday hygiene while respecting the person's comfort, dignity, and privacy.
+                Caregivers assist with sponge baths, assisted showering, washing hair, and dental care while strictly protecting personal privacy and warmth. Maintaining personal hygiene prevents skin irritation and infections while helping patients feel fresh, respected, and comfortable.
               </p>
             </div>
 
             <div class="service-detail-card">
               <h4 class="service-detail-card__title">
                 <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                Meals and feeding assistance
+                Personal grooming and dressing
               </h4>
               <p class="service-detail-card__text">
-                Help prepare or serve meals, assist with eating when required, and support the person's normal meal routine.
+                Caregivers provide patient support with choosing clean, comfortable clothing, fastening buttons, putting on socks and footwear, hair brushing, and nail care. Dressing neatly each day fosters self-esteem and maintains a reassuring sense of daily purpose.
               </p>
             </div>
 
             <div class="service-detail-card">
               <h4 class="service-detail-card__title">
                 <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                Medication reminders
+                Mobility assistance and everyday routines
               </h4>
               <p class="service-detail-card__text">
-                Remind the person to take medications according to the schedule provided by their healthcare professional. <em>Please note: medication reminders are strictly intended to support adherence and are not the same as prescribing medicines or independently changing dosages.</em>
+                Helping individuals move safely between their bed, chair, and dining table, steadying their balance while walking, and assisting with comfortable repositioning. Gentle mobility support prevents painful bedsores and reduces the risk of dangerous falls.
               </p>
             </div>
 
             <div class="service-detail-card">
               <h4 class="service-detail-card__title">
                 <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                Everyday assistance
+                Meal assistance and feeding support
               </h4>
               <p class="service-detail-card__text">
-                Help the person follow their daily routine and provide practical support with ordinary activities around the home.
+                Caregivers help serve nutritious meals at regular times, encourage proper fluid intake, and provide gentle, patient feeding assistance when tremors, physical weakness, or recovery makes handling cutlery difficult.
               </p>
             </div>
 
             <div class="service-detail-card">
               <h4 class="service-detail-card__title">
                 <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                Companionship
+                Companionship and emotional reassurance
               </h4>
               <p class="service-detail-card__text">
-                Offer friendly company and support to help the person feel comfortable, listened to, and reassured during daily activities.
+                Social isolation and loneliness can significantly affect emotional and physical health. Caregivers offer warm, attentive companionship, engaging in conversation, listening patiently to stories, and creating a safe, calm presence at home.
+              </p>
+            </div>
+
+            <div class="service-detail-card">
+              <h4 class="service-detail-card__title">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Medication reminders (Non-Clinical)
+              </h4>
+              <p class="service-detail-card__text">
+                Caregivers give timely reminders to take prescribed tablets according to the schedule set by the patient's doctor. <em>Important medical boundary: Reminders are strictly intended to support patient adherence. Caregivers cannot independently prescribe, adjust dosages, or administer injections.</em>
               </p>
             </div>
 
           </div>
 
-          <!-- Crucial Clinical Distinction Callout Box -->
-          <div class="callout-box">
+          <h3 style="font-size: var(--font-size-xl); margin-top: var(--spacing-10); margin-bottom: var(--spacing-2);">Caregiver Support in Common Situations</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-6);">
+            Families often ask how everyday help applies to a particular situation. A caregiver can assist with personal care and routine. A caregiver does not diagnose, treat, or carry out clinical procedures. Whether support can be arranged is confirmed when you call.
+          </p>
+
+          <div class="service-detail-grid">
+            <div class="service-detail-card">
+              <h4 class="service-detail-card__title">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Older adults who need help with daily activities
+              </h4>
+              <p class="service-detail-card__text">
+                Help may include washing, dressing, moving about the house, meals, and company through the day. This is practical support when everyday tasks have become tiring or unsafe. It is not treatment for the medical conditions of ageing.
+              </p>
+            </div>
+            <div class="service-detail-card">
+              <h4 class="service-detail-card__title">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Bedridden patients
+              </h4>
+              <p class="service-detail-card__text">
+                A caregiver may help with washing in bed, changing position, using a bedpan or urinal, and moving between bed and chair when that transfer is safe. Pressure-sore treatment and other wound care stay with a nurse.
+              </p>
+            </div>
+            <div class="service-detail-card">
+              <h4 class="service-detail-card__title">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                After surgery or hospital discharge
+              </h4>
+              <p class="service-detail-card__text">
+                While energy is low, a caregiver may help with washing, dressing, short walks, meals, and the shape of the day. Stitches, dressings, drips, and prescribed injections are not caregiver tasks.
+              </p>
+            </div>
+            <div class="service-detail-card">
+              <h4 class="service-detail-card__title">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Recovering from stroke
+              </h4>
+              <p class="service-detail-card__text">
+                Support can cover washing, dressing, safe transfers, meals, and a steady routine. A caregiver is not a stroke therapist. Any exercise or swallowing advice must come from the treating doctor and, where needed, a qualified nurse or therapist.
+              </p>
+            </div>
+            <div class="service-detail-card">
+              <h4 class="service-detail-card__title">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Daily support with dementia or Parkinson's
+              </h4>
+              <p class="service-detail-card__text">
+                A caregiver may help keep a familiar routine, give reminders, and assist with washing, dressing, meals, walking, and company. This does not include clinical treatment of dementia or Parkinson's, or changing medicines.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dignity & Non-Clinical Distinction Callout Box -->
+          <div class="callout-box" style="margin-top: var(--spacing-8);">
             <div class="callout-box__title">
               <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
-              Important Distinction: Non-Clinical Assistance
+              Core Principles: Dignity, Privacy, and Clinical Distinction
             </div>
             <p class="callout-box__text">
-              Caregivers provide non-clinical assistance only. They must not be presented as substitutes for registered nurses when a clinical procedure or professional nursing assessment is required. Injections, wound cleaning, dressings, and medical procedures are not performed by caregivers.
+              Dignity, patience, and confidentiality form the cornerstone of quality caregiving. Caregivers understand that accepting personal help can feel vulnerable, and they approach every task with empathy and respect. However, caregivers provide non-clinical support only. They are not licensed nurses and do not perform clinical assessments, wound debridement, catheterization, or medical injections. When clinical nursing care is required, a registered nurse must be engaged.
             </p>
           </div>
 
-          <!-- Section 3.6 Caregiver Contact Callout -->
+          <!-- Caregiver Contact Callout -->
           <div style="background-color: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--spacing-6); margin-top: var(--spacing-8); display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-6); flex-wrap: wrap;">
             <div>
               <h4 style="margin-bottom: var(--spacing-1); color: var(--color-primary-dark);">Need Caregiver Assistance for a Loved One?</h4>
-              <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: 0;">Call Arovia to discuss your family's daily routine, shifts, and attendant availability.</p>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: 0;">Call Arovia to discuss your family's daily routine, patient condition, and caregiver availability.</p>
             </div>
             <div>
-              <a href="tel:+917013775996" class="btn btn--call-primary">
+              <a href="tel:+919649648430" class="btn btn--call-primary">
                 <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-                <span>Call Caregiver Desk: +91 7013775996</span>
+                <span>Call Caregiver Desk</span>
               </a>
             </div>
           </div>
@@ -284,102 +380,166 @@
       </div>
     </section>
 
-    <!-- 3.3 Registered Nurses Section -->
+    <!-- 3. Registered Nurses Section -->
     <section id="nurses" class="section section--alt">
       <div class="container">
         
-        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--spacing-10); align-items: center; margin-bottom: var(--spacing-10);">
+        <div class="grid-2col--asymmetric" style="margin-bottom: var(--spacing-10);">
           <div>
             <span class="care-type-card__tag" style="background-color: #e0f2fe; color: #0369a1;">Clinical Healthcare Procedures</span>
             <h2 style="font-size: var(--font-size-3xl); color: var(--color-primary-dark); margin-bottom: var(--spacing-4);">
-              Registered Nurses — Professional Nursing Care at Home
+              Registered Nurses — Skilled Clinical Care at Home
             </h2>
             <p style="font-size: var(--font-size-md); color: var(--color-text); line-height: var(--line-height-relaxed); margin-bottom: var(--spacing-4);">
-              When a person needs clinical attention but prefers to receive care at home, a registered nurse may help with appropriate nursing procedures and monitoring. The care provided depends on the patient's condition, clinical requirements, and the nurse's qualifications.
+              Registered nurses (RNs) are formal clinical healthcare professionals who have completed accredited nursing education and maintain professional clinical licensing. Nursing care involves clinical judgment, technical medical skills, aseptic procedures, and the management of doctor-prescribed therapies.
             </p>
-            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
-              All clinical procedures are carried out under professional medical guidelines and treating physician authorization.
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: var(--line-height-relaxed); margin-bottom: var(--spacing-4);">
+              <strong>How Nursing Care Differs From Caregiving:</strong> While caregivers support general daily routines, registered nurses focus on the clinical treatment plan. They perform sterile dressing changes, administer intravenous and intramuscular medications, assess physiological parameters, and recognize subtle warning signs of medical deterioration.
+            </p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: var(--line-height-relaxed);">
+              <strong>When In-Home Nursing Is Appropriate:</strong> Professional home nursing is indicated for patients recovering from major surgeries, individuals requiring ongoing intravenous antibiotic or hydration therapy, patients with complex non-healing wounds, and individuals transitioning home from intensive care or post-acute hospital wards.
             </p>
           </div>
 
           <!-- Registered Nurse Image (Photo 2) -->
           <div class="hero__image-card">
-            <img src="assets/images/nurse_clinical.jpg" alt="Arovia registered nurse checking vital signs with blood pressure monitor and stethoscope for patient at home" class="hero__image" style="height: 380px;" width="640" height="380">
-            <div class="hero__image-caption">
-              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
-              <span>A qualified registered nurse performing vital signs assessment and blood pressure check</span>
-            </div>
+            <img src="assets/images/nurse_clinical.jpg" alt="Arovia registered nurse checking vital signs with blood pressure monitor and stethoscope for patient at home" class="hero__image" width="640" height="380">
           </div>
         </div>
 
-        <!-- Five Registered Nurse Service Descriptions -->
+        <!-- Clinical Services Provided by Registered Nurses -->
         <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-2);">Clinical Services Provided by Registered Nurses</h3>
-        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">The following clinical care activities may be provided based on patient assessment and physician authorization:</p>
+        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-6);">
+          All clinical nursing interventions are delivered under treating physician authorization and strict infection-control standards:
+        </p>
 
         <div class="service-detail-grid">
           
           <div class="service-detail-card">
             <h4 class="service-detail-card__title">
               <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
-              Injections
+              Physician-prescribed injections
             </h4>
             <p class="service-detail-card__text">
-              Eligible injections (intravenous, intramuscular, or subcutaneous) may be administered by a qualified nurse when appropriately prescribed or authorized by a physician and clinically suitable for home delivery.
+              Administration of intravenous (IV), intramuscular (IM), and subcutaneous (SC) medications strictly in accordance with written medical prescriptions. Nurses follow aseptic techniques, check medication expiry and dosage, and monitor the patient for allergic reactions.
             </p>
           </div>
 
           <div class="service-detail-card">
             <h4 class="service-detail-card__title">
               <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
-              Wound care and dressing changes
+              Wound care and sterile dressing changes
             </h4>
             <p class="service-detail-card__text">
-              Nursing professionals provide appropriate post-surgical wound assessments, sterile cleaning, dressing changes, suture care, and bed-sore management according to clinical requirements.
+              Clinical assessment of surgical incisions, pressure ulcers (bedsores), and chronic wounds. Nurses perform sterile cleansing, surgical suture and staple care, application of medicated dressings, and documentation of tissue healing stages.
             </p>
           </div>
 
           <div class="service-detail-card">
             <h4 class="service-detail-card__title">
               <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
-              Nursing assessments and monitoring
+              Nursing assessments and clinical monitoring
             </h4>
             <p class="service-detail-card__text">
-              Regular monitoring of baseline vital signs including blood pressure, pulse rate, oxygen saturation, temperature, and blood glucose, with clear daily logs shared with treating physicians.
+              Systematic recording of baseline vital signs: blood pressure, heart rate, blood oxygen saturation (SpO2), body temperature, and capillary blood sugar. Nurses maintain accurate clinical observation charts and promptly notify the treating doctor of any clinical changes.
             </p>
           </div>
 
           <div class="service-detail-card">
             <h4 class="service-detail-card__title">
               <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
-              Prescribed treatment support
+              Infusion therapies & treatment support
             </h4>
             <p class="service-detail-card__text">
-              Nurses assist with appropriate prescribed medical treatments within their professional scope, such as IV infusion therapy, nebulization sessions, and oxygen support setup.
+              Cannula maintenance, saline and electrolyte infusion setups, management of medical nebulization sessions, and clinical oversight of supplemental oxygen support within the approved home nursing scope.
             </p>
           </div>
 
           <div class="service-detail-card">
             <h4 class="service-detail-card__title">
               <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
-              Other nursing procedures
+              Catheter, tube & line management
             </h4>
             <p class="service-detail-card__text">
-              Catheter insertion and care, Ryle's tube feeding assistance, tracheostomy routine care, and specialized clinical recovery procedures confirmed on an individual patient evaluation basis.
+              Foley urinary catheter maintenance and hygiene, nasogastric (Ryle's) feeding tube management, and routine care of clinical recovery lines, ensuring proper positioning, patency, and strict infection control.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h4 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+              Adherence to treating physician instructions
+            </h4>
+            <p class="service-detail-card__text">
+              Home nursing is carried out as an extension of the primary doctor's medical orders. Registered nurses do not alter treatment protocols or introduce new therapies independently; they coordinate closely with the clinician to ensure continuous, safe care.
             </p>
           </div>
 
         </div>
 
-        <!-- Section 3.6 Nurse Contact Callout -->
+        <h3 style="font-size: var(--font-size-xl); margin-top: var(--spacing-10); margin-bottom: var(--spacing-2);">When Nursing Care May Be Discussed</h3>
+        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-6);">
+          These are situations families often raise with the home care desk. A nurse works from the treating doctor's instructions. Arovia can help you explore whether suitable nursing support can be discussed. That is not a statement that Arovia employs the nurse, or that every procedure is available in every place. Sudden or life-threatening illness needs emergency medical care, not a home-care enquiry.
+        </p>
+
+        <div class="service-detail-grid">
+          <div class="service-detail-card">
+            <h4 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+              General nursing and health monitoring
+            </h4>
+            <p class="service-detail-card__text">
+              A nurse may be appropriate when someone at home needs clinical observation and help following a doctor's plan, beyond what the family can safely do. Which checks are done, and how often, has to be agreed before care starts. Personal care from a caregiver is not a substitute for that observation.
+            </p>
+          </div>
+          <div class="service-detail-card">
+            <h4 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+              Post-operative care and wound dressing
+            </h4>
+            <p class="service-detail-card__text">
+              After an operation, a nurse may look after a wound or dressing only as the surgeon has directed. A caregiver can still help with washing, clothes, and moving about. Opening or dressing a surgical wound is not part of caregiver support.
+            </p>
+          </div>
+          <div class="service-detail-card">
+            <h4 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+              Prescribed medicines and injections
+            </h4>
+            <p class="service-detail-card__text">
+              Giving an injection, or administering a medicine the person cannot take independently, is a nursing task and only when a doctor has prescribed it. A caregiver may remind someone about tablets they take themselves. Neither role should change the dose.
+            </p>
+          </div>
+          <div class="service-detail-card">
+            <h4 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+              Catheter and feeding-tube care
+            </h4>
+            <p class="service-detail-card__text">
+              Care of a urinary catheter or a feeding tube is clinical. It can be discussed when the treating team has said that this care may continue at home and a nurse who can do it is available. A caregiver does not insert, replace, or manage these tubes.
+            </p>
+          </div>
+          <div class="service-detail-card">
+            <h4 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+              Respiratory support and more complex needs
+            </h4>
+            <p class="service-detail-card__text">
+              Nebulisation or oxygen already prescribed by a doctor may be discussed if a suitably qualified nurse and a suitable home setup are available. Care that depends on intensive-care equipment, such as a ventilator, is not promised on this page. Ask the treating doctor whether home is appropriate before you enquire.
+            </p>
+          </div>
+        </div>
+
+        <!-- Nurse Contact Callout -->
         <div style="background-color: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--spacing-6); margin-top: var(--spacing-8); display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-6); flex-wrap: wrap;">
           <div>
             <h4 style="margin-bottom: var(--spacing-1); color: var(--color-primary-dark);">Need Clinical Nursing Care at Home?</h4>
-            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: 0;">Call Arovia to discuss your clinical requirements and registered nurse availability.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: 0;">Call Arovia to discuss your patient's clinical requirements, medical prescriptions, and nurse availability.</p>
           </div>
           <div>
-            <a href="tel:+917013775996" class="btn btn--call-primary">
+            <a href="tel:+919649648430" class="btn btn--call-primary">
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              <span>Call Nursing Desk: +91 7013775996</span>
+              <span>Call Nursing Desk</span>
             </a>
           </div>
         </div>
@@ -387,75 +547,278 @@
       </div>
     </section>
 
-    <!-- 3.4 Comparison Section -->
+    <!-- 4. Comparison Section -->
     <section id="comparison" class="section">
       <div class="container">
-        <div style="text-align: center; max-width: 720px; margin: 0 auto var(--spacing-8);">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto var(--spacing-8);">
           <div class="page-header__badge">
             <span>Side-by-Side Comparison</span>
           </div>
-          <h2>Caregivers vs. Registered Nurses: At a Glance</h2>
-          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
-            Use this comparison table to quickly determine which type of support matches your patient's current needs.
+          <h2>Caregivers vs. Registered Nurses: Choosing the Right Care</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            Selecting between a caregiver and a registered nurse depends on whether the patient requires non-clinical assistance with daily physical tasks or formal medical procedures supervised by a clinician. Review the breakdown below to guide your decision:
           </p>
+        </div>
+
+        <div class="table-scroll-hint" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+          <span>Scroll horizontally to view complete comparison details</span>
         </div>
 
         <div class="table-responsive">
           <table class="comparison-table" aria-label="Comparison between Caregivers and Registered Nurses">
             <thead>
               <tr>
-                <th scope="col" style="width: 40%;">Service Activity</th>
-                <th scope="col" style="width: 30%;">Caregivers (Attendants)</th>
-                <th scope="col" style="width: 30%;">Registered Nurses</th>
+                <th scope="col" style="width: 36%;">Aspect of Care</th>
+                <th scope="col" style="width: 32%;">Caregivers (Attendants)</th>
+                <th scope="col" style="width: 32%;">Registered Nurses</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Dressing and grooming assistance</strong></td>
-                <td><span class="badge-yes">&#10003; Yes</span></td>
-                <td><span class="badge-cond">Where appropriate</span></td>
+                <td><strong>Primary Objective</strong></td>
+                <td>Support with activities of daily living (ADLs), comfort, and physical safety</td>
+                <td>Clinical healthcare delivery, vital signs assessment, and treatment administration</td>
               </tr>
               <tr>
-                <td><strong>Bathing and hygiene assistance</strong></td>
-                <td><span class="badge-yes">&#10003; Yes</span></td>
-                <td><span class="badge-cond">Where appropriate</span></td>
+                <td><strong>Professional Qualifications</strong></td>
+                <td>Trained non-clinical personal care attendant</td>
+                <td>Formally educated, clinically licensed nursing professional</td>
               </tr>
               <tr>
-                <td><strong>Meal and feeding assistance</strong></td>
-                <td><span class="badge-yes">&#10003; Yes</span></td>
-                <td><span class="badge-cond">Where appropriate</span></td>
+                <td><strong>Dressing & grooming assistance</strong></td>
+                <td><span class="badge-yes">&#10003; Yes — Routine core activity</span></td>
+                <td><span class="badge-cond">Secondary to clinical care when needed</span></td>
               </tr>
               <tr>
-                <td><strong>Medication reminders</strong></td>
-                <td><span class="badge-yes">&#10003; Yes</span></td>
-                <td><span class="badge-cond">As appropriate to nursing care</span></td>
+                <td><strong>Bathing & hygiene assistance</strong></td>
+                <td><span class="badge-yes">&#10003; Yes — Routine core activity</span></td>
+                <td><span class="badge-cond">Secondary to clinical care when needed</span></td>
+              </tr>
+              <tr>
+                <td><strong>Meal feeding & mobility support</strong></td>
+                <td><span class="badge-yes">&#10003; Yes — Core daily assistance</span></td>
+                <td><span class="badge-cond">As appropriate during clinical shift</span></td>
+              </tr>
+              <tr>
+                <td><strong>Medication Reminders</strong></td>
+                <td><span class="badge-yes">&#10003; Yes — Scheduled adherence prompts only</span></td>
+                <td><span class="badge-cond">Administers and logs prescribed drugs</span></td>
               </tr>
               <tr>
                 <td><strong>Injections (IV, IM, SC)</strong></td>
-                <td><span class="badge-no">&#10005; No</span></td>
-                <td><span class="badge-cond">If qualified and authorized</span></td>
+                <td><span class="badge-no">&#10005; No — Strictly outside scope</span></td>
+                <td><span class="badge-yes">&#10003; Yes — Under physician authorization</span></td>
               </tr>
               <tr>
-                <td><strong>Wound care and sterile dressings</strong></td>
-                <td><span class="badge-no">&#10005; No</span></td>
-                <td><span class="badge-cond">If qualified and within scope</span></td>
+                <td><strong>Wound Care & Sterile Dressings</strong></td>
+                <td><span class="badge-no">&#10005; No — Strictly outside scope</span></td>
+                <td><span class="badge-yes">&#10003; Yes — Post-surgical & ulcer care</span></td>
               </tr>
               <tr>
-                <td><strong>Clinical nursing procedures (Catheter, IV, etc.)</strong></td>
-                <td><span class="badge-no">&#10005; No</span></td>
-                <td><span class="badge-yes">&#10003; Yes, where appropriate</span></td>
+                <td><strong>Catheters, Feeding Tubes & Lines</strong></td>
+                <td><span class="badge-no">&#10005; No — Strictly outside scope</span></td>
+                <td><span class="badge-yes">&#10003; Yes — Managed with sterile technique</span></td>
+              </tr>
+              <tr>
+                <td><strong>Clinical Monitoring & Observation</strong></td>
+                <td><span class="badge-no">&#10005; No clinical diagnostic interpretation</span></td>
+                <td><span class="badge-yes">&#10003; Yes — Systematic vital signs & doctor logs</span></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div style="margin-top: var(--spacing-4); font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.6;">
-          <em>Note: Registered nurses focus primarily on clinical needs, though basic comfort support may be provided as appropriate during the course of clinical care. Not every nurse or caregiver provides every listed service; specific care plans are determined based on individual patient requirements and doctor prescriptions.</em>
+        <div style="margin-top: var(--spacing-6); padding: var(--spacing-4) var(--spacing-6); background-color: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.6;">
+          <strong>Clinical Note for Families:</strong> The appropriate level of care must always be guided by the patient's current medical condition and treating physician's instructions. A family whose loved one is medically stable but needs physical help walking and bathing should enquire about a caregiver. A family whose patient has surgical sutures, IV therapy, or unstable vital signs requires a registered nurse. In many recovery situations, families combine services based on evolving patient needs.
         </div>
       </div>
     </section>
 
-    <!-- 3.6 Overall Bottom Contact Section -->
+    <!-- Scope, planning, and how to choose. Existing comparison and FAQs stay as they are. -->
+    <section class="section" id="care-planning">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Scope of Support</span>
+          </div>
+          <h2>What Is Included in Home Care?</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            The tasks and responsibilities for a particular arrangement have to be agreed before support starts. This page does not set that list. Personal care, clinical procedures, and household work are different kinds of help.
+          </p>
+        </div>
+
+        <div class="info-cards-grid" style="margin-top: 0;">
+          <div class="info-card">
+            <h3 class="info-card__title">Personal care and daily support</h3>
+            <p class="info-card__text">
+              Washing, dressing, help with toileting, moving about, meals and feeding assistance, and companionship. These are the everyday tasks a caregiver may help with when a clinical procedure is not required.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3 class="info-card__title">Clinical procedures</h3>
+            <p class="info-card__text">
+              Injections, wound dressing, care of tubes and catheters, and clinical monitoring belong with a nurse, and only when a doctor has authorised them and a suitable nurse can be arranged.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3 class="info-card__title">Household chores</h3>
+            <p class="info-card__text">
+              Cooking, cleaning the house, and laundry are not personal care and they are not nursing. Do not assume they are included. If you want them discussed, say so when you call. They are a separate question.
+            </p>
+          </div>
+        </div>
+
+        <div style="max-width: 760px; margin-top: var(--spacing-16); margin-bottom: var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Before You Decide</span>
+          </div>
+          <h2>Planning the Right Care Arrangement</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            Call the home care desk with what you already know. Arovia can help you explore suitable care options. The points below are questions to settle on that call. They are not packages, prices, schedules, or a guarantee that staff will be available.
+          </p>
+        </div>
+
+        <div class="info-cards-grid" style="margin-top: 0;">
+          <div class="info-card">
+            <h3 class="info-card__title">Duration and time of day</h3>
+            <p class="info-card__text">
+              Say whether help is needed for a few days, for a longer recovery, or on an open-ended basis, and whether that is daytime, overnight, or both. What can actually be arranged is confirmed when you call.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3 class="info-card__title">Mobility and level of assistance</h3>
+            <p class="info-card__text">
+              Describe whether the person is in bed, moves to a chair, walks with help, or walks alone, and whether they need help with one or two tasks or with most personal care. That shapes the kind of support to discuss.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3 class="info-card__title">Qualifications, availability, and responsibilities</h3>
+            <p class="info-card__text">
+              A caregiver is for daily living. A nurse is for clinical tasks a doctor has asked for. Ask what training applies to the person being discussed, which tasks they will do, and which stay with the family or the doctor. A match may not be free for every place or start date.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3 class="info-card__title">Cost</h3>
+            <p class="info-card__text">
+              Charges are not listed on this page. They depend on the arrangement you discuss and are explained on the call before you decide.
+            </p>
+          </div>
+        </div>
+
+        <div style="max-width: 760px; margin-top: var(--spacing-16); margin-bottom: var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>A Simple Guide</span>
+          </div>
+          <h2>How to Choose the Right Support</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2); font-size: var(--font-size-md);">
+            Use this only as a starting point. The treating doctor remains the right person to say what clinical care is needed.
+          </p>
+        </div>
+
+        <div class="info-cards-grid" style="margin-top: 0;">
+          <div class="info-card">
+            <h3 class="info-card__title">Everyday assistance</h3>
+            <p class="info-card__text">
+              If the person is medically stable and mainly needs help to wash, dress, eat, move, or have company, ask about a caregiver. If you are not sure they are stable, check with the treating doctor first.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3 class="info-card__title">Qualified nursing</h3>
+            <p class="info-card__text">
+              If there is a wound, an injection, a tube, prescribed oxygen, or clinical checks the doctor wants done at home, ask about a nurse. Home nursing is not an emergency service, and it is only suitable when the doctor has said home care is appropriate.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3 class="info-card__title">Ask the treating doctor</h3>
+            <p class="info-card__text">
+              New confusion, trouble breathing, a fall with injury, bleeding, chest pain, or any sudden worsening should go to the doctor or to emergency services. After the doctor has said what is needed at home, call Arovia to see whether caregiver support, nursing, or both can be explored.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Frequently Asked Questions Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto var(--spacing-8);">
+          <div class="page-header__badge">
+            <span>Helpful Information</span>
+          </div>
+          <h2>Frequently Asked Questions About Home Care</h2>
+          <p style="color: var(--color-text-muted); margin-top: var(--spacing-2);">
+            Answers to common questions families ask when considering in-home caregiving and nursing support.
+          </p>
+        </div>
+
+        <div class="service-detail-grid">
+          
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What is the difference between a caregiver and a registered nurse?
+            </h3>
+            <p class="service-detail-card__text">
+              A caregiver is a non-clinical attendant who assists with everyday physical activities such as bathing, dressing, meal support, mobility, and companionship. A registered nurse is a licensed healthcare professional who provides clinical medical care, such as administering physician-prescribed injections, dressing surgical wounds, managing catheters, and systematically monitoring vital signs.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What daily activities can a caregiver assist with?
+            </h3>
+            <p class="service-detail-card__text">
+              Caregivers assist with bathing, oral hygiene, dressing, hair grooming, transfers between bed and chair, walking safely, serving meals and feeding, scheduling medication reminders, and providing reassurance and companionship throughout the day.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              When might professional home nursing be required instead of caregiving?
+            </h3>
+            <p class="service-detail-card__text">
+              Professional nursing is needed whenever medical treatments or clinical judgment are involved. Examples include post-surgical recovery requiring incision dressings, injectable medications, intravenous therapy, catheter or Ryle's tube care, and close clinical monitoring of unstable vital signs following hospital discharge.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Can our family enquire if we are unsure which service is right?
+            </h3>
+            <p class="service-detail-card__text">
+              Yes. You can call Arovia's desk directly. Our coordinator will listen to your patient's routine, ask about any doctor instructions, and help clarify whether caregiver support or registered nursing matches your situation.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              What information should I have ready when calling about home care?
+            </h3>
+            <p class="service-detail-card__text">
+              It is helpful to describe the patient's approximate age, primary condition or recent surgery, current mobility level (e.g. bedridden, using a walker, or walking with assistance), specific assistance needed, whether a doctor has prescribed nursing procedures, and your location in Guntur.
+            </p>
+          </div>
+
+          <div class="service-detail-card">
+            <h3 class="service-detail-card__title">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Can a caregiver administer injections or change surgical dressings?
+            </h3>
+            <p class="service-detail-card__text">
+              No. Caregivers are non-clinical attendants and are strictly not authorized to perform invasive medical procedures, give injections, or change surgical dressings. Those tasks require a licensed registered nurse working under a physician's written prescription.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Overall Bottom Contact Section -->
     <section class="home-contact-section">
       <div class="container">
         <div class="home-contact-card">
@@ -464,13 +827,13 @@
               Unsure Whether You Need a Caregiver or a Registered Nurse?
             </h2>
             <p class="home-contact-card__desc">
-              Call our home care coordinator at +91 7013775996. Describe the patient's condition and we will advise on the most suitable, cost-effective arrangement.
+              Call our home care coordinator directly. Describe your patient's day-to-day routine and medical recommendations, and we will help you identify the most appropriate care arrangement.
             </p>
           </div>
           <div class="home-contact-card__actions">
-            <a href="tel:+917013775996" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
+            <a href="tel:+919649648430" class="btn btn--call-primary" style="background-color: var(--color-white); color: var(--color-primary-dark); font-size: var(--font-size-md); font-weight: var(--font-weight-bold); padding: 16px 28px;">
               <svg viewBox="0 0 24 24" style="fill: var(--color-primary-dark);"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-              <span>Call Now: +91 7013775996</span>
+              <span>Call Now</span>
             </a>
           </div>
         </div>
@@ -503,7 +866,6 @@
             <li><a href="ambulance.html" class="footer-nav__link">Ambulance</a></li>
             <li><a href="medical-equipment.html" class="footer-nav__link">Medical Equipment</a></li>
             <li><a href="pharmacy.html" class="footer-nav__link">Pharmacy</a></li>
-            <li><a href="clinic.html" class="footer-nav__link">Clinic</a></li>
             <li><a href="lab-tests.html" class="footer-nav__link">Lab Tests</a></li>
           </ul>
         </div>
@@ -524,7 +886,7 @@
               <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
               <div>
                 <div>Official Phone Number:</div>
-                <a href="tel:+917013775996" class="footer-contact__link">+91 7013775996</a>
+                <a href="tel:+919649648430" class="footer-contact__link">+91 96496 48430</a>
               </div>
             </div>
             <div class="footer-contact__item">
@@ -551,11 +913,13 @@
   </footer>
 
   <!-- Floating Mobile Call Button -->
-  <a href="tel:+917013775996" class="floating-call-btn" aria-label="Call Arovia Healthcare at +91 7013775996">
+  <a href="tel:+919649648430" class="floating-call-btn" aria-label="Call Arovia Healthcare Helpline">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z"/></svg>
-    <span>Call +91 7013775996</span>
+    <span>Call Helpline</span>
   </a>
 
+  <script src="js/social-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>

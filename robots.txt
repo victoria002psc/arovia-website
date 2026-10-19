@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arovia.pages.dev/sitemap.xml

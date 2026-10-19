@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Warm Human Trust Glow (Center-Left) -->
+    <radialGradient id="aboutWarmGlow" cx="28%" cy="38%" r="48%">
+      <stop offset="0%" stop-color="#faedd5" stop-opacity="0.40" />
+      <stop offset="50%" stop-color="#fdf8f0" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Compassionate Teal Glow (Center-Right) -->
+    <radialGradient id="aboutTealGlow" cx="74%" cy="42%" r="48%">
+      <stop offset="0%" stop-color="#39c6c8" stop-opacity="0.20" />
+      <stop offset="50%" stop-color="#008794" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="aboutSoftBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="85" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#aboutWarmGlow)" />
+  <rect width="1600" height="900" fill="url(#aboutTealGlow)" />
+
+  <ellipse cx="1280" cy="400" rx="320" ry="220" fill="#cbeff2" opacity="0.18" filter="url(#aboutSoftBlur)" />
+  <ellipse cx="320" cy="380" rx="280" ry="200" fill="#faeed7" opacity="0.22" filter="url(#aboutSoftBlur)" />
+</svg>

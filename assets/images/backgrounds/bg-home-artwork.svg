@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Primary Ambient Volumetric Glow (Top-Right / Behind Showcase) -->
+    <radialGradient id="homeGlowRight" cx="82%" cy="28%" r="52%">
+      <stop offset="0%" stop-color="#39c6c8" stop-opacity="0.24" />
+      <stop offset="45%" stop-color="#008794" stop-opacity="0.08" />
+      <stop offset="85%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Warm Ivory / Dawn Glow (Bottom-Left Corner) -->
+    <radialGradient id="homeGlowLeft" cx="12%" cy="82%" r="48%">
+      <stop offset="0%" stop-color="#faedd5" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#fdf8f0" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Aqua Diffusion (Top-Left Edge) -->
+    <radialGradient id="homeGlowTopLeft" cx="8%" cy="12%" r="35%">
+      <stop offset="0%" stop-color="#d4eff2" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#eef8fa" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- High-diffusion Gaussian Blur for Seamless Edge Transitions -->
+    <filter id="ultraSoftBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="85" />
+    </filter>
+    <filter id="softCornerBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="65" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Volumetric Lighting Fields -->
+  <rect width="1600" height="900" fill="url(#homeGlowRight)" />
+  <rect width="1600" height="900" fill="url(#homeGlowLeft)" />
+  <rect width="1600" height="900" fill="url(#homeGlowTopLeft)" />
+
+  <!-- Very Faint, Translucent Shapes Confined strictly to Outer Corners / Edges (Zero Lines Across Content) -->
+  <!-- Top-Right Ambient Cyan Bloom (Behind card perimeter) -->
+  <path d="M1250,-80 C1450,-30 1680,60 1650,320 C1620,520 1440,540 1320,440 C1200,340 1150,-120 1250,-80 Z" 
+        fill="#bce8ed" opacity="0.22" filter="url(#ultraSoftBlur)" />
+
+  <!-- Bottom-Left Warm Neutral Organic Bloom -->
+  <path d="M-100,620 C80,560 260,640 280,780 C300,920 140,980 -40,950 C-140,930 -220,720 -100,620 Z" 
+        fill="#faedd5" opacity="0.30" filter="url(#ultraSoftBlur)" />
+
+  <!-- Far Top-Left Edge Soft Aqua Tint -->
+  <ellipse cx="60" cy="80" rx="220" ry="160" fill="#cbeff2" opacity="0.25" filter="url(#softCornerBlur)" />
+</svg>
